@@ -1,0 +1,71 @@
+[versions]
+kotlin = "1.9.21"
+compose = "1.5.11"
+koinCore = "3.5.0"
+koinAndroid = "3.5.0"
+gradle = "8.2.0"
+sqlDelight = "2.0.1"
+voyager = "1.0.0-rc10"
+componentsResources = "1.5.11"
+multiplatformSettings = "1.1.1"
+koin-compose = "1.1.0"
+core = "1.12.0"
+jna = "5.13.0"
+koalaplotCore = "0.4.0"
+kotlinxCoroutinesSwing = "1.7.3"
+kotlinxSerializationJson = "1.6.2"
+kotlinxDateTime = "0.5.0"
+material3WindowSizeClassMultiplatform = "0.3.1"
+napier = "2.6.1"
+core-library-desugaring = "2.0.4"
+toast4j = "0.2.0"
+compose-activity = "1.8.1"
+spotless = "5.17.1"
+accompanist-systemUIController = "0.32.0"
+annotationJvm = "1.7.0"
+
+[plugins]
+compose-multiplatform = { id = "org.jetbrains.compose", version.ref = "compose" }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "gradle" }
+android-application = { id = "com.android.application", version.ref = "gradle" }
+jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlinX-serialization-plugin = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+sqlDelight-plugin = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
+
+[libraries]
+components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "componentsResources" }
+core = { module = "androidx.core:core", version.ref = "core" }
+jna = { module = "net.java.dev.jna:jna", version.ref = "jna" }
+koalaplot-core = { module = "io.github.koalaplot:koalaplot-core", version.ref = "koalaplotCore" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koinCore" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin-compose"}
+kotlinx-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinxCoroutinesSwing" }
+kotlinX-serializationJson = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlinxSerializationJson" }
+material3-window-size-multiplatform = { module = "dev.chrisbanes.material3:material3-window-size-class-multiplatform", version.ref = "material3WindowSizeClassMultiplatform" }
+primitive-adapters = { module = "app.cash.sqldelight:primitive-adapters", version.ref = "sqlDelight" }
+sqlDelight-runtime = { module = "app.cash.sqldelight:runtime", version.ref = "sqlDelight" }
+sqlDelight-coroutine = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqlDelight" }
+sqlDelight-android = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlDelight" }
+sqlDelight-native = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlDelight" }
+sqlDelight-JVM = { module = "app.cash.sqldelight:sqlite-driver", version.ref = "sqlDelight" }
+sqlDelight-driver-sqljs = { module = "app.cash.sqldelight:sqljs-driver", version = "2.0.0-alpha05" }
+napier = { module = "io.github.aakira:napier", version.ref = "napier" }
+kotlinX-dateTime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDateTime" }
+multiplatformSettings-noArg = { module = "com.russhwolf:multiplatform-settings-no-arg", version.ref = "multiplatformSettings" }
+multiplatformSettings-coroutines = { module = "com.russhwolf:multiplatform-settings-coroutines", version.ref = "multiplatformSettings" }
+
+compose-activity = { module = "androidx.activity:activity-compose", version.ref = "compose-activity" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koinAndroid" }
+toast4j = { module = "de.mobanisto:toast4j", version.ref = "toast4j" }
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-bottomSheetNavigator = { module = "cafe.adriel.voyager:voyager-bottom-sheet-navigator", version.ref = "voyager" }
+voyager-tabNavigator = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
+voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
+core-library-desugaring = { module = "com.android.tools:desugar_jdk_libs", version.ref = "core-library-desugaring" }
+accompanist-systemUIController = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanist-systemUIController" }
+lifecycle-common = { group = "androidx.lifecycle", name = "lifecycle-common", version = "2.6.2" }
+annotation-jvm = { group = "androidx.annotation", name = "annotation-jvm", version.ref = "annotationJvm" }
+
+stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
