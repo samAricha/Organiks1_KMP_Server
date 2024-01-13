@@ -32,7 +32,7 @@ fun EggProductionEntryComponent(
     onDialogDismissed:(Boolean) -> Unit,
     onSaveEggType:() -> Unit,
     onSaveEggCollection: () -> Unit,
-    updateEggCollectionQty:() -> Unit,
+//    updateEggCollectionQty:() -> Unit,
 ){
 
     val eggTypeItems = listOf(
@@ -164,7 +164,7 @@ fun EggProductionEntryComponent(
                 onClick ={
                     when(state.isUpdatingItem){
                         true -> {
-                            updateEggCollectionQty.invoke()
+//                            updateEggCollectionQty.invoke()
                         }
                         false -> {
                             onSaveEggCollection.invoke()
