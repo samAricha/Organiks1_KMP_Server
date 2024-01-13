@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <string name="add_task">Add Task</string>
+    <string name="all_tasks">All Tasks</string>
+    <string name="date">Date</string>
+    <string name="description">Description</string>
+    <string name="enter_date">Enter date</string>
+    <string name="enter_description">Enter task description</string>
+    <string name="enter_task_name">Enter task name</string>
+    <string name="focus_sessions">Focus Sessions</string>
+    <string name="focusbloom">Focus Bloom</string>
+    <string name="schedule">Schedule</string>
+    <string name="statistics">Statistics</string>
+    <string name="task">Task</string>
+    <string name="task_type">Task Type</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

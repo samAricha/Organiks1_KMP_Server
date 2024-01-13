@@ -1,0 +1,13 @@
+R_DEF: Internal format may change without notice
+local
+drawable logo
+font montserrat_black
+font montserrat_bold
+font montserrat_extrabold
+font montserrat_extralight
+font montserrat_light
+font montserrat_medium
+font montserrat_regular
+font montserrat_semi_bold
+font montserrat_thin
+raw alarm
