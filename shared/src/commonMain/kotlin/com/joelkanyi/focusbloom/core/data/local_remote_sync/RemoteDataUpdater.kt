@@ -2,7 +2,9 @@ package com.joelkanyi.focusbloom.core.data.local_remote_sync
 
 
 import com.joelkanyi.focusbloom.core.data.local_remote_sync.models.RemoteEggCollectionResponse
+import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 import com.joelkanyi.focusbloom.core.domain.repository.DbRepository
+import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggCollectionsRepository
 import database.EggCollectionEntity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -15,7 +17,7 @@ sealed class UpdateResult {
 
 class RemoteDataUpdater () {
 
-    suspend fun updateRemoteEggCollectionData(eggCollections: List<EggCollectionEntity>, repository: DbRepository): UpdateResult {
+    suspend fun updateRemoteEggCollectionData(eggCollections: List<EggCollectionModel>, repository: EggCollectionsRepository): UpdateResult {
 
         return try{
             withContext(Dispatchers.IO) {
@@ -26,7 +28,7 @@ class RemoteDataUpdater () {
 //                        val response = RetrofitProvider.createEggCollectionService().createRemoteEggCollection(eggCollectionRequest)
                     val response = RemoteEggCollectionResponse(success = false, message = null)
                     if (response.success){
-                        val updatedEggCollection = eggCollection.copy(isBackedUp = 1)
+                        val updatedEggCollection = eggCollection.copy(isBackedUp = true)
 
 //                        eggCollection.isBackedUp = 1
 //                        repository.updateEggCollection(eggCollection)
