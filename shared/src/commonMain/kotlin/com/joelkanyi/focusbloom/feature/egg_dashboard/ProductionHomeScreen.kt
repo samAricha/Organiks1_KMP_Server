@@ -13,7 +13,6 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
@@ -27,7 +26,6 @@ import androidx.compose.material.icons.filled.Cloud
 import androidx.compose.material.icons.filled.CloudDone
 import androidx.compose.material.icons.filled.CloudOff
 import androidx.compose.ui.graphics.PathEffect
-import androidx.compose.ui.input.key.Key.Companion.R
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 import com.joelkanyi.focusbloom.core.presentation.theme.PrimaryColor
 import org.koin.compose.rememberKoinInject
