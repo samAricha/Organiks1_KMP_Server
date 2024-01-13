@@ -12,3 +12,5 @@ rootProject.name = "Organiks1"
 include(":android")
 include(":desktop")
 include(":shared")
+include(":server")
+
