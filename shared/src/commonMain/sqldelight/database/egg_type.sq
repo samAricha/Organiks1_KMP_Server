@@ -1,0 +1,22 @@
+CREATE TABLE eggTypeEntity (
+    egg_type_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL
+);
+
+getAllEggTypes:
+SELECT * FROM eggTypeEntity;
+
+getEggTypeById:
+SELECT * FROM eggTypeEntity WHERE egg_type_id = ?;
+
+insertEggType:
+INSERT OR REPLACE INTO eggTypeEntity (name) VALUES (?);
+
+updateEggType:
+UPDATE eggTypeEntity SET name = ? WHERE egg_type_id = ?;
+
+deleteEggTypeById:
+DELETE FROM eggTypeEntity WHERE egg_type_id = ?;
+
+deleteAllEggTypes:
+DELETE FROM eggTypeEntity;
