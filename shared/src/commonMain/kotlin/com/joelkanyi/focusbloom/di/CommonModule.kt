@@ -54,22 +54,6 @@ fun commonModule() = module {
     /**
      * Database
      */
-//    single<BloomDatabase> {
-//        BloomDatabase(
-//            driver = get<DatabaseDriverFactory>().createDriver(),
-//            eggCollectionAdapter = EggCollectionEntity.Adapter(
-//                idAdapter = idAdapter,
-//                uuidAdapter = uuidAdapter,
-//                qtyAdapter = qtyAdapter,
-//                crackedAdapter = crackedAdapter,
-//                eggTypeIdAdapter = eggTypeIdAdapter,
-//                dateAdapter = dateAdapter,
-//                isBackedUpAdapter = isBackedUpAdapter,
-//                createdAtAdapter = createdAtAdapter
-//            )
-//        )
-//    }
-
 
     single<BloomDatabase> {
         BloomDatabase(
@@ -83,16 +67,7 @@ fun commonModule() = module {
                 currentAdapter = currentAdapter,
                 currentCycleAdapter = currentCycleAdapter,
                 focusSessionsAdapter = focusSessionsAdapter,
-            ),
-//            eggCollectionAdapter = EggCollection.Adapter(
-//                uuidAdapter = uuidAdapter,
-//                qtyAdapter = qtyAdapter,
-//                crackedAdapter = crackedAdapter,
-//                eggTypeIdAdapter = eggTypeIdAdapter,
-//                dateAdapter = dateAdapter,
-//                isBackedUpAdapter = isBackedUpAdapter,
-//                createdAtAdapter = createdAtAdapter
-//            )
+            )
 
         )
     }

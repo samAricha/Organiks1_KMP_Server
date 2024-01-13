@@ -6,6 +6,7 @@ import app.cash.sqldelight.db.QueryResult
 import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.db.SqlSchema
 import com.joelkanyi.focusbloom.database.BloomDatabase
+import database.Egg_collectionQueries
 import database.TaskEntity
 import database.TaskQueries
 import kotlin.Long
@@ -23,6 +24,8 @@ private class BloomDatabaseImpl(
   driver: SqlDriver,
   taskEntityAdapter: TaskEntity.Adapter,
 ) : TransacterImpl(driver), BloomDatabase {
+  override val egg_collectionQueries: Egg_collectionQueries = Egg_collectionQueries(driver)
+
   override val taskQueries: TaskQueries = TaskQueries(driver, taskEntityAdapter)
 
   public object Schema : SqlSchema<QueryResult.Value<Unit>> {
@@ -31,7 +34,7 @@ private class BloomDatabaseImpl(
 
     override fun create(driver: SqlDriver): QueryResult.Value<Unit> {
       driver.execute(null, """
-          |CREATE TABLE IF NOT EXISTS eggCollectionEntity (
+          |CREATE TABLE eggCollectionEntity (
           |    egg_collection_id INTEGER PRIMARY KEY AUTOINCREMENT,
           |    uuid TEXT NOT NULL,
           |    qty TEXT NOT NULL,
@@ -62,32 +65,6 @@ private class BloomDatabaseImpl(
           |    active INTEGER NOT NULL
           |)
           """.trimMargin(), 0)
-      driver.execute(null, "SELECT * FROM eggCollectionEntity ORDER BY date DESC", 0)
-      driver.execute(null, "SELECT * FROM eggCollectionEntity WHERE egg_collection_id = ?", 0)
-      driver.execute(null, """
-          |INSERT OR REPLACE INTO eggCollectionEntity (
-          |    uuid,
-          |    qty,
-          |    cracked,
-          |    eggTypeId,
-          |    date,
-          |    isBackedUp,
-          |    createdAt
-          |) VALUES (?, ?, ?, ?, ?, ?, ?)
-          """.trimMargin(), 0)
-      driver.execute(null, """
-          |UPDATE eggCollectionEntity SET
-          |    uuid = ?,
-          |    qty = ?,
-          |    cracked = ?,
-          |    eggTypeId = ?,
-          |    date = ?,
-          |    isBackedUp = ?,
-          |    createdAt = ?
-          |WHERE egg_collection_id = ?
-          """.trimMargin(), 0)
-      driver.execute(null, "DELETE FROM eggCollectionEntity WHERE egg_collection_id = ?", 0)
-      driver.execute(null, "DELETE FROM eggCollectionEntity", 0)
       return QueryResult.Unit
     }
 

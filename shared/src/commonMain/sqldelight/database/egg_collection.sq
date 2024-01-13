@@ -1,5 +1,5 @@
--- egg_collection.sq
-CREATE TABLE IF NOT EXISTS eggCollectionEntity (
+
+CREATE TABLE eggCollectionEntity (
     egg_collection_id INTEGER PRIMARY KEY AUTOINCREMENT,
     uuid TEXT NOT NULL,
     qty TEXT NOT NULL,
@@ -10,13 +10,13 @@ CREATE TABLE IF NOT EXISTS eggCollectionEntity (
     createdAt INTEGER NOT NULL
 );
 
--- getAllEggCollections
+getAllEggCollections:
 SELECT * FROM eggCollectionEntity ORDER BY date DESC;
 
--- getEggCollectionById
+getEggCollectionById:
 SELECT * FROM eggCollectionEntity WHERE egg_collection_id = ?;
 
--- insertEggCollection
+insertEggCollection:
 INSERT OR REPLACE INTO eggCollectionEntity (
     uuid,
     qty,
@@ -27,7 +27,7 @@ INSERT OR REPLACE INTO eggCollectionEntity (
     createdAt
 ) VALUES (?, ?, ?, ?, ?, ?, ?);
 
--- updateEggCollection
+updateEggCollection:
 UPDATE eggCollectionEntity SET
     uuid = ?,
     qty = ?,
@@ -38,8 +38,8 @@ UPDATE eggCollectionEntity SET
     createdAt = ?
 WHERE egg_collection_id = ?;
 
--- deleteEggCollectionById
+deleteEggCollectionById:
 DELETE FROM eggCollectionEntity WHERE egg_collection_id = ?;
 
--- deleteAllEggCollections
+deleteAllEggCollections:
 DELETE FROM eggCollectionEntity;
