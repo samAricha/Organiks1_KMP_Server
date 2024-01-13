@@ -1,9 +1,11 @@
 package com.joelkanyi.focusbloom.core.data.mapper
 
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
+import com.joelkanyi.focusbloom.core.domain.model.EggTypeModel
 import com.joelkanyi.focusbloom.core.domain.model.Task
 import com.joelkanyi.focusbloom.core.utils.dateTimeToString
 import database.EggCollectionEntity
+import database.EggTypeEntity
 import database.TaskEntity
 import kotlinx.datetime.toLocalDateTime
 
@@ -47,8 +49,7 @@ fun Task.toTaskEntity() = TaskEntity(
 
 // Assuming date conversion functions and other necessary utilities are available
 
-fun EggCollectionEntity.toEggCollection() = EggCollectionModel(
-    id = egg_collection_id.toInt(),
+fun EggCollectionEntity.toEggCollectionModel() = EggCollectionModel(
     uuid = uuid,
     qty = qty,
     cracked = cracked,
@@ -59,7 +60,6 @@ fun EggCollectionEntity.toEggCollection() = EggCollectionModel(
 )
 
 fun EggCollectionModel.toEggCollectionEntity() = EggCollectionEntity(
-    egg_collection_id = id.toLong(),
     uuid = uuid,
     qty = qty,
     cracked = cracked,
@@ -68,4 +68,18 @@ fun EggCollectionModel.toEggCollectionEntity() = EggCollectionEntity(
     isBackedUp = if (isBackedUp) 1L else 0L, // Convert Boolean to Long
     createdAt = createdAt
 )
+
+fun EggTypeEntity.toEggTypeModel(): EggTypeModel {
+    return EggTypeModel(
+        id = egg_type_id.toInt(),
+        name = name
+    )
+}
+
+fun EggTypeModel.toEggTypeEntity(): EggTypeEntity {
+    return EggTypeEntity(
+        egg_type_id = id.toLong(),
+        name = name
+    )
+}
 

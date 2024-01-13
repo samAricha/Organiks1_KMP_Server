@@ -1,7 +1,7 @@
 package com.joelkanyi.focusbloom.core.data.repository.egg_collections
 
 import app.cash.sqldelight.coroutines.asFlow
-import com.joelkanyi.focusbloom.core.data.mapper.toEggCollection
+import com.joelkanyi.focusbloom.core.data.mapper.toEggCollectionModel
 import com.joelkanyi.focusbloom.core.data.mapper.toEggCollectionEntity
 import com.joelkanyi.focusbloom.core.data.utils.mapToList
 import com.joelkanyi.focusbloom.core.data.utils.mapToOneOrNull
@@ -23,7 +23,7 @@ class EggCollectionsRepositoryImpl(
             .mapToList()
             .map { eggCollections ->
                 eggCollections.map {
-                    it.toEggCollection()
+                    it.toEggCollectionModel()
                 }
             }
     }
@@ -34,7 +34,7 @@ class EggCollectionsRepositoryImpl(
             .asFlow()
             .mapToOneOrNull()
             .map { eggCollectionEntity ->
-                eggCollectionEntity?.toEggCollection()
+                eggCollectionEntity?.toEggCollectionModel()
             }
     }
 

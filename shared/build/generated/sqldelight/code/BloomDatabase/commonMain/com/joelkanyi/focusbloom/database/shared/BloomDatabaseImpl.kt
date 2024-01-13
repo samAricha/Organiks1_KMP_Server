@@ -7,6 +7,7 @@ import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.db.SqlSchema
 import com.joelkanyi.focusbloom.database.BloomDatabase
 import database.Egg_collectionQueries
+import database.Egg_typeQueries
 import database.TaskEntity
 import database.TaskQueries
 import kotlin.Long
@@ -26,6 +27,8 @@ private class BloomDatabaseImpl(
 ) : TransacterImpl(driver), BloomDatabase {
   override val egg_collectionQueries: Egg_collectionQueries = Egg_collectionQueries(driver)
 
+  override val egg_typeQueries: Egg_typeQueries = Egg_typeQueries(driver)
+
   override val taskQueries: TaskQueries = TaskQueries(driver, taskEntityAdapter)
 
   public object Schema : SqlSchema<QueryResult.Value<Unit>> {
@@ -43,6 +46,12 @@ private class BloomDatabaseImpl(
           |    date TEXT NOT NULL,
           |    isBackedUp INTEGER NOT NULL,
           |    createdAt INTEGER NOT NULL
+          |)
+          """.trimMargin(), 0)
+      driver.execute(null, """
+          |CREATE TABLE eggTypeEntity (
+          |    egg_type_id INTEGER PRIMARY KEY AUTOINCREMENT,
+          |    name TEXT NOT NULL
           |)
           """.trimMargin(), 0)
       driver.execute(null, """

@@ -1,5 +1,8 @@
 package com.joelkanyi.focusbloom.core.domain.repository
 
+import com.joelkanyi.focusbloom.core.data.mapper.toEggCollectionEntity
+import com.joelkanyi.focusbloom.core.data.mapper.toTaskEntity
+import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 
 
 class DbRepository(
@@ -29,9 +32,12 @@ class DbRepository(
 //    suspend fun insertProductionCategory(productionCategory: ProductionCategory){
 //        productionCategoryDao.insertProductionCategory(productionCategory = productionCategory)
 //    }
-//    suspend fun insertEggCollection(eggCollection: EggCollection){
-//        eggCollectionDao.insert(eggCollection)
-//    }
+    suspend fun insertEggCollection(eggCollection: EggCollectionModel){
+        eggCollection.toEggCollectionEntity().let {
+
+
+        }
+    }
 //    suspend fun insertEggType(eggType: EggType){
 //        eggTypeDao.insert(eggType)
 //    }

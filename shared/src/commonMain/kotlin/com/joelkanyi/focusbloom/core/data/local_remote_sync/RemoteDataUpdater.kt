@@ -26,7 +26,9 @@ class RemoteDataUpdater () {
 //                        val response = RetrofitProvider.createEggCollectionService().createRemoteEggCollection(eggCollectionRequest)
                     val response = RemoteEggCollectionResponse(success = false, message = null)
                     if (response.success){
-                        eggCollection.isBackedUp = 1
+                        val updatedEggCollection = eggCollection.copy(isBackedUp = 1)
+
+//                        eggCollection.isBackedUp = 1
 //                        repository.updateEggCollection(eggCollection)
 //                        Toast.makeText(appContext, "Sync successful.", Toast.LENGTH_SHORT).show()
                         UpdateResult.Success("Data updated successfully.")
