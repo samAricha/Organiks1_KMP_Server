@@ -2,7 +2,7 @@ package com.joelkanyi.focusbloom.core.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
-val PrimaryColor = Color(0xFF8B4513)
+val PrimaryColor = Color(0x998B4513)
 val PrimaryLightColor = PrimaryColor.copy(alpha = 0.75f)
 
 val SecondaryColor = Color(0xFF336633)
