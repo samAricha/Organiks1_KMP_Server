@@ -4,8 +4,8 @@ import app.cash.sqldelight.Transacter
 import app.cash.sqldelight.db.QueryResult
 import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.db.SqlSchema
-import com.joelkanyi.focusbloom.database.shared.newInstance
-import com.joelkanyi.focusbloom.database.shared.schema
+import com.joelkanyi.focusbloom.database.Organiks1.shared.newInstance
+import com.joelkanyi.focusbloom.database.Organiks1.shared.schema
 import database.TaskEntity
 import database.TaskQueries
 import kotlin.Unit

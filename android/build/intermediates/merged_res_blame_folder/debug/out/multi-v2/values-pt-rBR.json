@@ -4,24 +4,7 @@
             "outputFile": "com.joelkanyi.focusbloom.android-mergeDebugResources-51:/values-pt-rBR/values-pt-rBR.xml",
             "map": [
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/ff57bebf379584040c7e8b698eab134d/transformed/ui-release/res/values-pt-rBR/values-pt-rBR.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,200,286,383,482,568,651,748,839,926,998,1067,1152,1242,1318,1394,1461",
-                        "endColumns": "94,85,96,98,85,82,96,90,86,71,68,84,89,75,75,66,112",
-                        "endOffsets": "195,281,378,477,563,646,743,834,921,993,1062,1147,1237,1313,1389,1456,1569"
-                    },
-                    "to": {
-                        "startLines": "40,41,74,75,77,79,80,81,82,83,84,85,86,89,93,94,95",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4034,4129,7851,7948,8129,8289,8372,8469,8560,8647,8719,8788,8873,9134,9493,9569,9636",
-                        "endColumns": "94,85,96,98,85,82,96,90,86,71,68,84,89,75,75,66,112",
-                        "endOffsets": "4124,4210,7943,8042,8210,8367,8464,8555,8642,8714,8783,8868,8958,9205,9564,9631,9744"
-                    }
-                },
-                {
-                    "source": "/home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/res/values-pt-rBR/values-pt-rBR.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/4a324b4f8a81fe036e1f2279127b429e/transformed/appcompat-1.6.1/res/values-pt-rBR/values-pt-rBR.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/06dee55e46f72503144d37cba543fbcf/transformed/ui-release/res/values-pt-rBR/values-pt-rBR.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,200,286,383,482,568,651,748,839,926,998,1067,1152,1242,1318,1394,1461",
+                        "endColumns": "94,85,96,98,85,82,96,90,86,71,68,84,89,75,75,66,112",
+                        "endOffsets": "195,281,378,477,563,646,743,834,921,993,1062,1147,1237,1313,1389,1456,1569"
+                    },
+                    "to": {
+                        "startLines": "40,41,74,75,77,79,80,81,82,83,84,85,86,89,93,94,95",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4034,4129,7851,7948,8129,8289,8372,8469,8560,8647,8719,8788,8873,9134,9493,9569,9636",
+                        "endColumns": "94,85,96,98,85,82,96,90,86,71,68,84,89,75,75,66,112",
+                        "endOffsets": "4124,4210,7943,8042,8210,8367,8464,8555,8642,8714,8783,8868,8958,9205,9564,9631,9744"
+                    }
+                },
+                {
+                    "source": "/home/teka/.gradle/caches/transforms-3/d9c3f385506a723f177d3b06c73a1952/transformed/appcompat-1.6.1/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/3ff799d47dfafa5f9d3f2a93b298ae45/transformed/material3-1.1.2/res/values-pt-rBR/values-pt-rBR.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/9deb20cfb9e373443062705bff705dfb/transformed/material3-1.1.2/res/values-pt-rBR/values-pt-rBR.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

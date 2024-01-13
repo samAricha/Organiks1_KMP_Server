@@ -1,0 +1,45 @@
+-- egg_collection.sq
+CREATE TABLE IF NOT EXISTS egg_collections (
+    egg_collection_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    uuid TEXT NOT NULL,
+    qty TEXT NOT NULL,
+    cracked TEXT NOT NULL,
+    eggTypeId INTEGER NOT NULL,
+    date TEXT NOT NULL,
+    isBackedUp INTEGER NOT NULL,
+    createdAt INTEGER NOT NULL
+);
+
+-- getAllEggCollections
+SELECT * FROM egg_collections ORDER BY date DESC;
+
+-- getEggCollectionById
+SELECT * FROM egg_collections WHERE egg_collection_id = ?;
+
+-- insertEggCollection
+INSERT OR REPLACE INTO egg_collections (
+    uuid,
+    qty,
+    cracked,
+    eggTypeId,
+    date,
+    isBackedUp,
+    createdAt
+) VALUES (?, ?, ?, ?, ?, ?, ?);
+
+-- updateEggCollection
+UPDATE egg_collections SET
+    uuid = ?,
+    qty = ?,
+    cracked = ?,
+    eggTypeId = ?,
+    date = ?,
+    isBackedUp = ?,
+    createdAt = ?
+WHERE egg_collection_id = ?;
+
+-- deleteEggCollectionById
+DELETE FROM egg_collections WHERE egg_collection_id = ?;
+
+-- deleteAllEggCollections
+DELETE FROM egg_collections;
