@@ -1,0 +1,25 @@
+R_DEF: Internal format may change without notice
+local
+color colorAccent
+color colorPrimary
+color colorPrimaryDark
+color ic_launcher_background
+drawable ic_launcher_foreground
+drawable il_statistics
+mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
+string add_task
+string all_tasks
+string date
+string description
+string enter_date
+string enter_description
+string enter_task_name
+string focus_sessions
+string focusbloom
+string schedule
+string statistics
+string task
+string task_type
+style AppTheme

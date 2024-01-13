@@ -1,0 +1,417 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-20:12
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-20:12
+MERGED from [:shared] /home/teka/teka-code/challange/Organiks1/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [io.insert-koin:koin-android:3.5.0] /home/teka/.gradle/caches/transforms-3/0fcb6a6123b374331a87f27b57503acd/transformed/koin-android-3.5.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/teka/.gradle/caches/transforms-3/4438b46deb3ff22b8a4a164859d7e819/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/teka/.gradle/caches/transforms-3/4a324b4f8a81fe036e1f2279127b429e/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.6.1] /home/teka/.gradle/caches/transforms-3/7008d9d5196af45e4fa684d978d44aef/transformed/fragment-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment-ktx:1.6.1] /home/teka/.gradle/caches/transforms-3/c95c1536665bf0a2ed1526fa9da65f5a/transformed/fragment-ktx-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.8.1] /home/teka/.gradle/caches/transforms-3/6e0d5fa333789551ab88a3de87cf3da9/transformed/activity-1.8.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.32.0] /home/teka/.gradle/caches/transforms-3/c1a414b28ded0c335679ca16143d9379/transformed/accompanist-systemuicontroller-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [io.github.koalaplot:koalaplot-core-android:0.4.0] /home/teka/.gradle/caches/transforms-3/a5c2f85a01d0757241a01644452723b3/transformed/koalaplot-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3:1.1.2] /home/teka/.gradle/caches/transforms-3/3ff799d47dfafa5f9d3f2a93b298ae45/transformed/material3-1.1.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/teka/.gradle/caches/transforms-3/5545b4c3a65a6be69ae77b81c3d920ef/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/teka/.gradle/caches/transforms-3/0a4a6d36fd1227e3b0639aa043c320d2/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.5.4] /home/teka/.gradle/caches/transforms-3/c4c2f6622b60b2d4cc354315c5ed4d8a/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-android:1.5.4] /home/teka/.gradle/caches/transforms-3/49b5b3bb75cd3f41be1e15d1ae1183e1/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [dev.chrisbanes.material3:material3-window-size-class-multiplatform-android:0.3.1] /home/teka/.gradle/caches/transforms-3/566495e08301bd6763ebe615304bfd21/transformed/lib-release/AndroidManifest.xml:2:1-7:12
+MERGED from [org.jetbrains.compose.components:library-android:1.5.11] /home/teka/.gradle/caches/transforms-3/c9c411d0255162f4dfef882affa5d746/transformed/library-release/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/teka/.gradle/caches/transforms-3/18d17086dcf8a099b3ce8338cd912481/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/teka/.gradle/caches/transforms-3/3fed5c34bfe141b35765d15b56c7944f/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/teka/.gradle/caches/transforms-3/033c0edf42c7933fcdfe4d22b8506874/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/teka/.gradle/caches/transforms-3/e5aa442c2d1bc347d11338357f3959a2/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/teka/.gradle/caches/transforms-3/81d84969d6ca181546a7b4a885db3636/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/teka/.gradle/caches/transforms-3/7e38d0271b5c52c25dad1e99608643ba/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/teka/.gradle/caches/transforms-3/499e7f08ccc5cafd3d599e840268ee08/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/teka/.gradle/caches/transforms-3/43211e6f7b6c5aeed60fc1b7ccec8555/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/teka/.gradle/caches/transforms-3/96326d461c5f23ee857eb5dfd9ac6cb2/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [cafe.adriel.voyager:voyager-bottom-sheet-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/17e829c4a38f9e94904e2746ab7a1a98/transformed/voyager-bottom-sheet-navigator-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [cafe.adriel.voyager:voyager-transitions-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/e61a23c3ce296a6464e88759f9d4ae40/transformed/voyager-transitions-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [cafe.adriel.voyager:voyager-tab-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/80dabec554e9826ff12077f5b665f207/transformed/voyager-tab-navigator-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [cafe.adriel.voyager:voyager-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/de4d9ebbc028c68508dd3b4fb1901b71/transformed/voyager-navigator-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [cafe.adriel.voyager:voyager-core-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/4d9da36f92fe455f1b39228143314117/transformed/voyager-core-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/teka/.gradle/caches/transforms-3/8156c89efbf5dd68858f8298784c543d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/teka/.gradle/caches/transforms-3/938f2de0a1e0739942a9cd334d481895/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/teka/.gradle/caches/transforms-3/0f3e302ebd0227d37a758e8a2ec95822/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /home/teka/.gradle/caches/transforms-3/47a89ae4d15d3952e1b1aca40afa5bae/transformed/emoji2-views-helper-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/teka/.gradle/caches/transforms-3/8465887fa6912e8069b658c32f378beb/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/8608d36a451bee194a6e7bba5527ae44/transformed/lifecycle-livedata-core-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/teka/.gradle/caches/transforms-3/223957b325ed532b8ade4422d66650d6/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/teka/.gradle/caches/transforms-3/d7f11ec86f9f00d2be1b0891d20e4710/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /home/teka/.gradle/caches/transforms-3/41acfaa007081baeaf44536383ce7125/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/teka/.gradle/caches/transforms-3/aa16b00c8e064e86bd4f94817c6882de/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/teka/.gradle/caches/transforms-3/c1fdbf4786f55a5bf7f9ab3c84213734/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/teka/.gradle/caches/transforms-3/99fec85de8c338bdc370cc90e7c9ea2b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/teka/.gradle/caches/transforms-3/fe096cbdf9244425f14472db7975be14/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/teka/.gradle/caches/transforms-3/4b2a2994e87d39820ac4d0602ca92e66/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/teka/.gradle/caches/transforms-3/bb98b566e57a28340ea1d9a98294be35/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/teka/.gradle/caches/transforms-3/62e6bb040dbd1c08224bf9be54104484/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/edd9ccd0e548c1514a9f1d77900f8991/transformed/lifecycle-runtime-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/adc79470653513b936bcbd1c70416119/transformed/lifecycle-viewmodel-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/teka/.gradle/caches/transforms-3/4b6c2ab8d1f940febc1955fb675f92a4/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/teka/.gradle/caches/transforms-3/4327ebd7ebf1e2c34e1f2ac091079d67/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1] /home/teka/.gradle/caches/transforms-3/93f12d629cc119bb9eaf7b1ed64f0ce6/transformed/lifecycle-viewmodel-compose-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/teka/.gradle/caches/transforms-3/ff57bebf379584040c7e8b698eab134d/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.8.1] /home/teka/.gradle/caches/transforms-3/c234b2e3acc0dd016e66379a05f3a79e/transformed/activity-ktx-1.8.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.8.1] /home/teka/.gradle/caches/transforms-3/d8846148eb1fb4acaf80c5544c682f1d/transformed/activity-compose-1.8.1/AndroidManifest.xml:2:1-7:12
+MERGED from [app.cash.sqldelight:android-driver:2.0.1] /home/teka/.gradle/caches/transforms-3/15d6fa82fc4d0442398416f674294acc/transformed/android-driver-2.0.1-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/teka/.gradle/caches/transforms-3/16768cef2891b7d86ac25d605419c024/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/teka/.gradle/caches/transforms-3/ca6200191b46cf52186884f81ad83046/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/teka/.gradle/caches/transforms-3/518f40b236f72526967b67623ccbd345/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:17:1-35:12
+MERGED from [com.russhwolf:multiplatform-settings-coroutines-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/2cf84c29235f35d4af98e1dc51146f0a/transformed/multiplatform-settings-coroutines-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/teka/.gradle/caches/transforms-3/110231dc54f69fc65ace5dba5ca7c1f0/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/teka/.gradle/caches/transforms-3/97d472276b2fc965d37323c339c304e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/teka/.gradle/caches/transforms-3/9e0a1726284410c6a0401fd6567c34d4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/transforms-3/2c54e35d1fdcce35fa4f1f2264825f95/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/teka/.gradle/caches/transforms-3/9ae3d73792480ed6dffcbd0bbcb48f22/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/teka/.gradle/caches/transforms-3/2dc3120297db412809a859ecb5b628eb/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.window.extensions.core:core:1.0.0] /home/teka/.gradle/caches/transforms-3/3fc48d068c86f452a8d930d9ea7af25d/transformed/core-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/teka/.gradle/caches/transforms-3/3ab6b41f2f0ec5b5f5b96aa8dfa3a0da/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/teka/.gradle/caches/transforms-3/79d6d5234bd285571f93eb209eec4e2e/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [io.github.aakira:napier-android-debug:2.6.1] /home/teka/.gradle/caches/transforms-3/0bb0fb4cb274c211cdebaddd9e4c31b3/transformed/napier-debug/AndroidManifest.xml:2:1-9:12
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/5ecd89bcfb6d24928115a84055c3e0bd/transformed/multiplatform-settings-debug/AndroidManifest.xml:2:1-7:12
+	package
+		INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:3:5-77
+	android:name
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:3:22-74
+application
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:5-19:19
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:5-19:19
+MERGED from [io.insert-koin:koin-android:3.5.0] /home/teka/.gradle/caches/transforms-3/0fcb6a6123b374331a87f27b57503acd/transformed/koin-android-3.5.0/AndroidManifest.xml:9:5-20
+MERGED from [io.insert-koin:koin-android:3.5.0] /home/teka/.gradle/caches/transforms-3/0fcb6a6123b374331a87f27b57503acd/transformed/koin-android-3.5.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:23:5-33:19
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/teka/.gradle/caches/transforms-3/97d472276b2fc965d37323c339c304e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/teka/.gradle/caches/transforms-3/97d472276b2fc965d37323c339c304e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/transforms-3/2c54e35d1fdcce35fa4f1f2264825f95/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/transforms-3/2c54e35d1fdcce35fa4f1f2264825f95/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:7:9-35
+	android:label
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:8:9-43
+	android:icon
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:6:9-36
+	android:theme
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:10:9-40
+	android:name
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:5:9-65
+activity#com.joelkanyi.focusbloom.android.MainActivity
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:11:9-18:20
+	android:exported
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:13:13-36
+	android:name
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:12:13-73
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:14:13-17:29
+action#android.intent.action.MAIN
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:15:17-69
+	android:name
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
+MERGED from [:shared] /home/teka/teka-code/challange/Organiks1/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:shared] /home/teka/teka-code/challange/Organiks1/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [io.insert-koin:koin-android:3.5.0] /home/teka/.gradle/caches/transforms-3/0fcb6a6123b374331a87f27b57503acd/transformed/koin-android-3.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [io.insert-koin:koin-android:3.5.0] /home/teka/.gradle/caches/transforms-3/0fcb6a6123b374331a87f27b57503acd/transformed/koin-android-3.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/teka/.gradle/caches/transforms-3/4438b46deb3ff22b8a4a164859d7e819/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/teka/.gradle/caches/transforms-3/4438b46deb3ff22b8a4a164859d7e819/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/teka/.gradle/caches/transforms-3/4a324b4f8a81fe036e1f2279127b429e/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/teka/.gradle/caches/transforms-3/4a324b4f8a81fe036e1f2279127b429e/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.1] /home/teka/.gradle/caches/transforms-3/7008d9d5196af45e4fa684d978d44aef/transformed/fragment-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.6.1] /home/teka/.gradle/caches/transforms-3/7008d9d5196af45e4fa684d978d44aef/transformed/fragment-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.1] /home/teka/.gradle/caches/transforms-3/c95c1536665bf0a2ed1526fa9da65f5a/transformed/fragment-ktx-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment-ktx:1.6.1] /home/teka/.gradle/caches/transforms-3/c95c1536665bf0a2ed1526fa9da65f5a/transformed/fragment-ktx-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.1] /home/teka/.gradle/caches/transforms-3/6e0d5fa333789551ab88a3de87cf3da9/transformed/activity-1.8.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.1] /home/teka/.gradle/caches/transforms-3/6e0d5fa333789551ab88a3de87cf3da9/transformed/activity-1.8.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.32.0] /home/teka/.gradle/caches/transforms-3/c1a414b28ded0c335679ca16143d9379/transformed/accompanist-systemuicontroller-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.32.0] /home/teka/.gradle/caches/transforms-3/c1a414b28ded0c335679ca16143d9379/transformed/accompanist-systemuicontroller-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [io.github.koalaplot:koalaplot-core-android:0.4.0] /home/teka/.gradle/caches/transforms-3/a5c2f85a01d0757241a01644452723b3/transformed/koalaplot-core-release/AndroidManifest.xml:5:5-44
+MERGED from [io.github.koalaplot:koalaplot-core-android:0.4.0] /home/teka/.gradle/caches/transforms-3/a5c2f85a01d0757241a01644452723b3/transformed/koalaplot-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] /home/teka/.gradle/caches/transforms-3/3ff799d47dfafa5f9d3f2a93b298ae45/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3:1.1.2] /home/teka/.gradle/caches/transforms-3/3ff799d47dfafa5f9d3f2a93b298ae45/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/teka/.gradle/caches/transforms-3/5545b4c3a65a6be69ae77b81c3d920ef/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/teka/.gradle/caches/transforms-3/5545b4c3a65a6be69ae77b81c3d920ef/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/teka/.gradle/caches/transforms-3/0a4a6d36fd1227e3b0639aa043c320d2/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/teka/.gradle/caches/transforms-3/0a4a6d36fd1227e3b0639aa043c320d2/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.5.4] /home/teka/.gradle/caches/transforms-3/c4c2f6622b60b2d4cc354315c5ed4d8a/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.5.4] /home/teka/.gradle/caches/transforms-3/c4c2f6622b60b2d4cc354315c5ed4d8a/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] /home/teka/.gradle/caches/transforms-3/49b5b3bb75cd3f41be1e15d1ae1183e1/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.5.4] /home/teka/.gradle/caches/transforms-3/49b5b3bb75cd3f41be1e15d1ae1183e1/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [dev.chrisbanes.material3:material3-window-size-class-multiplatform-android:0.3.1] /home/teka/.gradle/caches/transforms-3/566495e08301bd6763ebe615304bfd21/transformed/lib-release/AndroidManifest.xml:5:5-44
+MERGED from [dev.chrisbanes.material3:material3-window-size-class-multiplatform-android:0.3.1] /home/teka/.gradle/caches/transforms-3/566495e08301bd6763ebe615304bfd21/transformed/lib-release/AndroidManifest.xml:5:5-44
+MERGED from [org.jetbrains.compose.components:library-android:1.5.11] /home/teka/.gradle/caches/transforms-3/c9c411d0255162f4dfef882affa5d746/transformed/library-release/AndroidManifest.xml:5:5-7:41
+MERGED from [org.jetbrains.compose.components:library-android:1.5.11] /home/teka/.gradle/caches/transforms-3/c9c411d0255162f4dfef882affa5d746/transformed/library-release/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/teka/.gradle/caches/transforms-3/18d17086dcf8a099b3ce8338cd912481/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.5.4] /home/teka/.gradle/caches/transforms-3/18d17086dcf8a099b3ce8338cd912481/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/teka/.gradle/caches/transforms-3/3fed5c34bfe141b35765d15b56c7944f/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.5.4] /home/teka/.gradle/caches/transforms-3/3fed5c34bfe141b35765d15b56c7944f/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/teka/.gradle/caches/transforms-3/033c0edf42c7933fcdfe4d22b8506874/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.5.4] /home/teka/.gradle/caches/transforms-3/033c0edf42c7933fcdfe4d22b8506874/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/teka/.gradle/caches/transforms-3/e5aa442c2d1bc347d11338357f3959a2/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.5.4] /home/teka/.gradle/caches/transforms-3/e5aa442c2d1bc347d11338357f3959a2/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/teka/.gradle/caches/transforms-3/81d84969d6ca181546a7b4a885db3636/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.5.4] /home/teka/.gradle/caches/transforms-3/81d84969d6ca181546a7b4a885db3636/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/teka/.gradle/caches/transforms-3/7e38d0271b5c52c25dad1e99608643ba/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.5.4] /home/teka/.gradle/caches/transforms-3/7e38d0271b5c52c25dad1e99608643ba/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/teka/.gradle/caches/transforms-3/499e7f08ccc5cafd3d599e840268ee08/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.5.4] /home/teka/.gradle/caches/transforms-3/499e7f08ccc5cafd3d599e840268ee08/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/teka/.gradle/caches/transforms-3/43211e6f7b6c5aeed60fc1b7ccec8555/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.5.4] /home/teka/.gradle/caches/transforms-3/43211e6f7b6c5aeed60fc1b7ccec8555/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/teka/.gradle/caches/transforms-3/96326d461c5f23ee857eb5dfd9ac6cb2/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.5.4] /home/teka/.gradle/caches/transforms-3/96326d461c5f23ee857eb5dfd9ac6cb2/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-bottom-sheet-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/17e829c4a38f9e94904e2746ab7a1a98/transformed/voyager-bottom-sheet-navigator-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-bottom-sheet-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/17e829c4a38f9e94904e2746ab7a1a98/transformed/voyager-bottom-sheet-navigator-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-transitions-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/e61a23c3ce296a6464e88759f9d4ae40/transformed/voyager-transitions-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-transitions-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/e61a23c3ce296a6464e88759f9d4ae40/transformed/voyager-transitions-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-tab-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/80dabec554e9826ff12077f5b665f207/transformed/voyager-tab-navigator-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-tab-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/80dabec554e9826ff12077f5b665f207/transformed/voyager-tab-navigator-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/de4d9ebbc028c68508dd3b4fb1901b71/transformed/voyager-navigator-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-navigator-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/de4d9ebbc028c68508dd3b4fb1901b71/transformed/voyager-navigator-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-core-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/4d9da36f92fe455f1b39228143314117/transformed/voyager-core-debug/AndroidManifest.xml:5:5-44
+MERGED from [cafe.adriel.voyager:voyager-core-android-debug:1.0.0-rc10] /home/teka/.gradle/caches/transforms-3/4d9da36f92fe455f1b39228143314117/transformed/voyager-core-debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/teka/.gradle/caches/transforms-3/8156c89efbf5dd68858f8298784c543d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/teka/.gradle/caches/transforms-3/8156c89efbf5dd68858f8298784c543d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/teka/.gradle/caches/transforms-3/938f2de0a1e0739942a9cd334d481895/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/teka/.gradle/caches/transforms-3/938f2de0a1e0739942a9cd334d481895/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/teka/.gradle/caches/transforms-3/0f3e302ebd0227d37a758e8a2ec95822/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/teka/.gradle/caches/transforms-3/0f3e302ebd0227d37a758e8a2ec95822/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /home/teka/.gradle/caches/transforms-3/47a89ae4d15d3952e1b1aca40afa5bae/transformed/emoji2-views-helper-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.4.0] /home/teka/.gradle/caches/transforms-3/47a89ae4d15d3952e1b1aca40afa5bae/transformed/emoji2-views-helper-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/teka/.gradle/caches/transforms-3/8465887fa6912e8069b658c32f378beb/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.6.1] /home/teka/.gradle/caches/transforms-3/8465887fa6912e8069b658c32f378beb/transformed/lifecycle-livedata-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/8608d36a451bee194a6e7bba5527ae44/transformed/lifecycle-livedata-core-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/8608d36a451bee194a6e7bba5527ae44/transformed/lifecycle-livedata-core-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/teka/.gradle/caches/transforms-3/223957b325ed532b8ade4422d66650d6/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.1] /home/teka/.gradle/caches/transforms-3/223957b325ed532b8ade4422d66650d6/transformed/lifecycle-viewmodel-savedstate-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/teka/.gradle/caches/transforms-3/d7f11ec86f9f00d2be1b0891d20e4710/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/teka/.gradle/caches/transforms-3/d7f11ec86f9f00d2be1b0891d20e4710/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /home/teka/.gradle/caches/transforms-3/41acfaa007081baeaf44536383ce7125/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/teka/.gradle/caches/transforms-3/41acfaa007081baeaf44536383ce7125/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/teka/.gradle/caches/transforms-3/aa16b00c8e064e86bd4f94817c6882de/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/teka/.gradle/caches/transforms-3/aa16b00c8e064e86bd4f94817c6882de/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/teka/.gradle/caches/transforms-3/c1fdbf4786f55a5bf7f9ab3c84213734/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/teka/.gradle/caches/transforms-3/c1fdbf4786f55a5bf7f9ab3c84213734/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/teka/.gradle/caches/transforms-3/99fec85de8c338bdc370cc90e7c9ea2b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/teka/.gradle/caches/transforms-3/99fec85de8c338bdc370cc90e7c9ea2b/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/teka/.gradle/caches/transforms-3/fe096cbdf9244425f14472db7975be14/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/teka/.gradle/caches/transforms-3/fe096cbdf9244425f14472db7975be14/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/teka/.gradle/caches/transforms-3/4b2a2994e87d39820ac4d0602ca92e66/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/teka/.gradle/caches/transforms-3/4b2a2994e87d39820ac4d0602ca92e66/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /home/teka/.gradle/caches/transforms-3/bb98b566e57a28340ea1d9a98294be35/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/teka/.gradle/caches/transforms-3/bb98b566e57a28340ea1d9a98294be35/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/teka/.gradle/caches/transforms-3/62e6bb040dbd1c08224bf9be54104484/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.1] /home/teka/.gradle/caches/transforms-3/62e6bb040dbd1c08224bf9be54104484/transformed/lifecycle-runtime-2.6.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/edd9ccd0e548c1514a9f1d77900f8991/transformed/lifecycle-runtime-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/edd9ccd0e548c1514a9f1d77900f8991/transformed/lifecycle-runtime-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/adc79470653513b936bcbd1c70416119/transformed/lifecycle-viewmodel-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1] /home/teka/.gradle/caches/transforms-3/adc79470653513b936bcbd1c70416119/transformed/lifecycle-viewmodel-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/teka/.gradle/caches/transforms-3/4b6c2ab8d1f940febc1955fb675f92a4/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.6.1] /home/teka/.gradle/caches/transforms-3/4b6c2ab8d1f940febc1955fb675f92a4/transformed/lifecycle-viewmodel-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/teka/.gradle/caches/transforms-3/4327ebd7ebf1e2c34e1f2ac091079d67/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.6.1] /home/teka/.gradle/caches/transforms-3/4327ebd7ebf1e2c34e1f2ac091079d67/transformed/lifecycle-livedata-core-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1] /home/teka/.gradle/caches/transforms-3/93f12d629cc119bb9eaf7b1ed64f0ce6/transformed/lifecycle-viewmodel-compose-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1] /home/teka/.gradle/caches/transforms-3/93f12d629cc119bb9eaf7b1ed64f0ce6/transformed/lifecycle-viewmodel-compose-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/teka/.gradle/caches/transforms-3/ff57bebf379584040c7e8b698eab134d/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.5.4] /home/teka/.gradle/caches/transforms-3/ff57bebf379584040c7e8b698eab134d/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.1] /home/teka/.gradle/caches/transforms-3/c234b2e3acc0dd016e66379a05f3a79e/transformed/activity-ktx-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.1] /home/teka/.gradle/caches/transforms-3/c234b2e3acc0dd016e66379a05f3a79e/transformed/activity-ktx-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.1] /home/teka/.gradle/caches/transforms-3/d8846148eb1fb4acaf80c5544c682f1d/transformed/activity-compose-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.1] /home/teka/.gradle/caches/transforms-3/d8846148eb1fb4acaf80c5544c682f1d/transformed/activity-compose-1.8.1/AndroidManifest.xml:5:5-44
+MERGED from [app.cash.sqldelight:android-driver:2.0.1] /home/teka/.gradle/caches/transforms-3/15d6fa82fc4d0442398416f674294acc/transformed/android-driver-2.0.1-debug/AndroidManifest.xml:5:5-44
+MERGED from [app.cash.sqldelight:android-driver:2.0.1] /home/teka/.gradle/caches/transforms-3/15d6fa82fc4d0442398416f674294acc/transformed/android-driver-2.0.1-debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/teka/.gradle/caches/transforms-3/16768cef2891b7d86ac25d605419c024/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/teka/.gradle/caches/transforms-3/16768cef2891b7d86ac25d605419c024/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/teka/.gradle/caches/transforms-3/ca6200191b46cf52186884f81ad83046/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/teka/.gradle/caches/transforms-3/ca6200191b46cf52186884f81ad83046/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/teka/.gradle/caches/transforms-3/518f40b236f72526967b67623ccbd345/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/teka/.gradle/caches/transforms-3/518f40b236f72526967b67623ccbd345/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:21:5-44
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:21:5-44
+MERGED from [com.russhwolf:multiplatform-settings-coroutines-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/2cf84c29235f35d4af98e1dc51146f0a/transformed/multiplatform-settings-coroutines-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.russhwolf:multiplatform-settings-coroutines-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/2cf84c29235f35d4af98e1dc51146f0a/transformed/multiplatform-settings-coroutines-debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/teka/.gradle/caches/transforms-3/110231dc54f69fc65ace5dba5ca7c1f0/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/teka/.gradle/caches/transforms-3/110231dc54f69fc65ace5dba5ca7c1f0/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/teka/.gradle/caches/transforms-3/97d472276b2fc965d37323c339c304e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/teka/.gradle/caches/transforms-3/97d472276b2fc965d37323c339c304e9/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/teka/.gradle/caches/transforms-3/9e0a1726284410c6a0401fd6567c34d4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/teka/.gradle/caches/transforms-3/9e0a1726284410c6a0401fd6567c34d4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/transforms-3/2c54e35d1fdcce35fa4f1f2264825f95/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/transforms-3/2c54e35d1fdcce35fa4f1f2264825f95/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/teka/.gradle/caches/transforms-3/9ae3d73792480ed6dffcbd0bbcb48f22/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/teka/.gradle/caches/transforms-3/9ae3d73792480ed6dffcbd0bbcb48f22/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/teka/.gradle/caches/transforms-3/2dc3120297db412809a859ecb5b628eb/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/teka/.gradle/caches/transforms-3/2dc3120297db412809a859ecb5b628eb/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] /home/teka/.gradle/caches/transforms-3/3fc48d068c86f452a8d930d9ea7af25d/transformed/core-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window.extensions.core:core:1.0.0] /home/teka/.gradle/caches/transforms-3/3fc48d068c86f452a8d930d9ea7af25d/transformed/core-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/teka/.gradle/caches/transforms-3/3ab6b41f2f0ec5b5f5b96aa8dfa3a0da/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/teka/.gradle/caches/transforms-3/3ab6b41f2f0ec5b5f5b96aa8dfa3a0da/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/teka/.gradle/caches/transforms-3/79d6d5234bd285571f93eb209eec4e2e/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/teka/.gradle/caches/transforms-3/79d6d5234bd285571f93eb209eec4e2e/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [io.github.aakira:napier-android-debug:2.6.1] /home/teka/.gradle/caches/transforms-3/0bb0fb4cb274c211cdebaddd9e4c31b3/transformed/napier-debug/AndroidManifest.xml:5:5-7:41
+MERGED from [io.github.aakira:napier-android-debug:2.6.1] /home/teka/.gradle/caches/transforms-3/0bb0fb4cb274c211cdebaddd9e4c31b3/transformed/napier-debug/AndroidManifest.xml:5:5-7:41
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/5ecd89bcfb6d24928115a84055c3e0bd/transformed/multiplatform-settings-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/5ecd89bcfb6d24928115a84055c3e0bd/transformed/multiplatform-settings-debug/AndroidManifest.xml:5:5-44
+	android:targetSdkVersion
+		INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:24:9-32:20
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:24:9-32:20
+MERGED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/transforms-3/2c54e35d1fdcce35fa4f1f2264825f95/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/transforms-3/2c54e35d1fdcce35fa4f1f2264825f95/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/e986a52710d627b1f775150246cff95d/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/dc9860d76201d58a08264c52007932ea/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/963e928c31be5f4c426e5e765a5039d2/transformed/window-1.1.0/AndroidManifest.xml:27:13-51
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/6579ecc0d0e85a988698f3bb96e0f645/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+meta-data#com.russhwolf.settings.SettingsInitializer
+ADDED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/c1c59afbbfd729e91368cc2744e54d22/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:30:17-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/2f180a438f7f59c17ead72d3af268953/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
