@@ -19,10 +19,17 @@ import com.joelkanyi.focusbloom.core.data.adapter.colorAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.consumedFocusTimeAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.consumedLongBreakTimeAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.consumedShortBreakTimeAdapter
+import com.joelkanyi.focusbloom.core.data.adapter.crackedAdapter
+import com.joelkanyi.focusbloom.core.data.adapter.createdAtAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.currentAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.currentCycleAdapter
+import com.joelkanyi.focusbloom.core.data.adapter.dateAdapter
+import com.joelkanyi.focusbloom.core.data.adapter.eggTypeIdAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.focusSessionsAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.idAdapter
+import com.joelkanyi.focusbloom.core.data.adapter.isBackedUpAdapter
+import com.joelkanyi.focusbloom.core.data.adapter.qtyAdapter
+import com.joelkanyi.focusbloom.core.data.adapter.uuidAdapter
 import com.joelkanyi.focusbloom.core.data.local.setting.PreferenceManager
 import com.joelkanyi.focusbloom.core.data.repository.settings.SettingsRepositoryImpl
 import com.joelkanyi.focusbloom.core.data.repository.tasks.TasksRepositoryImpl
@@ -38,6 +45,7 @@ import com.joelkanyi.focusbloom.feature.statistics.StatisticsScreenModel
 import com.joelkanyi.focusbloom.feature.taskprogress.TaskProgressScreenModel
 import com.joelkanyi.focusbloom.main.MainViewModel
 import com.joelkanyi.focusbloom.platform.DatabaseDriverFactory
+import database.EggCollectionEntity
 import database.TaskEntity
 import org.koin.core.module.Module
 import org.koin.dsl.module
@@ -46,6 +54,23 @@ fun commonModule() = module {
     /**
      * Database
      */
+//    single<BloomDatabase> {
+//        BloomDatabase(
+//            driver = get<DatabaseDriverFactory>().createDriver(),
+//            eggCollectionAdapter = EggCollectionEntity.Adapter(
+//                idAdapter = idAdapter,
+//                uuidAdapter = uuidAdapter,
+//                qtyAdapter = qtyAdapter,
+//                crackedAdapter = crackedAdapter,
+//                eggTypeIdAdapter = eggTypeIdAdapter,
+//                dateAdapter = dateAdapter,
+//                isBackedUpAdapter = isBackedUpAdapter,
+//                createdAtAdapter = createdAtAdapter
+//            )
+//        )
+//    }
+
+
     single<BloomDatabase> {
         BloomDatabase(
             driver = get<DatabaseDriverFactory>().createDriver(),
@@ -59,6 +84,16 @@ fun commonModule() = module {
                 currentCycleAdapter = currentCycleAdapter,
                 focusSessionsAdapter = focusSessionsAdapter,
             ),
+//            eggCollectionAdapter = EggCollection.Adapter(
+//                uuidAdapter = uuidAdapter,
+//                qtyAdapter = qtyAdapter,
+//                crackedAdapter = crackedAdapter,
+//                eggTypeIdAdapter = eggTypeIdAdapter,
+//                dateAdapter = dateAdapter,
+//                isBackedUpAdapter = isBackedUpAdapter,
+//                createdAtAdapter = createdAtAdapter
+//            )
+
         )
     }
     /**

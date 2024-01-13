@@ -31,6 +31,18 @@ private class BloomDatabaseImpl(
 
     override fun create(driver: SqlDriver): QueryResult.Value<Unit> {
       driver.execute(null, """
+          |CREATE TABLE IF NOT EXISTS eggCollectionEntity (
+          |    egg_collection_id INTEGER PRIMARY KEY AUTOINCREMENT,
+          |    uuid TEXT NOT NULL,
+          |    qty TEXT NOT NULL,
+          |    cracked TEXT NOT NULL,
+          |    eggTypeId INTEGER NOT NULL,
+          |    date TEXT NOT NULL,
+          |    isBackedUp INTEGER NOT NULL,
+          |    createdAt INTEGER NOT NULL
+          |)
+          """.trimMargin(), 0)
+      driver.execute(null, """
           |CREATE TABLE taskEntity (
           |    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
           |    name TEXT NOT NULL,
@@ -50,6 +62,32 @@ private class BloomDatabaseImpl(
           |    active INTEGER NOT NULL
           |)
           """.trimMargin(), 0)
+      driver.execute(null, "SELECT * FROM eggCollectionEntity ORDER BY date DESC", 0)
+      driver.execute(null, "SELECT * FROM eggCollectionEntity WHERE egg_collection_id = ?", 0)
+      driver.execute(null, """
+          |INSERT OR REPLACE INTO eggCollectionEntity (
+          |    uuid,
+          |    qty,
+          |    cracked,
+          |    eggTypeId,
+          |    date,
+          |    isBackedUp,
+          |    createdAt
+          |) VALUES (?, ?, ?, ?, ?, ?, ?)
+          """.trimMargin(), 0)
+      driver.execute(null, """
+          |UPDATE eggCollectionEntity SET
+          |    uuid = ?,
+          |    qty = ?,
+          |    cracked = ?,
+          |    eggTypeId = ?,
+          |    date = ?,
+          |    isBackedUp = ?,
+          |    createdAt = ?
+          |WHERE egg_collection_id = ?
+          """.trimMargin(), 0)
+      driver.execute(null, "DELETE FROM eggCollectionEntity WHERE egg_collection_id = ?", 0)
+      driver.execute(null, "DELETE FROM eggCollectionEntity", 0)
       return QueryResult.Unit
     }
 
