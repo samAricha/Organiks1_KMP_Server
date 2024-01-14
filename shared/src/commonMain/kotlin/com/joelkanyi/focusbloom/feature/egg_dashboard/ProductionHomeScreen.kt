@@ -1,12 +1,13 @@
 package com.joelkanyi.focusbloom.feature.egg_dashboard
 
 
+import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.material.*
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
@@ -21,19 +22,36 @@ import androidx.compose.ui.unit.dp
 import java.text.SimpleDateFormat
 import java.util.Locale
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Cloud
 import androidx.compose.material.icons.filled.CloudDone
 import androidx.compose.material.icons.filled.CloudOff
+import androidx.compose.material.icons.outlined.CloudUpload
+import androidx.compose.material.rememberScaffoldState
 import androidx.compose.ui.graphics.PathEffect
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
+import com.joelkanyi.focusbloom.core.presentation.component.BloomTab
 import com.joelkanyi.focusbloom.core.presentation.theme.PrimaryColor
+import com.joelkanyi.focusbloom.core.utils.UiEvents
+import com.joelkanyi.focusbloom.core.utils.calculateFromFocusSessions
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import kotlinx.datetime.LocalDateTime
+import org.jetbrains.compose.resources.ExperimentalResourceApi
+import org.jetbrains.compose.resources.painterResource
 import org.koin.compose.rememberKoinInject
 
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun ProductionHomeScreen(){
     val productionHomeViewModel = rememberKoinInject<ProductionHomeViewModel>()
+
+
+
+    val snackbarHostState = remember { SnackbarHostState() }
+
 
 //    val productionHomeViewModel : ProductionHomeViewModel = hiltViewModel()
     val eggCollections by productionHomeViewModel.eggCollections.collectAsState()
@@ -46,46 +64,124 @@ fun ProductionHomeScreen(){
 
     val snackbarData by productionHomeViewModel.snackbarData.collectAsState()
 
-    if (snackbarData != null) {
-        LaunchedEffect(snackbarData) {
-            scaffoldState.snackbarHostState.showSnackbar(snackbarData!!.message)
-            productionHomeViewModel.clearSnackbar()
-        }
-    }
+//    if (snackbarData != null) {
+//        LaunchedEffect(snackbarData) {
+//            scaffoldState.snackbarHostState.showSnackbar(snackbarData!!.message)
+//            productionHomeViewModel.clearSnackbar()
+//        }
+//    }
 
 
 
     val eggCollectionsState by productionHomeViewModel.eggCollections.collectAsState()
 
+    LaunchedEffect(key1 = true) {
+        withContext(Dispatchers.Main.immediate) {
+            productionHomeViewModel.eventsFlow.collect { event ->
+                when (event) {
+                    is UiEvents.ShowSnackbar -> {
+                        snackbarHostState.showSnackbar(
+                            message = event.message,
+                        )
+                    }
+                    else -> {}
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
 
 
     Scaffold(
-        floatingActionButton = {
-        FloatingActionButton(onClick = {
-            fabClicked.value = true
-            productionHomeViewModel.syncRoomDbToRemote()
-            fabClicked.value = false
-
+        snackbarHost = {
+            Box(
+                modifier = Modifier.fillMaxSize(),
+                contentAlignment = Alignment.TopCenter, // Change to your desired position
+            ) {
+                SnackbarHost(
+                    hostState = snackbarHostState,
+                    snackbar = {
+                        Card(
+                            modifier = Modifier
+                                .padding(horizontal = 16.dp)
+                                .clickable {
+                                    snackbarHostState.currentSnackbarData?.dismiss()
+                                },
+                            border = BorderStroke(2.dp, MaterialTheme.colorScheme.primary),
+                            colors = CardDefaults.cardColors(
+                                containerColor = MaterialTheme.colorScheme.secondary,
+                            ),
+                        ) {
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(16.dp),
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                            ) {
+                                Text(
+                                    modifier = Modifier
+                                        .fillMaxWidth(.85f),
+                                    text = it.visuals.message,
+                                    style = MaterialTheme.typography.titleSmall.copy(
+                                        color = MaterialTheme.colorScheme.onPrimary,
+                                    ),
+                                )
+                                Image(
+                                    modifier = Modifier
+                                        .size(32.dp),
+                                    painter = painterResource("ic_complete.xml"),
+                                    contentDescription = "Task Options",
+                                )
+                            }
+                        }
+                    },
+                )
+            }
         },
-        backgroundColor = PrimaryColor) {
-            Icon(
-                imageVector = Icons.Filled.Cloud,
-                contentDescription = null,
-                tint = Color.White
-            )
-        }
-    },
-    snackbarHost = {
-        SnackbarHost(
-            hostState = scaffoldState.snackbarHostState,
-            modifier = Modifier.padding(16.dp)
-        ) { snackbarData ->
-            Snackbar(
-                modifier = Modifier.padding(8.dp),
-                snackbarData = snackbarData
-            )
-        }
-    }) {
+        floatingActionButton = {
+            FloatingActionButton(
+                containerColor = MaterialTheme.colorScheme.primary,
+                onClick = {
+                    productionHomeViewModel.syncRoomDbToRemote()
+//                                tabNavigator.current = BloomTab.AddTaskTab()
+                },
+                elevation = FloatingActionButtonDefaults.elevation(
+                    defaultElevation = 0.dp,
+                ),
+                shape = CircleShape,
+            ) {
+                Icon(
+                    imageVector = Icons.Outlined.CloudUpload,
+                    contentDescription = "",
+                    tint = MaterialTheme.colorScheme.onPrimary,
+                    modifier = Modifier.size(24.dp),
+                )
+            }
+        },
+
+
+//        snackbarHost = {
+//            SnackbarHost(
+//                hostState = snackbarHostState,
+//                modifier = Modifier.padding(16.dp)
+//            ) { snackbarData ->
+//                Snackbar(
+//                    modifier = Modifier.padding(8.dp),
+//                    snackbarData = snackbarData
+//                )
+//            }
+//        }
+    ) {
+
+
+
         Box(
             modifier = Modifier.fillMaxSize().padding(top = 16.dp, start = 16.dp, end = 16.dp)
         ){

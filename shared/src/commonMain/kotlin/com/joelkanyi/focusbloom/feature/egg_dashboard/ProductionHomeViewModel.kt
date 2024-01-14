@@ -9,10 +9,13 @@ import com.joelkanyi.focusbloom.core.data.local_remote_sync.UpdateResult
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggCollectionsRepository
 import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggTypeRepository
+import com.joelkanyi.focusbloom.core.utils.UiEvents
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 
 data class SnackbarData(val message: String)
@@ -23,6 +26,9 @@ class ProductionHomeViewModel (
 ): ScreenModel {
 
     private val remoteDataUpdater: RemoteDataUpdater = RemoteDataUpdater()
+
+    private val _eventsFlow = Channel<UiEvents>(Channel.UNLIMITED)
+    val eventsFlow = _eventsFlow.receiveAsFlow()
 
 
     private val _eggCollections = MutableStateFlow<List<EggCollectionModel>>(emptyList())
@@ -72,7 +78,10 @@ class ProductionHomeViewModel (
 
 
     fun syncRoomDbToRemote() {
+
         screenModelScope.launch {
+            _eventsFlow.trySend(UiEvents.ShowSnackbar("Data backed up!"))
+
             _isSyncing.value = true // Set isSyncing to true when synchronization starts
             try {
                 // Filter and get eggCollections with status backedUp == false

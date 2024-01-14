@@ -86,29 +86,25 @@ class MainScreen : Screen {
                             CurrentScreen()
                         }
                     },
-                    floatingActionButtonPosition = FabPosition.Center,
-                    floatingActionButton = {
-                        FloatingActionButton(
-                            modifier = Modifier
-                                .offset(y = 60.dp)
-                                .size(42.dp),
-                            containerColor = MaterialTheme.colorScheme.primary,
-                            onClick = {
-                                tabNavigator.current = BloomTab.AddTaskTab()
-                            },
-                            elevation = FloatingActionButtonDefaults.elevation(
-                                defaultElevation = 0.dp,
-                            ),
-                            shape = CircleShape,
-                        ) {
-                            Icon(
-                                imageVector = Icons.Filled.Add,
-                                contentDescription = "",
-                                tint = MaterialTheme.colorScheme.onPrimary,
-                                modifier = Modifier.size(24.dp),
-                            )
-                        }
-                    },
+//                    floatingActionButton = {
+//                        FloatingActionButton(
+//                            containerColor = MaterialTheme.colorScheme.primary,
+//                            onClick = {
+//                                tabNavigator.current = BloomTab.AddTaskTab()
+//                            },
+//                            elevation = FloatingActionButtonDefaults.elevation(
+//                                defaultElevation = 0.dp,
+//                            ),
+//                            shape = CircleShape,
+//                        ) {
+//                            Icon(
+//                                imageVector = Icons.Filled.Add,
+//                                contentDescription = "",
+//                                tint = MaterialTheme.colorScheme.onPrimary,
+//                                modifier = Modifier.size(24.dp),
+//                            )
+//                        }
+//                    },
                     bottomBar = {
                         BottomNavigation(
                             backgroundColor = MaterialTheme.colorScheme.background,
@@ -118,6 +114,7 @@ class MainScreen : Screen {
                             TabNavigationItem(BloomTab.StatisticsTab)
                             TabNavigationItem(BloomTab.SettingsTab)
                             TabNavigationItem(BloomTab.ProductionHomeTab)
+                            TabNavigationItem(BloomTab.ProductionRecordingTab())
                         }
                     },
                 )

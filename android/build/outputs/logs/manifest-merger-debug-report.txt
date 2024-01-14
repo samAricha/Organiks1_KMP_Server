@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-20:12
-INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-20:12
-INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-20:12
-INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-20:12
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:2:1-22:12
 MERGED from [:shared] /home/teka/teka-code/challange/Organiks1/shared/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [io.insert-koin:koin-android:3.5.0] /home/teka/.gradle/caches/transforms-3/c866ea1c065c5beeb47aea462513f2d8/transformed/koin-android-3.5.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/teka/.gradle/caches/transforms-3/b4576c3b2a381e489534e2d5ee37c107/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
@@ -92,9 +92,13 @@ uses-permission#android.permission.POST_NOTIFICATIONS
 ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:3:5-77
 	android:name
 		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:3:22-74
+uses-permission#android.permission.INTERNET
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:5-19:19
-INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:5-19:19
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:6:5-21:19
+INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:6:5-21:19
 MERGED from [io.insert-koin:koin-android:3.5.0] /home/teka/.gradle/caches/transforms-3/c866ea1c065c5beeb47aea462513f2d8/transformed/koin-android-3.5.0/AndroidManifest.xml:9:5-20
 MERGED from [io.insert-koin:koin-android:3.5.0] /home/teka/.gradle/caches/transforms-3/c866ea1c065c5beeb47aea462513f2d8/transformed/koin-android-3.5.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/47ca1b621d979ac3e7a753de6cb19ba2/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
@@ -118,33 +122,33 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/t
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:7:9-35
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:9:9-35
 	android:label
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:8:9-43
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:10:9-43
 	android:icon
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:6:9-36
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:8:9-36
 	android:theme
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:10:9-40
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:5:9-65
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:7:9-65
 activity#com.joelkanyi.focusbloom.android.MainActivity
-ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:11:9-18:20
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:13:9-20:20
 	android:exported
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:13:13-36
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:15:13-36
 	android:name
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:12:13-73
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:14:13-73
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:14:13-17:29
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN
-ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:15:17-69
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:16:17-77
+ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:18:27-74
 uses-sdk
 INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
