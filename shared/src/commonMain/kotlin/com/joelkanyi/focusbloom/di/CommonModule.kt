@@ -42,6 +42,7 @@ import com.joelkanyi.focusbloom.core.domain.repository.tasks.TasksRepository
 import com.joelkanyi.focusbloom.database.BloomDatabase
 import com.joelkanyi.focusbloom.feature.addtask.AddTaskScreenModel
 import com.joelkanyi.focusbloom.feature.calendar.CalendarScreenModel
+import com.joelkanyi.focusbloom.feature.dashborad.DashboardViewModel
 import com.joelkanyi.focusbloom.feature.egg_collection.ProductionRecordingViewModel
 import com.joelkanyi.focusbloom.feature.egg_dashboard.ProductionHomeViewModel
 import com.joelkanyi.focusbloom.feature.home.HomeScreenModel
@@ -175,6 +176,12 @@ fun commonModule() = module {
         ProductionRecordingViewModel(
             eggCollectionsRepository = get(),
             eggTypeRepository = get ()
+        )
+    }
+
+    single<DashboardViewModel> {
+        DashboardViewModel(
+            eggCollectionsRepository = get(),
         )
     }
 

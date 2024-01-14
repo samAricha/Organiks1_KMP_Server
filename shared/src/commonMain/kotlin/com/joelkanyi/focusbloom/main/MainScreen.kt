@@ -56,7 +56,7 @@ class MainScreen : Screen {
         val useNavRail = windowSizeClass.widthSizeClass > WindowWidthSizeClass.Compact
 
         TabNavigator(
-            BloomTab.HomeTab,
+            BloomTab.MainDashboardTab,
         ) {
             val tabNavigator = LocalTabNavigator.current
 
@@ -72,7 +72,8 @@ class MainScreen : Screen {
                             BloomTab.SettingsTab,
                             BloomTab.ProductionRecordingTab(),
                             BloomTab.ProductionHomeTab,
-                            BloomTab.AiAssistantTab
+                            BloomTab.AiAssistantTab,
+                            BloomTab.MainDashboardTab
                         ),
                     )
                     CurrentScreen()
@@ -91,7 +92,8 @@ class MainScreen : Screen {
                         BottomNavigation(
                             backgroundColor = MaterialTheme.colorScheme.background,
                         ) {
-                            TabNavigationItem(BloomTab.HomeTab)
+                            TabNavigationItem(BloomTab.MainDashboardTab)
+//                            TabNavigationItem(BloomTab.HomeTab)
 //                            TabNavigationItem(BloomTab.CalendarTab)
 //                            TabNavigationItem(BloomTab.StatisticsTab)
                             TabNavigationItem(BloomTab.ProductionHomeTab)

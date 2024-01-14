@@ -30,16 +30,17 @@ fun DashboardScreen() {
 
 
     val eggs by viewModel.eggCollections.collectAsState()
-    val totalEggsCollected = eggs.sumOf { it.qty.toInt() }
+//    val totalEggsCollected = eggs.sumOf { it.qty.toInt() }
+    val totalEggsCollected =  eggs.size
 
 
     val totalNotBackedUpCount by viewModel.totalNotBackedUpCount.collectAsState()
 
 
 
-    LaunchedEffect(viewModel) {
-        viewModel.viewModelInitialization()
-    }
+//    LaunchedEffect(viewModel) {
+//        viewModel.viewModelInitialization()
+//    }
 
     Column(
         modifier = Modifier
