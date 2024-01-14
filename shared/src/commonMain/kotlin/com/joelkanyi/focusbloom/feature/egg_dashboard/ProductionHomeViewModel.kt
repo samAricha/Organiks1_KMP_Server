@@ -101,6 +101,8 @@ class ProductionHomeViewModel (
                         eggSnackbarMessage.value = result.errorMessage
                         showSnackbar(eggSnackbarMessage.value!!)
                     }
+
+                    else -> {}
                 }
             } catch (e: Exception) {
                 // Handle synchronization failure

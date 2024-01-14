@@ -14,6 +14,7 @@ MERGED from [androidx.activity:activity:1.8.1] /home/teka/.gradle/caches/transfo
 MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.32.0] /home/teka/.gradle/caches/transforms-3/ba003fbed8f665f341db09e93a540153/transformed/accompanist-systemuicontroller-0.32.0/AndroidManifest.xml:17:1-23:12
 MERGED from [io.github.koalaplot:koalaplot-core-android:0.4.0] /home/teka/.gradle/caches/transforms-3/57e6d57367f1ad2cc649e62287a8abdd/transformed/koalaplot-core-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material3:material3:1.1.2] /home/teka/.gradle/caches/transforms-3/9deb20cfb9e373443062705bff705dfb/transformed/material3-1.1.2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.mohamedrejeb.calf:calf-file-picker-android:0.3.0] /home/teka/.gradle/caches/transforms-3/961515a00e878126128dc5ce59a6fe90/transformed/calf-file-picker-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/teka/.gradle/caches/transforms-3/4ac17786541423111d1a0c2a84a2808f/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/teka/.gradle/caches/transforms-3/774a0739fc27c3a7c661137e4c570b3a/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.compose.material:material-icons-extended-android:1.5.4] /home/teka/.gradle/caches/transforms-3/d2d7e36366b3d3089af8d9a75cba8bff/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
@@ -80,6 +81,7 @@ MERGED from [androidx.compose.runtime:runtime-saveable-android:1.5.4] /home/teka
 MERGED from [androidx.compose.runtime:runtime-android:1.5.4] /home/teka/.gradle/caches/transforms-3/a95a4a98750a981cc8442c3985a3559b/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
 MERGED from [io.github.aakira:napier-android-debug:2.6.1] /home/teka/.gradle/caches/transforms-3/9b3c2ccc66aed15e9df39262610e6b4c/transformed/napier-debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/8dabd33fcc6941c5e3ab171cef68f639/transformed/multiplatform-settings-debug/AndroidManifest.xml:2:1-7:12
+MERGED from [com.mohamedrejeb.calf:calf-io-android:0.3.0] /home/teka/.gradle/caches/transforms-3/bae4b07731ae539ad0d9827bd2dc8b6e/transformed/calf-io-release/AndroidManifest.xml:2:1-7:12
 	package
 		INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
 	android:versionName
@@ -173,6 +175,8 @@ MERGED from [io.github.koalaplot:koalaplot-core-android:0.4.0] /home/teka/.gradl
 MERGED from [io.github.koalaplot:koalaplot-core-android:0.4.0] /home/teka/.gradle/caches/transforms-3/57e6d57367f1ad2cc649e62287a8abdd/transformed/koalaplot-core-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material3:material3:1.1.2] /home/teka/.gradle/caches/transforms-3/9deb20cfb9e373443062705bff705dfb/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.compose.material3:material3:1.1.2] /home/teka/.gradle/caches/transforms-3/9deb20cfb9e373443062705bff705dfb/transformed/material3-1.1.2/AndroidManifest.xml:20:5-44
+MERGED from [com.mohamedrejeb.calf:calf-file-picker-android:0.3.0] /home/teka/.gradle/caches/transforms-3/961515a00e878126128dc5ce59a6fe90/transformed/calf-file-picker-release/AndroidManifest.xml:5:5-44
+MERGED from [com.mohamedrejeb.calf:calf-file-picker-android:0.3.0] /home/teka/.gradle/caches/transforms-3/961515a00e878126128dc5ce59a6fe90/transformed/calf-file-picker-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/teka/.gradle/caches/transforms-3/4ac17786541423111d1a0c2a84a2808f/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-ripple-android:1.5.4] /home/teka/.gradle/caches/transforms-3/4ac17786541423111d1a0c2a84a2808f/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
 MERGED from [androidx.compose.material:material-icons-core-android:1.5.4] /home/teka/.gradle/caches/transforms-3/774a0739fc27c3a7c661137e4c570b3a/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
@@ -305,6 +309,8 @@ MERGED from [io.github.aakira:napier-android-debug:2.6.1] /home/teka/.gradle/cac
 MERGED from [io.github.aakira:napier-android-debug:2.6.1] /home/teka/.gradle/caches/transforms-3/9b3c2ccc66aed15e9df39262610e6b4c/transformed/napier-debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/8dabd33fcc6941c5e3ab171cef68f639/transformed/multiplatform-settings-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.russhwolf:multiplatform-settings-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/8dabd33fcc6941c5e3ab171cef68f639/transformed/multiplatform-settings-debug/AndroidManifest.xml:5:5-44
+MERGED from [com.mohamedrejeb.calf:calf-io-android:0.3.0] /home/teka/.gradle/caches/transforms-3/bae4b07731ae539ad0d9827bd2dc8b6e/transformed/calf-io-release/AndroidManifest.xml:5:5-44
+MERGED from [com.mohamedrejeb.calf:calf-io-android:0.3.0] /home/teka/.gradle/caches/transforms-3/bae4b07731ae539ad0d9827bd2dc8b6e/transformed/calf-io-release/AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
 		INJECTED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml
 	android:minSdkVersion

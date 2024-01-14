@@ -35,6 +35,7 @@ import com.joelkanyi.focusbloom.core.presentation.component.BloomTab
 import com.joelkanyi.focusbloom.core.presentation.theme.PrimaryColor
 import com.joelkanyi.focusbloom.core.utils.UiEvents
 import com.joelkanyi.focusbloom.core.utils.calculateFromFocusSessions
+import com.joelkanyi.focusbloom.core.utils.dateTimeToString
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.datetime.LocalDateTime
@@ -266,8 +267,9 @@ fun EggCollectionItem(
                 .padding(8.dp)
                 .fillMaxSize()) {
                 // Date Text
-                val formattedDate = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
-                    .format(eggCollection.date)
+//                val formattedDate = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
+//                    .format(eggCollection.date)
+                val formattedDate = eggCollection.date.dateTimeToString()
                 Text(text = formattedDate,
                     modifier = Modifier.align(Alignment.BottomEnd)
                 )

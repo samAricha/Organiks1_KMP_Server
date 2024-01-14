@@ -5,7 +5,7 @@
 5    android:versionName="1.0.3" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="21"
+8        android:minSdkVersion="24"
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
@@ -35,7 +35,7 @@
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
-25        android:extractNativeLibs="true"
+25        android:extractNativeLibs="false"
 26        android:icon="@mipmap/ic_launcher"
 26-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:11:9-43
 27        android:label="@string/focusbloom"
