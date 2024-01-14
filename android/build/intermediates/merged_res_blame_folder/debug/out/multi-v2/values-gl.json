@@ -4,7 +4,24 @@
             "outputFile": "com.joelkanyi.focusbloom.android-mergeDebugResources-51:/values-gl/values-gl.xml",
             "map": [
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/d9c3f385506a723f177d3b06c73a1952/transformed/appcompat-1.6.1/res/values-gl/values-gl.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/res/values-gl/values-gl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,356,454,561,667,783",
+                        "endColumns": "98,101,99,97,106,105,115,100",
+                        "endOffsets": "149,251,351,449,556,662,778,879"
+                    },
+                    "to": {
+                        "startLines": "33,34,35,36,37,38,39,91",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3318,3417,3519,3619,3717,3824,3930,9370",
+                        "endColumns": "98,101,99,97,106,105,115,100",
+                        "endOffsets": "3412,3514,3614,3712,3819,3925,4041,9466"
+                    }
+                },
+                {
+                    "source": "/home/teka/.gradle/caches/transforms-3/b755b846db33c6339b7e686fa059259a/transformed/appcompat-1.6.1/res/values-gl/values-gl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/06dee55e46f72503144d37cba543fbcf/transformed/ui-release/res/values-gl/values-gl.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/4c2b5211b6de1852bb6f63f87ce39d69/transformed/ui-release/res/values-gl/values-gl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/9deb20cfb9e373443062705bff705dfb/transformed/material3-1.1.2/res/values-gl/values-gl.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/1b668878490546fb90f66342ce98c347/transformed/material3-1.1.2/res/values-gl/values-gl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,23 +69,6 @@
                         "startOffsets": "2855,2971,3084,3203,4225,4303,4395,4505,4639,4753,4902,4982,5081,5173,5270,5384,5498,5602,5736,5869,6004,6183,6314,6429,6548,6672,6766,6859,6976,7120,7217,7326,7436,7570,7710,7816,8127,8298,9046,9288,9471,9849,9925,10005,10102,10204,10299,10394,10478,10585,10682,10780,10903,10979,11091",
                         "endColumns": "115,112,118,114,77,91,109,133,113,148,79,98,91,96,113,113,103,133,132,134,178,130,114,118,123,93,92,116,143,96,108,109,133,139,105,100,81,77,81,81,101,75,79,96,101,94,94,83,106,96,97,122,75,111,103",
                         "endOffsets": "2966,3079,3198,3313,4298,4390,4500,4634,4748,4897,4977,5076,5168,5265,5379,5493,5597,5731,5864,5999,6178,6309,6424,6543,6667,6761,6854,6971,7115,7212,7321,7431,7565,7705,7811,7912,8204,8371,9123,9365,9568,9920,10000,10097,10199,10294,10389,10473,10580,10677,10775,10898,10974,11086,11190"
-                    }
-                },
-                {
-                    "source": "/home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/res/values-gl/values-gl.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,154,256,356,454,561,667,783",
-                        "endColumns": "98,101,99,97,106,105,115,100",
-                        "endOffsets": "149,251,351,449,556,662,778,879"
-                    },
-                    "to": {
-                        "startLines": "33,34,35,36,37,38,39,91",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3318,3417,3519,3619,3717,3824,3930,9370",
-                        "endColumns": "98,101,99,97,106,105,115,100",
-                        "endOffsets": "3412,3514,3614,3712,3819,3925,4041,9466"
                     }
                 }
             ]

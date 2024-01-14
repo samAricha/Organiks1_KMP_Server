@@ -4,17 +4,7 @@
             "outputFile": "com.joelkanyi.focusbloom.android-mergeDebugResources-51:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/teka/.gradle/caches/transforms-3/d9c3f385506a723f177d3b06c73a1952/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/b755b846db33c6339b7e686fa059259a/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

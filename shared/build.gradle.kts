@@ -73,6 +73,11 @@ kotlin {
 
                 implementation(libs.stdlib)
 
+                implementation(libs.bundles.ktor.common)
+                implementation(libs.kotlinx.coroutines)
+
+
+
                 val ktorVersion = "2.3.7"
                 implementation("io.ktor:ktor-client-logging:$ktorVersion")
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
@@ -91,6 +96,9 @@ kotlin {
                 implementation(libs.accompanist.systemUIController)
                 implementation(libs.core)
                 implementation(libs.compose.activity)
+
+                implementation(libs.ktor.client.android)
+
             }
         }
 
@@ -102,6 +110,8 @@ kotlin {
             dependencies {
                 implementation(libs.sqlDelight.jvm)
                 implementation(libs.kotlinx.coroutines.swing)
+                implementation(libs.ktor.client.java)
+
 
                 // Toaster for Windows
                 implementation(libs.toast4j)

@@ -72,6 +72,7 @@ class MainScreen : Screen {
                             BloomTab.SettingsTab,
                             BloomTab.ProductionRecordingTab(),
                             BloomTab.ProductionHomeTab,
+                            BloomTab.AiAssistantTab
                         ),
                     )
                     CurrentScreen()
@@ -95,6 +96,7 @@ class MainScreen : Screen {
 //                            TabNavigationItem(BloomTab.StatisticsTab)
                             TabNavigationItem(BloomTab.ProductionHomeTab)
                             TabNavigationItem(BloomTab.ProductionRecordingTab())
+                            TabNavigationItem(BloomTab.AiAssistantTab)
                         }
                     },
                 )

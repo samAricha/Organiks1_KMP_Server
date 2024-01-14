@@ -16,15 +16,15 @@
 12-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:22-64
 13
 14    <permission
-14-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+14-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 15        android:name="com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-15-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+15-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 16        android:protectionLevel="signature" />
-16-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+16-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 17
 18    <uses-permission android:name="com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-18-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-18-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+18-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+18-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 19
 20    <application
 20-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:6:5-21:19
@@ -33,7 +33,7 @@
 22        android:allowBackup="false"
 22-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:8:9-36
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-23-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/a733df5fb581bf3e931651d9a4207345/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+23-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:icon="@mipmap/ic_launcher"
@@ -64,87 +64,87 @@
 39        </activity>
 40
 41        <provider
-41-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/47ca1b621d979ac3e7a753de6cb19ba2/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+41-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/1d6e91e1b86fca5b7e0b5d87ba18570c/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
 42            android:name="androidx.startup.InitializationProvider"
-42-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/47ca1b621d979ac3e7a753de6cb19ba2/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+42-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/1d6e91e1b86fca5b7e0b5d87ba18570c/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
 43            android:authorities="com.joelkanyi.focusbloom.android.androidx-startup"
-43-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/47ca1b621d979ac3e7a753de6cb19ba2/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+43-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/1d6e91e1b86fca5b7e0b5d87ba18570c/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
 44            android:exported="false" >
-44-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/47ca1b621d979ac3e7a753de6cb19ba2/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+44-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/1d6e91e1b86fca5b7e0b5d87ba18570c/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
 45            <meta-data
-45-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/47ca1b621d979ac3e7a753de6cb19ba2/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+45-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/1d6e91e1b86fca5b7e0b5d87ba18570c/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
 46                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-46-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/47ca1b621d979ac3e7a753de6cb19ba2/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+46-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/1d6e91e1b86fca5b7e0b5d87ba18570c/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
 47                android:value="androidx.startup" />
-47-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/47ca1b621d979ac3e7a753de6cb19ba2/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+47-->[androidx.emoji2:emoji2:1.4.0] /home/teka/.gradle/caches/transforms-3/1d6e91e1b86fca5b7e0b5d87ba18570c/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
 48            <meta-data
-48-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/8b1e9a252e8216f8079590c9dd70bbcf/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+48-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/4aea7f7917426e2655c7169412c76365/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
 49                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-49-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/8b1e9a252e8216f8079590c9dd70bbcf/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+49-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/4aea7f7917426e2655c7169412c76365/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
 50                android:value="androidx.startup" />
-50-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/8b1e9a252e8216f8079590c9dd70bbcf/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+50-->[androidx.lifecycle:lifecycle-process:2.6.1] /home/teka/.gradle/caches/transforms-3/4aea7f7917426e2655c7169412c76365/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
 51            <meta-data
-51-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/b34d8dc7ad6a3e630c017a4e959403a1/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:29:13-31:52
+51-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/b99d922c054f043e3e2da6880d2e0fd9/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:29:13-31:52
 52                android:name="com.russhwolf.settings.SettingsInitializer"
-52-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/b34d8dc7ad6a3e630c017a4e959403a1/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:30:17-74
+52-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/b99d922c054f043e3e2da6880d2e0fd9/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:30:17-74
 53                android:value="androidx.startup" />
-53-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/b34d8dc7ad6a3e630c017a4e959403a1/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:31:17-49
+53-->[com.russhwolf:multiplatform-settings-no-arg-android-debug:1.1.1] /home/teka/.gradle/caches/transforms-3/b99d922c054f043e3e2da6880d2e0fd9/transformed/multiplatform-settings-no-arg-debug/AndroidManifest.xml:31:17-49
 54            <meta-data
-54-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+54-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
 55                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-55-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+55-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
 56                android:value="androidx.startup" />
-56-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+56-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
 57        </provider>
 58
 59        <uses-library
-59-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/223659b1d1248d7e4b6cf24948c39a76/transformed/window-1.1.0/AndroidManifest.xml:23:9-25:40
+59-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/42e04f189c49abef984f60d58d1a8b8d/transformed/window-1.1.0/AndroidManifest.xml:23:9-25:40
 60            android:name="androidx.window.extensions"
-60-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/223659b1d1248d7e4b6cf24948c39a76/transformed/window-1.1.0/AndroidManifest.xml:24:13-54
+60-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/42e04f189c49abef984f60d58d1a8b8d/transformed/window-1.1.0/AndroidManifest.xml:24:13-54
 61            android:required="false" />
-61-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/223659b1d1248d7e4b6cf24948c39a76/transformed/window-1.1.0/AndroidManifest.xml:25:13-37
+61-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/42e04f189c49abef984f60d58d1a8b8d/transformed/window-1.1.0/AndroidManifest.xml:25:13-37
 62        <uses-library
-62-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/223659b1d1248d7e4b6cf24948c39a76/transformed/window-1.1.0/AndroidManifest.xml:26:9-28:40
+62-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/42e04f189c49abef984f60d58d1a8b8d/transformed/window-1.1.0/AndroidManifest.xml:26:9-28:40
 63            android:name="androidx.window.sidecar"
-63-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/223659b1d1248d7e4b6cf24948c39a76/transformed/window-1.1.0/AndroidManifest.xml:27:13-51
+63-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/42e04f189c49abef984f60d58d1a8b8d/transformed/window-1.1.0/AndroidManifest.xml:27:13-51
 64            android:required="false" />
-64-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/223659b1d1248d7e4b6cf24948c39a76/transformed/window-1.1.0/AndroidManifest.xml:28:13-37
+64-->[androidx.window:window:1.1.0] /home/teka/.gradle/caches/transforms-3/42e04f189c49abef984f60d58d1a8b8d/transformed/window-1.1.0/AndroidManifest.xml:28:13-37
 65
 66        <receiver
-66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+66-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
 67            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-67-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+67-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
 68            android:directBootAware="false"
-68-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+68-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
 69            android:enabled="true"
-69-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
 70            android:exported="true"
-70-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
 71            android:permission="android.permission.DUMP" >
-71-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
 72            <intent-filter>
-72-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+72-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
 73                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
-73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+73-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
 74            </intent-filter>
 75            <intent-filter>
-75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+75-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
 76                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
-76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+76-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
 77            </intent-filter>
 78            <intent-filter>
-78-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+78-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
 79                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
-79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 80            </intent-filter>
 81            <intent-filter>
-81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
 82                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
-82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/3ad7497a0bb08f6ac085ff1c3a0e7516/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/teka/.gradle/caches/transforms-3/f05e70f724a7aaf57e914f486a0b9714/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
 83            </intent-filter>
 84        </receiver>
 85    </application>

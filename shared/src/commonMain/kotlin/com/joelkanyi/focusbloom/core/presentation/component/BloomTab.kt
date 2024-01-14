@@ -23,6 +23,7 @@ import androidx.compose.runtime.remember
 import cafe.adriel.voyager.navigator.tab.Tab
 import cafe.adriel.voyager.navigator.tab.TabOptions
 import com.joelkanyi.focusbloom.feature.addtask.AddTaskScreen
+import com.joelkanyi.focusbloom.feature.ai_assistant.image_selection.ImageSelectionScreen
 import com.joelkanyi.focusbloom.feature.calendar.CalendarScreen
 import com.joelkanyi.focusbloom.feature.egg_collection.ProductionRecordingScreen
 import com.joelkanyi.focusbloom.feature.egg_dashboard.ProductionHomeScreen
@@ -209,6 +210,32 @@ internal sealed class BloomTab {
         @Composable
         override fun Content() {
             ProductionRecordingScreen(collectionId)
+        }
+    }
+
+
+    internal object AiAssistantTab : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "AI Assistant"
+                val icon = painterResource("work.xml")
+
+
+
+                return remember {
+                    TabOptions(
+                        index = 4u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            ImageSelectionScreen()
         }
     }
 
