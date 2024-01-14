@@ -15,6 +15,9 @@
  */
 package com.joelkanyi.focusbloom.core.presentation.component
 
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.outlined.Home
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import cafe.adriel.voyager.navigator.tab.Tab
@@ -37,6 +40,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Home"
                 val icon = painterResource("home_outlined.xml")
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
 
                 return remember {
                     TabOptions(
@@ -60,6 +65,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Calendar"
                 val icon = painterResource("calendar_outlined.xml")
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
 
                 return remember {
                     TabOptions(
@@ -83,6 +90,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Statistics"
                 val icon = painterResource("statistics_outlined.xml")
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
 
                 return remember {
                     TabOptions(
@@ -106,6 +115,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Settings"
                 val icon = painterResource("settings_outlined.xml")
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
 
                 return remember {
                     TabOptions(
@@ -132,6 +143,9 @@ internal sealed class BloomTab {
                 val title = "Add Task"
                 val icon = painterResource("add_outlined.xml")
 
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
+
                 return remember {
                     TabOptions(
                         index = 4u,
@@ -148,6 +162,29 @@ internal sealed class BloomTab {
     }
 
 
+    internal object ProductionHomeTab : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "Records"
+                val icon = painterResource("statistics_outlined.xml")
+
+                return remember {
+                    TabOptions(
+                        index = 4u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            ProductionHomeScreen()
+        }
+    }
+
     internal data class ProductionRecordingTab(
         val collectionId: Int? = null,
     ) : Tab {
@@ -157,6 +194,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Record Collection"
                 val icon = painterResource("add_outlined.xml")
+
+
 
                 return remember {
                     TabOptions(
@@ -173,26 +212,4 @@ internal sealed class BloomTab {
         }
     }
 
-    internal object ProductionHomeTab : Tab {
-        @OptIn(ExperimentalResourceApi::class)
-        override val options: TabOptions
-            @Composable
-            get() {
-                val title = "Records"
-                val icon = painterResource("add_outlined.xml")
-
-                return remember {
-                    TabOptions(
-                        index = 4u,
-                        title = title,
-                        icon = icon,
-                    )
-                }
-            }
-
-        @Composable
-        override fun Content() {
-            ProductionHomeScreen()
-        }
-    }
 }

@@ -79,6 +79,9 @@ kotlin {
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
                 implementation("io.ktor:ktor-client-content-negotiation:$ktorVersion")
                 implementation("io.ktor:ktor-serialization-kotlinx-json:$ktorVersion")
+
+                // For Adaptive FilePicker
+                implementation("com.mohamedrejeb.calf:calf-file-picker:0.3.0")
             }
         }
 

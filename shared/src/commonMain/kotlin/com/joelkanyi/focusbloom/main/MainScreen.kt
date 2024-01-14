@@ -86,33 +86,13 @@ class MainScreen : Screen {
                             CurrentScreen()
                         }
                     },
-//                    floatingActionButton = {
-//                        FloatingActionButton(
-//                            containerColor = MaterialTheme.colorScheme.primary,
-//                            onClick = {
-//                                tabNavigator.current = BloomTab.AddTaskTab()
-//                            },
-//                            elevation = FloatingActionButtonDefaults.elevation(
-//                                defaultElevation = 0.dp,
-//                            ),
-//                            shape = CircleShape,
-//                        ) {
-//                            Icon(
-//                                imageVector = Icons.Filled.Add,
-//                                contentDescription = "",
-//                                tint = MaterialTheme.colorScheme.onPrimary,
-//                                modifier = Modifier.size(24.dp),
-//                            )
-//                        }
-//                    },
                     bottomBar = {
                         BottomNavigation(
                             backgroundColor = MaterialTheme.colorScheme.background,
                         ) {
                             TabNavigationItem(BloomTab.HomeTab)
-                            TabNavigationItem(BloomTab.CalendarTab)
-                            TabNavigationItem(BloomTab.StatisticsTab)
-                            TabNavigationItem(BloomTab.SettingsTab)
+//                            TabNavigationItem(BloomTab.CalendarTab)
+//                            TabNavigationItem(BloomTab.StatisticsTab)
                             TabNavigationItem(BloomTab.ProductionHomeTab)
                             TabNavigationItem(BloomTab.ProductionRecordingTab())
                         }
