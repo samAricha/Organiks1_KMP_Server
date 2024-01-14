@@ -2,6 +2,9 @@ package com.joelkanyi.focusbloom.core.data.local_remote_sync
 
 
 import com.joelkanyi.focusbloom.core.data.local_remote_sync.models.RemoteEggCollectionResponse
+import com.joelkanyi.focusbloom.core.data.mapper.toEggCollectionDTO
+import com.joelkanyi.focusbloom.core.data.mapper.toEggCollectionEntity
+import com.joelkanyi.focusbloom.core.data.remote.RetrofitProvider
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 import com.joelkanyi.focusbloom.core.domain.repository.DbRepository
 import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggCollectionsRepository
@@ -17,7 +20,10 @@ sealed class UpdateResult {
 
 class RemoteDataUpdater () {
 
-    suspend fun updateRemoteEggCollectionData(eggCollections: List<EggCollectionModel>, repository: EggCollectionsRepository): UpdateResult {
+    suspend fun updateRemoteEggCollectionData(
+        eggCollections: List<EggCollectionModel>,
+        repository: EggCollectionsRepository
+    ): UpdateResult {
 
         return try{
             withContext(Dispatchers.IO) {
@@ -25,13 +31,12 @@ class RemoteDataUpdater () {
 
 //                    val eggCollectionRequest = eggCollection.toEggCollectionRequest()
 
-//                        val response = RetrofitProvider.createEggCollectionService().createRemoteEggCollection(eggCollectionRequest)
-                    val response = RemoteEggCollectionResponse(success = false, message = null)
-                    if (response.success){
+                        val response = RetrofitProvider.createEggCollectionBackup(eggCollection.toEggCollectionDTO())
+//                    val response = RemoteEggCollectionResponse(success = false, message = null)
+                    if (response.isSuccess){
                         val updatedEggCollection = eggCollection.copy(isBackedUp = true)
 
-//                        eggCollection.isBackedUp = 1
-//                        repository.updateEggCollection(eggCollection)
+                        repository.updateEggCollection(updatedEggCollection)
 //                        Toast.makeText(appContext, "Sync successful.", Toast.LENGTH_SHORT).show()
                         UpdateResult.Success("Data updated successfully.")
                     }else{

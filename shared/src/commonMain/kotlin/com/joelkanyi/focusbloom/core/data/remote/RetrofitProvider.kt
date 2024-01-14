@@ -1,35 +1,62 @@
 package com.joelkanyi.focusbloom.core.data.remote
 
+import io.ktor.client.HttpClient
+import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.client.plugins.logging.DEFAULT
+import io.ktor.client.plugins.logging.LogLevel
+import io.ktor.client.plugins.logging.Logger
+import io.ktor.client.plugins.logging.Logging
+import io.ktor.client.request.post
+import io.ktor.client.statement.bodyAsText
+import io.ktor.serialization.kotlinx.json.json
+import io.ktor.util.InternalAPI
+import kotlinx.serialization.ExperimentalSerializationApi
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.json.Json
+
 
 object RetrofitProvider {
-    private const val TEST_URL = "https://a3fb-105-57-17-70.ngrok-free.app"
-//    private const val TEST_URL = "https://c5bf-2c0f-fe38-2407-af33-288b-ff34-18af-45d1.ngrok-free.app"
+    private const val TEST_URL = "https://a3fb-105-57-17-70.ngrok-free.app/api"
     private const val BASE_URL = "http://191.101.0.246:8081"
 
     //here we provide the HTTP client
+     private fun provide(): HttpClient{
+        @OptIn(ExperimentalSerializationApi::class)
+        val client: HttpClient = HttpClient {
+            install(ContentNegotiation) {
+                json(Json {
+                    isLenient = true;
+                    ignoreUnknownKeys = true;
+                    explicitNulls = false}
+                )
+            }
+            install(Logging) {
+                logger = Logger.DEFAULT
+                level = LogLevel.ALL
+            }
+        }
+        return client
+    }
 
-//    private fun provide(): Retrofit {
-//        val json = Json { ignoreUnknownKeys = true }//to ignore unkown keys
-//
-//        return Retrofit.Builder()
-//            .baseUrl(BASE_URL)
-//            .client(provideOkhttpClient())
-//            .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
-//            .build()
-//    }
-
-//    private fun provideOkhttpClient(): OkHttpClient =
-//        OkHttpClient.Builder()
-//            .addInterceptor(HttpLoggingInterceptor().also {
-//                it.level = HttpLoggingInterceptor.Level.BODY
-//            })
-//            .addInterceptor(HeaderInterceptor)
-//            .build()
 
 
-    fun createEggCollectionService(): EggCollectionService {
-        TODO()
-//        return provide().create(EggCollectionService::class.java)
+    @OptIn(InternalAPI::class)
+    suspend fun createEggCollectionBackup(eggCollectionDTO: EggCollectionDTO): GenericApiResponse<String> {
+        try {
+            val client: HttpClient = provide()
+            val response: String = client.post("$TEST_URL/eggs/create") {
+                body = Json.encodeToString(eggCollectionDTO)
+            }.bodyAsText()
+
+            return Json.decodeFromString(response)
+
+            // Assuming the response contains a string data
+//            return GenericApiResponse(isSuccess = true, data = response)
+        } catch (e: Exception) {
+            // If an exception occurs, treat it as a failure
+            return GenericApiResponse(isSuccess = false, data = "Error: ${e.message}")
+        }
     }
 
 

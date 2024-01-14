@@ -4,7 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class EggCollectionDTO(
-    val egg_collection_id: Long,
     val uuid: String,
     val qty: String,
     val cracked: String,

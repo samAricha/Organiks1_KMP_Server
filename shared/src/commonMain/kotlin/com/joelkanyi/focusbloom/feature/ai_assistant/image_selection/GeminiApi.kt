@@ -21,7 +21,7 @@ class GeminiApi {
     private val apiKey = "AIzaSyAPN3pRJqLIiSALpvs_vdehFQPEcAJZih4"
 
     @OptIn(ExperimentalSerializationApi::class)
-    private val client = HttpClient {
+    private val client: HttpClient = HttpClient {
         install(ContentNegotiation) {
             json(Json {
                 isLenient = true;
@@ -43,7 +43,10 @@ class GeminiApi {
     }
 
     @OptIn(InternalAPI::class)
-    private suspend fun makeApiRequest(url: String, requestBuilder: Request.RequestBuilder.() -> Unit): Response {
+    private suspend fun makeApiRequest(
+        url: String,
+        requestBuilder: Request.RequestBuilder.() -> Unit
+    ): Response {
         val request = Request.RequestBuilder().apply(requestBuilder).build()
 
         val response: String = client.post(url) {

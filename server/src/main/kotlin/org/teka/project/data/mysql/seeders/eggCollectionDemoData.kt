@@ -1,14 +1,15 @@
 package org.teka.project.data.mysql.seeders
 
 
-import com.example.data.remote.dto.egg_collection.CreateEggCollectionDto
+import org.teka.project.data.remote.dto.egg_collection.CreateEggCollectionDto
 import org.teka.project.domain.repository.EggCollectionRepository
 
 
 fun eggCollectionsDemoData(){
     val repository = EggCollectionRepository()
 
-    repository.create(CreateEggCollectionDto(
+    repository.create(
+        CreateEggCollectionDto(
         uuid = "c8c2b450-67d5-4e2c-b3a2-3f8ef0012345",
         qty = "10",
         cracked = "2",
@@ -16,7 +17,8 @@ fun eggCollectionsDemoData(){
         date = "2024-01-15",
         isBackedUp = 0,
         createdAt = 1642252800
-    ))
+    )
+    )
 
     repository.create(
         CreateEggCollectionDto(
@@ -30,7 +32,8 @@ fun eggCollectionsDemoData(){
     )
     )
 
-    repository.create(CreateEggCollectionDto(
+    repository.create(
+        CreateEggCollectionDto(
         uuid = "yet-another-uuid",
         qty = "8",
         cracked = "1",
@@ -38,6 +41,7 @@ fun eggCollectionsDemoData(){
         date = "2024-03-10",
         isBackedUp = 0,
         createdAt = 1646764800
-    ))
+    )
+    )
 
 }

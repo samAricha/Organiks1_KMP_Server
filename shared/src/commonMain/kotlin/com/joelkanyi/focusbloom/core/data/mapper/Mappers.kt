@@ -1,5 +1,6 @@
 package com.joelkanyi.focusbloom.core.data.mapper
 
+import com.joelkanyi.focusbloom.core.data.remote.EggCollectionDTO
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 import com.joelkanyi.focusbloom.core.domain.model.EggTypeModel
 import com.joelkanyi.focusbloom.core.domain.model.Task
@@ -67,6 +68,17 @@ fun EggCollectionModel.toEggCollectionEntity() = EggCollectionEntity(
     eggTypeId = eggTypeId.toLong(), // Assuming eggTypeId is an Int in the model
     date = date.dateTimeToString(), // Convert LocalDateTime to formatted string
     isBackedUp = if (isBackedUp) 1L else 0L, // Convert Boolean to Long
+    createdAt = createdAt
+)
+
+fun EggCollectionModel.toEggCollectionDTO() = EggCollectionDTO(
+
+    uuid = uuid,
+    qty = qty,
+    cracked = cracked,
+    eggTypeId = eggTypeId.toLong(),
+    date = date.dateTimeToString(),
+    isBackedUp = if (isBackedUp) 1L else 0L,
     createdAt = createdAt
 )
 

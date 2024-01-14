@@ -1,6 +1,6 @@
 package org.teka.project.domain.repository
 
-import com.example.data.remote.dto.egg_collection.CreateEggCollectionDto
+import org.teka.project.data.remote.dto.egg_collection.CreateEggCollectionDto
 import com.example.data.remote.dto.egg_collection.EggCollectionDTO
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.teka.project.data.mysql.mysql_models.egg_collection.EggCollectionEntity

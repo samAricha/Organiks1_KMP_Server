@@ -1,7 +1,7 @@
 package org.teka.project.routes
 
 
-import com.example.data.remote.dto.egg_collection.CreateEggCollectionDto
+import org.teka.project.data.remote.dto.egg_collection.CreateEggCollectionDto
 import com.example.data.remote.dto.egg_collection.EggCollectionDTO
 import io.ktor.http.*
 import io.ktor.server.application.*

@@ -1,4 +1,4 @@
-package com.example.data.remote.dto.egg_collection
+package org.teka.project.data.remote.dto.egg_collection
 
 import kotlinx.serialization.Serializable
 
