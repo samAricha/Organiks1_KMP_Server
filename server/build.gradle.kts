@@ -42,6 +42,6 @@ dependencies {
     //Ktor client
     implementation ("io.ktor:ktor-client-core:1.6.10")
     implementation("io.ktor:ktor-client-cio:1.6.10")
-    implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
-    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
+//    implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
+//    implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
 }
