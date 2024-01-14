@@ -41,12 +41,3 @@ fun ApplicationEngineEnvironmentBuilder.envConfig() {
 }
 
 
-//fun Application.module() {
-//    routing {
-//        get("/") {
-//            call.respondText("Ktor: Greeting().greet()}")
-//        }
-//    }
-//}
-
-
