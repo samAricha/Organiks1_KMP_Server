@@ -19,10 +19,11 @@ data class SnackbarData(val message: String)
 
 
 class ProductionHomeViewModel (
-    private val remoteDataUpdater: RemoteDataUpdater,
     private val eggCollectionsRepository: EggCollectionsRepository,
-    private val eggTypeRepository: EggTypeRepository,
 ): ScreenModel {
+
+    private val remoteDataUpdater: RemoteDataUpdater = RemoteDataUpdater()
+
 
     private val _eggCollections = MutableStateFlow<List<EggCollectionModel>>(emptyList())
     val eggCollections: StateFlow<List<EggCollectionModel>> = _eggCollections.asStateFlow()

@@ -16,7 +16,6 @@ import kotlinx.coroutines.launch
 import java.util.*
 
 class ProductionRecordingViewModel (
-    private val repository: DbRepository,
     private val eggCollectionsRepository: EggCollectionsRepository,
     private val eggTypeRepository: EggTypeRepository,
 

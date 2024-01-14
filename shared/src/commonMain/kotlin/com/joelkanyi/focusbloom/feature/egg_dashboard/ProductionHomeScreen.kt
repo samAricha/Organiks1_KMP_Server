@@ -32,9 +32,7 @@ import org.koin.compose.rememberKoinInject
 
 
 @Composable
-fun ProductionHomeScreen(
-    onNavigate:(Int) -> Unit
-){
+fun ProductionHomeScreen(){
     val productionHomeViewModel = rememberKoinInject<ProductionHomeViewModel>()
 
 //    val productionHomeViewModel : ProductionHomeViewModel = hiltViewModel()

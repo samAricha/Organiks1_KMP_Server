@@ -23,8 +23,8 @@ import java.util.*
 
 @Composable
 fun ProductionRecordingScreen(
-    id: Int,
-){
+    collectionId: Int? = null,
+    ){
     val viewModel = rememberKoinInject<ProductionRecordingViewModel>()
 
 //    val viewModel: ProductionRecordingViewModel = hiltViewModel()

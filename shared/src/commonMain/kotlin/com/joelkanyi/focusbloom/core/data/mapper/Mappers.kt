@@ -60,6 +60,7 @@ fun EggCollectionEntity.toEggCollectionModel() = EggCollectionModel(
 )
 
 fun EggCollectionModel.toEggCollectionEntity() = EggCollectionEntity(
+    egg_collection_id = 0,
     uuid = uuid,
     qty = qty,
     cracked = cracked,

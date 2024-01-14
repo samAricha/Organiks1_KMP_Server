@@ -31,13 +31,19 @@ import com.joelkanyi.focusbloom.core.data.adapter.isBackedUpAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.qtyAdapter
 import com.joelkanyi.focusbloom.core.data.adapter.uuidAdapter
 import com.joelkanyi.focusbloom.core.data.local.setting.PreferenceManager
+import com.joelkanyi.focusbloom.core.data.repository.egg_collections.EggCollectionsRepositoryImpl
+import com.joelkanyi.focusbloom.core.data.repository.egg_collections.EggTypeRepositoryImpl
 import com.joelkanyi.focusbloom.core.data.repository.settings.SettingsRepositoryImpl
 import com.joelkanyi.focusbloom.core.data.repository.tasks.TasksRepositoryImpl
+import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggCollectionsRepository
+import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggTypeRepository
 import com.joelkanyi.focusbloom.core.domain.repository.settings.SettingsRepository
 import com.joelkanyi.focusbloom.core.domain.repository.tasks.TasksRepository
 import com.joelkanyi.focusbloom.database.BloomDatabase
 import com.joelkanyi.focusbloom.feature.addtask.AddTaskScreenModel
 import com.joelkanyi.focusbloom.feature.calendar.CalendarScreenModel
+import com.joelkanyi.focusbloom.feature.egg_collection.ProductionRecordingViewModel
+import com.joelkanyi.focusbloom.feature.egg_dashboard.ProductionHomeViewModel
 import com.joelkanyi.focusbloom.feature.home.HomeScreenModel
 import com.joelkanyi.focusbloom.feature.onboarding.OnboadingViewModel
 import com.joelkanyi.focusbloom.feature.settings.SettingsScreenModel
@@ -67,7 +73,8 @@ fun commonModule() = module {
                 currentAdapter = currentAdapter,
                 currentCycleAdapter = currentCycleAdapter,
                 focusSessionsAdapter = focusSessionsAdapter,
-            )
+            ),
+
 
         )
     }
@@ -89,6 +96,18 @@ fun commonModule() = module {
 
     single<TasksRepository> {
         TasksRepositoryImpl(
+            bloomDatabase = get(),
+        )
+    }
+
+    single<EggCollectionsRepository> {
+        EggCollectionsRepositoryImpl(
+            bloomDatabase = get(),
+        )
+    }
+
+    single<EggTypeRepository> {
+        EggTypeRepositoryImpl(
             bloomDatabase = get(),
         )
     }
@@ -145,6 +164,20 @@ fun commonModule() = module {
             settingsRepository = get(),
         )
     }
+
+    single<ProductionHomeViewModel> {
+        ProductionHomeViewModel(
+            eggCollectionsRepository = get(),
+        )
+    }
+
+    single<ProductionRecordingViewModel> {
+        ProductionRecordingViewModel(
+            eggCollectionsRepository = get(),
+            eggTypeRepository = get ()
+        )
+    }
+
 }
 
 expect fun platformModule(): Module

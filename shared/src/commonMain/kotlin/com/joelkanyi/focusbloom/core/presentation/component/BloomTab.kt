@@ -21,6 +21,8 @@ import cafe.adriel.voyager.navigator.tab.Tab
 import cafe.adriel.voyager.navigator.tab.TabOptions
 import com.joelkanyi.focusbloom.feature.addtask.AddTaskScreen
 import com.joelkanyi.focusbloom.feature.calendar.CalendarScreen
+import com.joelkanyi.focusbloom.feature.egg_collection.ProductionRecordingScreen
+import com.joelkanyi.focusbloom.feature.egg_dashboard.ProductionHomeScreen
 import com.joelkanyi.focusbloom.feature.home.HomeScreen
 import com.joelkanyi.focusbloom.feature.settings.SettingsScreen
 import com.joelkanyi.focusbloom.feature.statistics.StatisticsScreen
@@ -142,6 +144,55 @@ internal sealed class BloomTab {
         @Composable
         override fun Content() {
             AddTaskScreen(taskId)
+        }
+    }
+
+
+    internal data class ProductionRecordingTab(
+        val collectionId: Int? = null,
+    ) : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "Record Collection"
+                val icon = painterResource("add_outlined.xml")
+
+                return remember {
+                    TabOptions(
+                        index = 4u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            ProductionRecordingScreen(collectionId)
+        }
+    }
+
+    internal object ProductionHomeTab : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "Records"
+                val icon = painterResource("add_outlined.xml")
+
+                return remember {
+                    TabOptions(
+                        index = 4u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            ProductionHomeScreen()
         }
     }
 }
