@@ -41,6 +41,7 @@ import com.teka.organiks.platform.MyAppImages
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
+import org.koin.compose.rememberKoinInject
 import org.koin.core.component.KoinComponent
 
 class OnboardingScreen : Screen, KoinComponent {
@@ -49,6 +50,8 @@ class OnboardingScreen : Screen, KoinComponent {
     @OptIn(ExperimentalFoundationApi::class)
     @Composable
     override fun Content() {
+        val onboadingViewModel = rememberKoinInject<OnboadingViewModel>()
+        onboadingViewModel.setUsername("OrganiksUser")
         val navigator = LocalNavigator.currentOrThrow
         val coroutineScope = rememberCoroutineScope()
         val pageCount = 3
@@ -60,6 +63,7 @@ class OnboardingScreen : Screen, KoinComponent {
             onClickNext = {
                 coroutineScope.launch {
                     pagerState.animateScrollToPage(pagerState.currentPage + 1)
+                    onboadingViewModel.saveUsername()
                 }
             },
             onClickGetStarted = {
