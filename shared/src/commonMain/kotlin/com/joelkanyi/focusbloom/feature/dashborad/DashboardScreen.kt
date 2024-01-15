@@ -46,7 +46,7 @@ fun DashboardScreen() {
         ) {
             DashboardCard(
                 title = "Egg Collections",
-                value = "$totalEggsCollected Rounds",
+                value = "$totalEggsCollected Collections",
                 iconVector = Icons.Outlined.Egg,
                 color = PrimaryLightColor
             )
