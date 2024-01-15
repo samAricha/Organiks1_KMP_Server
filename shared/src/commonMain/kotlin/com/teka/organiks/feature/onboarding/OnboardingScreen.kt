@@ -152,22 +152,17 @@ private fun ColumnScope.PageIndicators(pageCount: Int, currentPage: Int) {
 private fun OnboardingFirstPage() {
     MyAppImages().getCealChroniclerLogo()
     CustomPageContent(
-        title = "Organize Tasks and Boost Productivity",
-        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
+        title = "Exhausted with Inconsistent Cash Flow?",
+        description = "Say goodbye to the chaos of tracking your agricultural products.",
         painterResource = MyAppImages().getAmazedLogo(),
     )
-//    PageContent(
-//        title = "Organize Tasks and Boost Productivity",
-//        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
-//        illustration = "il_tasks.xml",
-//    )
 }
 
 @Composable
 private fun OnboardingSecondPage() {
     CustomPageContent(
-        title = "Organize Tasks and Boost Productivity",
-        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
+        title = "Let us hold your hand to success!!",
+        description = "Organiks is here to drastically simplify and improve your life on the farm.",
         painterResource = MyAppImages().getPerfect100Logo(),
     )
 }
@@ -175,8 +170,8 @@ private fun OnboardingSecondPage() {
 @Composable
 private fun OnboardingThirdPage() {
     CustomPageContent(
-        title = "Organize Tasks and Boost Productivity",
-        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
+        title = "Let's Go !!",
+        description = "Get ready to harness the power of data in your agricultural operations.",
         painterResource = MyAppImages().getLetsgo100Logo(),
     )
 }
