@@ -29,8 +29,6 @@ class RemoteDataUpdater () {
             withContext(Dispatchers.IO) {
                 eggCollections.forEach { eggCollection ->
 
-//                    val eggCollectionRequest = eggCollection.toEggCollectionRequest()
-
                         val response = RetrofitProvider.createEggCollectionBackup(eggCollection.toEggCollectionDTO())
 //                    val response = RemoteEggCollectionResponse(success = false, message = null)
                     if (response.isSuccess){
