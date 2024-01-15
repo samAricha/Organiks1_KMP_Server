@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/teka/teka-code/challange/Organiks1/shared/src/androidMain/AndroidManifest.xml:2:1-12
-INJECTED from /home/teka/teka-code/challange/Organiks1/shared/src/androidMain/AndroidManifest.xml:2:1-12
+ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/shared/src/androidMain/AndroidManifest.xml:2:1-12
+INJECTED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/shared/src/androidMain/AndroidManifest.xml:2:1-12
 	package
-		INJECTED from /home/teka/teka-code/challange/Organiks1/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/shared/src/androidMain/AndroidManifest.xml
 uses-sdk
-INJECTED from /home/teka/teka-code/challange/Organiks1/shared/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/teka/teka-code/challange/Organiks1/shared/src/androidMain/AndroidManifest.xml
-INJECTED from /home/teka/teka-code/challange/Organiks1/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/shared/src/androidMain/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/shared/src/androidMain/AndroidManifest.xml
+INJECTED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/shared/src/androidMain/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/teka/teka-code/challange/Organiks1/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/shared/src/androidMain/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/teka/teka-code/challange/Organiks1/shared/src/androidMain/AndroidManifest.xml
+		INJECTED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/shared/src/androidMain/AndroidManifest.xml

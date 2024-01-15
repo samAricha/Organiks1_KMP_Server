@@ -17,32 +17,6 @@ import org.jetbrains.compose.resources.painterResource
 
 internal sealed class BloomTab {
 
-    internal object SettingsTab : Tab {
-        @OptIn(ExperimentalResourceApi::class)
-        override val options: TabOptions
-            @Composable
-            get() {
-                val title = "Settings"
-                val icon = painterResource("settings_outlined.xml")
-                val filledIcon = Icons.Filled.Home
-                val outlinedIcon = Icons.Outlined.Home
-
-                return remember {
-                    TabOptions(
-                        index = 3u,
-                        title = title,
-                        icon = icon,
-                    )
-                }
-            }
-
-        @Composable
-        override fun Content() {
-            SettingsScreen()
-        }
-    }
-
-
     internal object MainDashboardTab : Tab {
         @OptIn(ExperimentalResourceApi::class)
         override val options: TabOptions
@@ -53,7 +27,7 @@ internal sealed class BloomTab {
 
                 return remember {
                     TabOptions(
-                        index = 4u,
+                        index = 0u,
                         title = title,
                         icon = icon,
                     )
@@ -66,7 +40,6 @@ internal sealed class BloomTab {
         }
     }
 
-
     internal object ProductionHomeTab : Tab {
         @OptIn(ExperimentalResourceApi::class)
         override val options: TabOptions
@@ -77,7 +50,7 @@ internal sealed class BloomTab {
 
                 return remember {
                     TabOptions(
-                        index = 4u,
+                        index = 1u,
                         title = title,
                         icon = icon,
                     )
@@ -104,7 +77,7 @@ internal sealed class BloomTab {
 
                 return remember {
                     TabOptions(
-                        index = 4u,
+                        index = 2u,
                         title = title,
                         icon = icon,
                     )
@@ -117,16 +90,38 @@ internal sealed class BloomTab {
         }
     }
 
-
     internal object AiAssistantTab : Tab {
         @OptIn(ExperimentalResourceApi::class)
         override val options: TabOptions
             @Composable
             get() {
                 val title = "AI Assistant"
-                val icon = painterResource("work.xml")
+                val icon = painterResource("study.xml")
+
+                return remember {
+                    TabOptions(
+                        index = 3u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            ImageSelectionScreen()
+        }
+    }
 
 
+
+    internal object SettingsTab : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "Settings"
+                val icon = painterResource("settings_outlined.xml")
 
                 return remember {
                     TabOptions(
@@ -139,8 +134,9 @@ internal sealed class BloomTab {
 
         @Composable
         override fun Content() {
-            ImageSelectionScreen()
+            SettingsScreen()
         }
     }
+
 
 }

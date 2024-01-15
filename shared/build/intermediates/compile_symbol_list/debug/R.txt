@@ -1,3 +1,4 @@
+int drawable laughing7 0x0
 int drawable logo 0x0
 int font montserrat_black 0x0
 int font montserrat_bold 0x0
