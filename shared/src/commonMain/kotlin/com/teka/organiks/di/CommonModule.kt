@@ -25,6 +25,7 @@ import com.teka.organiks.feature.onboarding.OnboadingViewModel
 import com.teka.organiks.feature.settings.SettingsScreenModel
 import com.teka.organiks.main.MainViewModel
 import com.teka.organiks.platform.DatabaseDriverFactory
+import com.teka.organiks.platform.GetAppImages
 import org.koin.core.module.Module
 import org.koin.dsl.module
 
@@ -89,6 +90,7 @@ fun commonModule() = module {
             settingsRepository = get(),
         )
     }
+
 
     single<ProductionHomeViewModel> {
         ProductionHomeViewModel(

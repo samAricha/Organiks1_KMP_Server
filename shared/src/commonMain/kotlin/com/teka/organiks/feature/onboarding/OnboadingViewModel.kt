@@ -14,6 +14,7 @@ class OnboadingViewModel(
     private val settingsRepository: SettingsRepository,
 ) : ScreenModel {
 
+
     private val _eventsFlow = Channel<UiEvents>(Channel.UNLIMITED)
     val eventsFlow = _eventsFlow.receiveAsFlow()
 

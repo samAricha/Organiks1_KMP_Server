@@ -37,6 +37,7 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.teka.organiks.main.MainScreen
+import com.teka.organiks.platform.MyAppImages
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
@@ -149,37 +150,38 @@ private fun ColumnScope.PageIndicators(pageCount: Int, currentPage: Int) {
 
 @Composable
 private fun OnboardingFirstPage() {
-//    CustomPageContent(
-//        title = "Organize Tasks and Boost Productivity",
-//        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
-//        painterResource = ,
-//    )
-    PageContent(
+    MyAppImages().getCealChroniclerLogo()
+    CustomPageContent(
         title = "Organize Tasks and Boost Productivity",
         description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
-        illustration = "il_tasks.xml",
+        painterResource = MyAppImages().getAmazedLogo(),
     )
+//    PageContent(
+//        title = "Organize Tasks and Boost Productivity",
+//        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
+//        illustration = "il_tasks.xml",
+//    )
 }
 
 @Composable
 private fun OnboardingSecondPage() {
-    PageContent(
-        title = "Tailor Your Work Sessions",
-        description = "With FocusBloom, you have the power to customize your work and break durations to match your preferences and maximize efficiency.",
-        illustration = "il_work_time.xml",
+    CustomPageContent(
+        title = "Organize Tasks and Boost Productivity",
+        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
+        painterResource = MyAppImages().getPerfect100Logo(),
     )
 }
 
 @Composable
 private fun OnboardingThirdPage() {
-    PageContent(
-        title = "Visualize Your Progress",
-        description = "Experience the power of progress tracking with FocusBloom. Gain insights into your productivity journey and visualize task completion trends.",
-        illustration = "il_statistics.xml",
+    CustomPageContent(
+        title = "Organize Tasks and Boost Productivity",
+        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
+        painterResource = MyAppImages().getLetsgo100Logo(),
     )
 }
 
-@OptIn(ExperimentalResourceApi::class)
+
 @Composable
 private fun CustomPageContent(title: String, description: String, painterResource: Painter) {
     Column(

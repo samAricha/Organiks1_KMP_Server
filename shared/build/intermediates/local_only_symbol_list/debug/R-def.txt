@@ -1,7 +1,13 @@
 R_DEF: Internal format may change without notice
 local
+drawable amazed100
+drawable egg100
 drawable laughing7
+drawable letsgo100
 drawable logo
+drawable perfect100
+drawable welcome100
+drawable welcome55
 font montserrat_black
 font montserrat_bold
 font montserrat_extrabold
