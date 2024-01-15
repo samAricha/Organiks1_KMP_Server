@@ -1,4 +1,4 @@
-com.joelkanyi.focusbloom.android
+com.teka.organiks.android
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -636,6 +636,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable amazed100
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -644,6 +645,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable egg100
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -653,6 +655,7 @@ drawable ic_call_decline_low
 drawable ic_launcher_foreground
 drawable il_statistics
 drawable laughing7
+drawable letsgo100
 drawable logo
 drawable notification_action_background
 drawable notification_bg
@@ -667,9 +670,12 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable perfect100
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable welcome100
+drawable welcome55
 font montserrat_black
 font montserrat_bold
 font montserrat_extrabold

@@ -1,18 +1,3 @@
-/*
- * Copyright 2023 Joel Kanyi.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.teka.organiks.feature.settings
 
 import androidx.compose.animation.AnimatedVisibility
@@ -101,10 +86,6 @@ fun SettingsScreen(
         navBarColor = MaterialTheme.colorScheme.background,
     )
 
-    val sessionTime = screenModel.sessionTime.collectAsState().value ?: 25
-    val shortBreakTime = screenModel.shortBreakTime.collectAsState().value ?: 5
-    val longBreakTime = screenModel.longBreakTime.collectAsState().value ?: 15
-    val timeFormat = screenModel.timeFormat.collectAsState().value ?: 24
     val selectedColorCardTitle = screenModel.selectedColorCardTitle.collectAsState().value
     val currentShortBreakColor = screenModel.shortBreakColor.collectAsState().value
     val currentLongBreakColor = screenModel.longBreakColor.collectAsState().value
@@ -120,44 +101,6 @@ fun SettingsScreen(
         optionsOpened = screenModel.optionsOpened,
         openOptions = { option ->
             screenModel.openOptions(option)
-        },
-        focusSessionMinutes = sessionTime,
-        onFocusSessionMinutesChange = { time ->
-            if (time.isEmpty()) {
-                screenModel.setSessionTime(0)
-                return@SettingsScreenContent
-            }
-            if (time.isDigitsOnly().not()) {
-                return@SettingsScreenContent
-            }
-            screenModel.setSessionTime(time.toInt())
-        },
-        shortBreakMinutes = shortBreakTime,
-        onShortBreakMinutesChange = { time ->
-            if (time.isEmpty()) {
-                screenModel.setShortBreakTime(0)
-                return@SettingsScreenContent
-            }
-            if (time.isDigitsOnly().not()) {
-                return@SettingsScreenContent
-            }
-            screenModel.setShortBreakTime(time.toInt())
-        },
-        longBreakMinutes = longBreakTime,
-        onLongBreakMinutesChange = { time ->
-            if (time.isEmpty()) {
-                screenModel.setLongBreakTime(0)
-                return@SettingsScreenContent
-            }
-            if (time.isDigitsOnly().not()) {
-                return@SettingsScreenContent
-            }
-            screenModel.setLongBreakTime(time.toInt())
-        },
-        hourFormats = screenModel.hourFormats,
-        selectedHourFormat = timeFormat,
-        onHourFormatChange = {
-            screenModel.setHourFormat(it)
         },
         showColorDialog = showColorDialog,
         selectedColorCardTitle = selectedColorCardTitle,
@@ -215,15 +158,6 @@ fun SettingsScreen(
 fun SettingsScreenContent(
     optionsOpened: List<String>,
     openOptions: (String) -> Unit,
-    focusSessionMinutes: Int,
-    onFocusSessionMinutesChange: (String) -> Unit,
-    shortBreakMinutes: Int,
-    onShortBreakMinutesChange: (String) -> Unit,
-    longBreakMinutes: Int,
-    onLongBreakMinutesChange: (String) -> Unit,
-    hourFormats: List<String>,
-    selectedHourFormat: Int,
-    onHourFormatChange: (Int) -> Unit,
     showColorDialog: Boolean,
     selectedColorCardTitle: String,
     onColorCardTitleChange: (String) -> Unit,
@@ -253,45 +187,6 @@ fun SettingsScreenContent(
             contentPadding = PaddingValues(16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp),
         ) {
-            item {
-                FocusSessionsSetting(
-                    focusSessionMinutes = focusSessionMinutes,
-                    onFocusSessionMinutesChange = onFocusSessionMinutesChange,
-                    shortBreakMinutes = shortBreakMinutes,
-                    onShortBreakMinutesChange = onShortBreakMinutesChange,
-                    longBreakMinutes = longBreakMinutes,
-                    onLongBreakMinutesChange = onLongBreakMinutesChange,
-                    expanded = { title ->
-                        optionsOpened.contains(title)
-                    },
-                    onExpand = { title ->
-                        openOptions(title)
-                    },
-                )
-            }
-            item {
-                TimeSetting(
-                    expanded = { title ->
-                        optionsOpened.contains(title)
-                    },
-                    onExpand = { title ->
-                        openOptions(title)
-                    },
-                    hourFormats = hourFormats,
-                    selectedHourFormat = selectedHourFormat,
-                    onHourFormatChange = onHourFormatChange,
-                )
-            }
-            /*item {
-                SoundSetting(
-                    expanded = { title ->
-                        optionsOpened.contains(title)
-                    },
-                    onExpand = { title ->
-                        openOptions(title)
-                    }
-                )
-            }*/
             item {
                 ThemeSetting(
                     expanded = { title ->

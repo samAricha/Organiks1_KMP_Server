@@ -28,7 +28,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.core.content.ContextCompat
-import com.teka.organiks.FocusBloomApp
+import com.teka.organiks.OrganiksApp
 
 class MainActivity : ComponentActivity() {
 
@@ -66,7 +66,7 @@ class MainActivity : ComponentActivity() {
                 "Organiks",
                 "Organiks is running in the background",
             )*/
-            FocusBloomApp()
+            OrganiksApp()
         }
     }
 }

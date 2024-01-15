@@ -37,9 +37,11 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import com.teka.organiks.main.MainScreen
+import com.teka.organiks.platform.MyAppImages
 import kotlinx.coroutines.launch
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
+import org.koin.compose.rememberKoinInject
 import org.koin.core.component.KoinComponent
 
 class OnboardingScreen : Screen, KoinComponent {
@@ -48,6 +50,8 @@ class OnboardingScreen : Screen, KoinComponent {
     @OptIn(ExperimentalFoundationApi::class)
     @Composable
     override fun Content() {
+        val onboadingViewModel = rememberKoinInject<OnboadingViewModel>()
+        onboadingViewModel.setUsername("OrganiksUser")
         val navigator = LocalNavigator.currentOrThrow
         val coroutineScope = rememberCoroutineScope()
         val pageCount = 3
@@ -59,6 +63,7 @@ class OnboardingScreen : Screen, KoinComponent {
             onClickNext = {
                 coroutineScope.launch {
                     pagerState.animateScrollToPage(pagerState.currentPage + 1)
+                    onboadingViewModel.saveUsername()
                 }
             },
             onClickGetStarted = {
@@ -149,37 +154,33 @@ private fun ColumnScope.PageIndicators(pageCount: Int, currentPage: Int) {
 
 @Composable
 private fun OnboardingFirstPage() {
-//    CustomPageContent(
-//        title = "Organize Tasks and Boost Productivity",
-//        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
-//        painterResource = ,
-//    )
-    PageContent(
-        title = "Organize Tasks and Boost Productivity",
-        description = "Welcome to FocusBloom, your task management and productivity companion. Effortlessly organize your tasks and supercharge your productivity journey.",
-        illustration = "il_tasks.xml",
+    MyAppImages().getCealChroniclerLogo()
+    CustomPageContent(
+        title = "Exhausted with Inconsistent Cash Flow?",
+        description = "Say goodbye to the chaos of tracking your agricultural products.",
+        painterResource = MyAppImages().getAmazedLogo(),
     )
 }
 
 @Composable
 private fun OnboardingSecondPage() {
-    PageContent(
-        title = "Tailor Your Work Sessions",
-        description = "With FocusBloom, you have the power to customize your work and break durations to match your preferences and maximize efficiency.",
-        illustration = "il_work_time.xml",
+    CustomPageContent(
+        title = "Let us hold your hand to success!!",
+        description = "Organiks is here to drastically simplify and improve your life on the farm.",
+        painterResource = MyAppImages().getPerfect100Logo(),
     )
 }
 
 @Composable
 private fun OnboardingThirdPage() {
-    PageContent(
-        title = "Visualize Your Progress",
-        description = "Experience the power of progress tracking with FocusBloom. Gain insights into your productivity journey and visualize task completion trends.",
-        illustration = "il_statistics.xml",
+    CustomPageContent(
+        title = "Let's Go !!",
+        description = "Get ready to harness the power of data in your agricultural operations.",
+        painterResource = MyAppImages().getLetsgo100Logo(),
     )
 }
 
-@OptIn(ExperimentalResourceApi::class)
+
 @Composable
 private fun CustomPageContent(title: String, description: String, painterResource: Painter) {
     Column(

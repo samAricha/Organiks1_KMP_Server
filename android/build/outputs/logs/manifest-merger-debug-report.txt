@@ -128,13 +128,13 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/t
 	android:label
 		ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:10:9-43
 	android:icon
-		ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:11:9-43
+		ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:11:9-40
 	android:allowBackup
 		ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:8:9-36
 	android:theme
 		ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:7:9-58
+		ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:7:9-61
 activity#com.teka.organiks.android.MainActivity
 ADDED from /home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:13:9-20:20
 	android:exported
@@ -363,7 +363,7 @@ ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a
 		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-permission#com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#com.teka.organiks.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
@@ -373,7 +373,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-uses-permission#com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#com.teka.organiks.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:26:22-94

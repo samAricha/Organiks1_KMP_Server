@@ -4,6 +4,7 @@ color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color ic_launcher_background
+drawable egg100
 drawable ic_launcher_foreground
 drawable il_statistics
 mipmap ic_launcher

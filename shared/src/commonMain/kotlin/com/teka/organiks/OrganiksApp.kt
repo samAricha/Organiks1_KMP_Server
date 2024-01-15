@@ -19,7 +19,7 @@ import org.koin.compose.KoinContext
 import org.koin.compose.koinInject
 
 @Composable
-fun FocusBloomApp(
+fun OrganiksApp(
     mainViewModel: MainViewModel = koinInject(),
 ) {
     val darkTheme = when (mainViewModel.appTheme.collectAsState().value) {

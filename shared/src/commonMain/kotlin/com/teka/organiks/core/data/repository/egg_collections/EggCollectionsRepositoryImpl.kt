@@ -13,9 +13,9 @@ import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
 
 class EggCollectionsRepositoryImpl(
-    bloomDatabase: OrganiksDatabase,
+    organiksDatabase: OrganiksDatabase,
 ) : EggCollectionsRepository {
-    private val dbQuery = bloomDatabase.egg_collectionQueries
+    private val dbQuery = organiksDatabase.egg_collectionQueries
 
     override fun getEggCollections(): Flow<List<EggCollectionModel>> {
         return dbQuery
