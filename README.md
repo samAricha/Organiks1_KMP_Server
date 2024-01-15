@@ -31,7 +31,9 @@ in this folder structure(change folder structure to Project from Android) Shared
 user-name and password after which you replace them in Data.kt plugin file in the following structure
 Server>Src>main>kotlin>com>teka>organiks>plugins>Data.kt
 
-2. In order to access you running backend server remotely in your Android or Desktop you can use [Ngrok](https://ngrok.com/) using the following instructions [Ngrok Setup](https://ngrok.com/docs/getting-started/?os=macos)
+2. In your Mysql Server you will require a database named organiks
+
+3. In order to access you running backend server remotely in your Android or Desktop you can use [Ngrok](https://ngrok.com/) using the following instructions [Ngrok Setup](https://ngrok.com/docs/getting-started/?os=macos)
   - After setting up your Ngrok and getting your URL, you will have to replace the test_url under HttpClientProvider in the following structure
     Shared>Src>commonMain>kotlin>com>teka>organiks>core>data>remote>HttpClientProvider
 
@@ -85,7 +87,7 @@ Run the desktop application: `./gradlew :desktop:run`
 To run the KTOR Server:
 - open project and access the Application.kt file under Server Folder 
 - run the main method in the Application.kt file
-N:B ==> In order to run Ktor Server you will require MySQL installed on your machine and have a DB named organiks
+- N:B ==> In order to run Ktor Server you will require MySQL installed on your machine and have a DB named organiks
 
 
   
