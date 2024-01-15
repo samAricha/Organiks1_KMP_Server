@@ -16,7 +16,7 @@ application {
 val ktor_version = "2.3.7"
 
 dependencies {
-//    implementation(projects.shared)
+    implementation(project(":shared"))
     implementation(libs.logback)
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.netty)

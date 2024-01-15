@@ -39,12 +39,6 @@ Server>Src>main>kotlin>com>teka>organiks>plugins>Data.kt
     Shared>Src>commonMain>kotlin>com>teka>organiks>core>data>remote>HttpClientProvider
 
 
-
-## Platforms
-![](https://img.shields.io/badge/Android-black.svg?style=for-the-badge&logo=android) | ![](https://img.shields.io/badge/iOS-black.svg?style=for-the-badge&logo=apple) | ![](https://img.shields.io/badge/Desktop-black.svg?style=for-the-badge&logo=windows) | ![](https://img.shields.io/badge/Web-black.svg?style=for-the-badge&logo=google-chrome)
-:----: | :----: | :----: | :----:
-✅ | ✅ | ✅ | Planned
-
 ## Screenshots
 ### Android
 <img src="art/android_screen1.jpeg"  width="250"/> <img src="art/android_screen2.jpeg"  width="250"/> <img src="art/android_screen3.jpeg" width="250"/>

@@ -1,5 +1,7 @@
 package com.teka.organiks
 
+import Greeting
+import SERVER_PORT
 import io.github.cdimascio.dotenv.dotenv
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
@@ -29,12 +31,13 @@ fun Application.module() {
 }
 
 fun ApplicationEngineEnvironmentBuilder.envConfig() {
+    SERVER_PORT
     module {
         module()
     }
     connector {
         host = "127.0.0.1"
-        port = 8080
+        port = SERVER_PORT
     }
 }
 
