@@ -8,7 +8,6 @@ import cafe.adriel.voyager.core.model.ScreenModel
 import cafe.adriel.voyager.core.model.screenModelScope
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 import com.joelkanyi.focusbloom.core.domain.model.EggTypeModel
-import com.joelkanyi.focusbloom.core.domain.repository.DbRepository
 import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggCollectionsRepository
 import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggTypeRepository
 import kotlinx.coroutines.flow.collectLatest
@@ -25,10 +24,8 @@ class ProductionRecordingViewModel (
     private val _eggCollectionId = mutableStateOf(-1)
     val eggCollectionId: State<Int> get() = _eggCollectionId
 
-    private val _milkCollectionQtyEntered = mutableStateOf("")
-    val milkCollectionQtyEntered: State<String> get() = _milkCollectionQtyEntered
 
-    var state by mutableStateOf(ProductionRecordingState())
+    var screenState by mutableStateOf(ProductionRecordingState())
         private set
 
     init {
@@ -36,32 +33,32 @@ class ProductionRecordingViewModel (
     }
 
     init {
-        state = if (eggCollectionId.value != -1){
-            state.copy(isUpdatingItem = true)
+        screenState = if (eggCollectionId.value != -1){
+            screenState.copy(isUpdatingItem = true)
         }else{
-            state.copy(isUpdatingItem = false)
+            screenState.copy(isUpdatingItem = false)
         }
     }
 
     //methods for modifying state
     fun onEggTypeChange(newValue: String){
-        state = state.copy(eggTypeName = newValue)
+        screenState = screenState.copy(eggTypeName = newValue)
     }
 
 
     fun onQtyChange(newValue: String){
-        state = state.copy(eggCollectionQty = newValue)
+        screenState = screenState.copy(eggCollectionModel = screenState.eggCollectionModel.copy(qty = newValue))
     }
     fun onCrackedQtyChange(newValue: String){
-        state = state.copy(eggsCracked = newValue)
+        screenState = screenState.copy(eggCollectionModel = screenState.eggCollectionModel.copy(cracked = newValue))
     }
 
     fun onDateChange(newValue: Date){
-        state = state.copy(date = newValue)
+        screenState = screenState.copy(date = newValue)
     }
 
     fun onScreenDialogDismissed(newValue: Boolean){
-        state = state.copy(isScreenDialogDismissed = newValue)
+        screenState = screenState.copy(isScreenDialogDismissed = newValue)
     }
 
     fun onSaveEggCollection() {
@@ -69,11 +66,11 @@ class ProductionRecordingViewModel (
             eggCollectionsRepository.addEggCollection(
                 EggCollectionModel(
                     uuid = UUID.randomUUID().toString(),
-                    date = state.eggCollectionModel.date,
-                    qty = state.eggCollectionModel.qty,
-                    cracked = state.eggCollectionModel.cracked,
-                    eggTypeId = state.eggTypes.find {
-                        it.name == state.eggTypeName
+                    date = screenState.eggCollectionModel.date,
+                    qty = screenState.eggCollectionModel.qty,
+                    cracked = screenState.eggCollectionModel.cracked,
+                    eggTypeId = screenState.eggTypes.find {
+                        it.name == screenState.eggTypeName
                     }?.id ?: 0,
                     isBackedUp = false
                 )
@@ -86,12 +83,12 @@ class ProductionRecordingViewModel (
             screenModelScope.launch {
                 eggCollectionsRepository.updateEggCollection(
                     EggCollectionModel(
-                        uuid = state.eggCollectionModel.uuid,
-                        date = state.eggCollectionModel.date,
-                        qty = state.eggCollectionModel.qty,
-                        cracked = state.eggCollectionModel.cracked,
-                        eggTypeId = state.eggTypes.find {
-                            it.name == state.eggTypeName
+                        uuid = screenState.eggCollectionModel.uuid,
+                        date = screenState.eggCollectionModel.date,
+                        qty = screenState.eggCollectionModel.qty,
+                        cracked = screenState.eggCollectionModel.cracked,
+                        eggTypeId = screenState.eggTypes.find {
+                            it.name == screenState.eggTypeName
                         }?.id ?: 0,
                         isBackedUp = false
                     )
@@ -103,7 +100,7 @@ class ProductionRecordingViewModel (
             screenModelScope.launch {
                 eggTypeRepository.addEggType(
                     EggTypeModel(
-                        name = state.eggTypeName
+                        name = screenState.eggTypeName
                     )
                 )
             }
@@ -112,7 +109,7 @@ class ProductionRecordingViewModel (
         fun getEggTypes() {
             screenModelScope.launch {
                 eggTypeRepository.getEggTypes().collectLatest {
-                    state = state.copy(eggTypes = it)
+                    screenState = screenState.copy(eggTypes = it)
                 }
             }
         }

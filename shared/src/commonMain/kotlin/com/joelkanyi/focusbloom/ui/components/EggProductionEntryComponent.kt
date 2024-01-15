@@ -54,7 +54,7 @@ fun EggProductionEntryComponent(
     ) {
 
         TextField(
-            value = state.eggCollectionQty,
+            value = state.eggCollectionModel.qty,
             label = { Text(text = "Total Eggs Collected") },
             onValueChange = {onCollectionQuantityChange(it)},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
@@ -70,7 +70,7 @@ fun EggProductionEntryComponent(
         Spacer(modifier = Modifier.size(24.dp))
 
         TextField(
-            value = state.eggsCracked,
+            value = state.eggCollectionModel.cracked,
             label = { Text(text = "Cracked Eggs") },
             onValueChange = {onCrackedQuantityChange(it)},
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
@@ -170,11 +170,9 @@ fun EggProductionEntryComponent(
                             onSaveEggCollection.invoke()
                         }
                     }
-//                    navigateUp.invoke()
-//                    navController.navigate(Screen.ProductionHome.route)
                 },
-                enabled = state.eggCollectionQty.isNotEmpty()&&
-                        state.eggsCracked.isNotEmpty()&&
+                enabled = state.eggCollectionModel.qty.isNotEmpty()&&
+                        state.eggCollectionModel.cracked.isNotEmpty()&&
                         state.eggTypeName.isNotEmpty(),
                 shape = ButtonShapes.large,
             ) {
