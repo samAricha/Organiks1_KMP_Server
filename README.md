@@ -1,7 +1,17 @@
 <p align="center"><img src="art/app_logo.png" alt="MealTime" height="150px"></p>
 
-# FocusBloom
-FocusBloom is a Kotlin Multiplatform app that helps users enhance their productivity and time management skills through focused work intervals and short breaks.
+# Organiks
+Organiks Platform combines Compose Multiplatform app(Android, Desktop) + KTOR server + Gemini AI aimed at being the digitizing tool for the Agricultural Sector which has been neglected
+in terms of Technology here in Africa which.
+
+Organiks is a story of two friends passionate about Agriculture, one a Techie in love with Compose and the other
+a MicroBiologist.
+
+The Platform aims at being a Farmers Offline First tool to store their farm records even when offline and when they have access to Internet Connection(i.e Offline First) they can backup their data to
+the backend Server also within the project.
+
+In combination with Offline First Record Keeping Organiks has implemented the Gemini AI LLM which acts as a farmers assistant whether they might have doubts
+whether their birds, animals or plants have been attacked by diseases.
 
 ## 🛠️ WIP 🛠️
 > Please note that this project is still under development and some features may not work as expected.
@@ -18,9 +28,6 @@ FocusBloom is a Kotlin Multiplatform app that helps users enhance their producti
 ### Android
 <img src="art/android_screen1.jpeg"  width="250"/> <img src="art/android_screen2.jpeg"  width="250"/> <img src="art/android_screen3.jpeg" width="250"/>
 
-### iOS
-<img src="art/ios_screen1.png"  width="250"/> <img src="art/ios_screen2.png"  width="250"/> <img src="art/ios_screen3.png"  width="250"/> 
-
 ### Desktop
 <img src="art/dsk_screen1.png"/>
 <img src="art/dsk_screen2.png"/>
@@ -33,10 +40,10 @@ The app is shared between Android, iOS and Desktop. The shared code is written i
   - contains all the shared code between the platforms
 - android:
   - contains the android app
-- ios:
-  - contains the ios app 
 - desktop:
-  - contains the desktop app 
+  - contains the desktop app
+  - - server:
+  - contains the backend ktor app
 
 ## Built with
 - [Kotlin Multiplatform](https://kotlinlang.org/docs/multiplatform.html) - The Kotlin Multiplatform technology is designed to simplify the development of cross-platform projects.
@@ -50,9 +57,6 @@ The app is shared between Android, iOS and Desktop. The shared code is written i
 - [Koala plot](https://github.com/KoalaPlot/koalaplot-core) - Koala Plot is a Compose Multiplatform based charting and plotting library written in Kotlin.
 - [Compose Components Resources](https://mvnrepository.com/artifact/org.jetbrains.compose.components/components-resources) - Resources For Compose Multiplatform.
 - [Material3 Window Size Multiplatform](https://github.com/chrisbanes/material3-windowsizeclass-multiplatform) - About Material 3 Window Size Class for Compose Multiplatform.
-- [Spotless](https://github.com/diffplug/spotless) - A code formatter that helps keep the codebase clean.
-- [Github Actions](https://docs.github.com/en/actions) - A CI/CD tool that helps automate workflows.
-- [Renovate](https://docs.renovatebot.com/) - An open-source software tool designed to help automate the process of updating dependencies in software projects.
 
 ## Run project
 ### Android
@@ -62,25 +66,4 @@ To run the application on android device/emulator:
 ### Desktop
 Run the desktop application: `./gradlew :desktop:run`
 
-### iOS
-To run the application on iPhone device/simulator:
-- Open `ios/iosApp.xcworkspace` in Xcode and run standard configuration
-- Or use [Kotlin Multiplatform Mobile plugin](https://plugins.jetbrains.com/plugin/14936-kotlin-multiplatform-mobile) for Android Studio
-
-## License
-```xml
-Copyright 2023 JoelKanyi
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-```  
   
