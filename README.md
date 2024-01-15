@@ -25,6 +25,7 @@ You can get your key here [Google AI Studio](https://makersuite.google.com/app/p
 in this folder structure(change folder structure to Project from Android) Shared>Src>commonMain>kotlin>com>teka>organiks>feature>ai_assistant>GeminiApi.kt
 
 
+
 > For KTOR Server.
 #### Mysql for running 
 1. In order to save data to db from KTOR Server you will have to install MySQL on your machine and get the 
@@ -36,6 +37,8 @@ Server>Src>main>kotlin>com>teka>organiks>plugins>Data.kt
 3. In order to access you running backend server remotely in your Android or Desktop you can use [Ngrok](https://ngrok.com/) using the following instructions [Ngrok Setup](https://ngrok.com/docs/getting-started/?os=macos)
   - After setting up your Ngrok and getting your URL, you will have to replace the test_url under HttpClientProvider in the following structure
     Shared>Src>commonMain>kotlin>com>teka>organiks>core>data>remote>HttpClientProvider
+
+
 
 ## Platforms
 ![](https://img.shields.io/badge/Android-black.svg?style=for-the-badge&logo=android) | ![](https://img.shields.io/badge/iOS-black.svg?style=for-the-badge&logo=apple) | ![](https://img.shields.io/badge/Desktop-black.svg?style=for-the-badge&logo=windows) | ![](https://img.shields.io/badge/Web-black.svg?style=for-the-badge&logo=google-chrome)
