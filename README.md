@@ -17,10 +17,13 @@ whether their birds, animals or plants have been attacked by diseases inline wit
 #### IDE
 You can either use [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [Android Studio](https://developer.android.com/studio/).
 
+
+
 > For Gemini AI Assistant.
 #### Gemini Api Key
 You can get your key here [Google AI Studio](https://makersuite.google.com/app/prompts/new_freeform) and replace it in GeminiApi.kt file
 in this folder structure(change folder structure to Project from Android) Shared>Src>commonMain>kotlin>com>teka>organiks>feature>ai_assistant>GeminiApi.kt
+
 
 > For KTOR Server.
 #### Mysql for running 
