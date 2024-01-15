@@ -26,6 +26,7 @@ import androidx.compose.material.icons.filled.CloudOff
 import androidx.compose.material.icons.outlined.CloudUpload
 import androidx.compose.ui.graphics.PathEffect
 import com.teka.organiks.core.domain.model.EggCollectionModel
+import com.teka.organiks.core.presentation.component.BloomTopAppBar
 import com.teka.organiks.core.presentation.theme.PrimaryColor
 import com.teka.organiks.core.presentation.theme.SecondaryColor
 import com.teka.organiks.core.presentation.theme.SurfaceDark
@@ -37,7 +38,7 @@ import org.jetbrains.compose.resources.painterResource
 import org.koin.compose.rememberKoinInject
 
 
-@OptIn(ExperimentalResourceApi::class)
+@OptIn(ExperimentalResourceApi::class, ExperimentalMaterial3Api::class)
 @Composable
 fun ProductionHomeScreen(){
     val productionHomeViewModel = rememberKoinInject<ProductionHomeViewModel>()
@@ -69,6 +70,13 @@ fun ProductionHomeScreen(){
 
 
     Scaffold(
+        topBar = {
+            BloomTopAppBar(
+                hasBackNavigation = false,
+            ) {
+                Text(text = "Records")
+            }
+        },
         snackbarHost = {
             Box(
                 modifier = Modifier.fillMaxSize(),

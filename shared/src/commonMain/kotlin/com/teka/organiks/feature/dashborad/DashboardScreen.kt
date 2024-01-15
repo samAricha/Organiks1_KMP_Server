@@ -4,10 +4,12 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.Card
 import androidx.compose.material.Icon
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Egg
 import androidx.compose.material.icons.outlined.SyncProblem
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -18,10 +20,12 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import com.teka.organiks.core.presentation.component.BloomTopAppBar
 import com.teka.organiks.core.presentation.theme.PrimaryLightColor
 import org.koin.compose.rememberKoinInject
 
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DashboardScreen() {
     val viewModel = rememberKoinInject<DashboardViewModel>()
@@ -30,34 +34,41 @@ fun DashboardScreen() {
     val totalEggsCollected =  eggs.size
     val totalNotBackedUpCount by viewModel.totalNotBackedUpCount.collectAsState()
 
-
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp)
+    Scaffold(
+        topBar = {
+            BloomTopAppBar(
+                hasBackNavigation = false,
+            ) {
+                androidx.compose.material3.Text(text = "DashBoard")
+            }
+        },
     ) {
-        Text(
-            text = "Dashboard",
-            modifier = Modifier.padding(bottom = 8.dp),
-            style = MaterialTheme.typography.h6
-        )
         Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
         ) {
-            DashboardCard(
-                title = "Egg Collections",
-                value = "$totalEggsCollected Collections",
-                iconVector = Icons.Outlined.Egg,
-                color = PrimaryLightColor
-            )
+            Column(
+            ) {
+                DashboardCard(
+                    title = "Egg Collections",
+                    value = "$totalEggsCollected Collections",
+                    iconVector = Icons.Outlined.Egg,
+                    color = PrimaryLightColor
+                )
 
-            DashboardCard(
-                title = "Not Backed up",
-                value = "$totalNotBackedUpCount Records",
-                iconVector = Icons.Outlined.SyncProblem,
-                color = Color(0xFFE57373)
-            )
+                DashboardCard(
+                    title = "Not Backed up",
+                    value = "$totalNotBackedUpCount Records",
+                    iconVector = Icons.Outlined.SyncProblem,
+                    color = Color(0xFFE57373)
+                )
+            }
         }
+
     }
+
+
 }
 
 @Composable
