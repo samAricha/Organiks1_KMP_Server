@@ -68,7 +68,7 @@ class ProductionRecordingViewModel (
         screenModelScope.launch {
             eggCollectionsRepository.addEggCollection(
                 EggCollectionModel(
-                    uuid = state.eggCollectionModel.uuid,
+                    uuid = UUID.randomUUID().toString(),
                     date = state.eggCollectionModel.date,
                     qty = state.eggCollectionModel.qty,
                     cracked = state.eggCollectionModel.cracked,

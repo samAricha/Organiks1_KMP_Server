@@ -8,7 +8,11 @@ import com.joelkanyi.focusbloom.core.data.utils.mapToOneOrNull
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 import com.joelkanyi.focusbloom.core.domain.repository.egg_collections.EggCollectionsRepository
 import com.joelkanyi.focusbloom.database.BloomDatabase
+import database.EggCollectionEntity
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.map
 
 class EggCollectionsRepositoryImpl(
@@ -38,6 +42,16 @@ class EggCollectionsRepositoryImpl(
             }
     }
 
+    override fun getEggCollectionByUuid(uuid: String): Flow<EggCollectionModel?> {
+        return dbQuery
+            .getEggCollectionByUUId(uuid)
+            .asFlow()
+            .mapToOneOrNull()
+            .map { eggCollectionEntity ->
+                eggCollectionEntity?.toEggCollectionModel()
+            }
+    }
+
     override suspend fun addEggCollection(eggCollection: EggCollectionModel) {
         eggCollection.toEggCollectionEntity().let {
             dbQuery.insertEggCollection(
@@ -52,8 +66,28 @@ class EggCollectionsRepositoryImpl(
         }
     }
 
-    override suspend fun updateEggCollection(eggCollection: EggCollectionModel) {
+    override suspend fun updateEggCollectionByUUId(eggCollection: EggCollectionModel) {
+//        val existingEntity: EggCollectionModel? = getEggCollectionByUuid(eggCollection.uuid).firstOrNull()
+//        println("ExistingEntity $existingEntity")
+
         eggCollection.toEggCollectionEntity().let {
+            dbQuery.updateEggCollectionByUUId(
+                uuid = it.uuid,
+                qty = it.qty,
+                cracked = it.cracked,
+                eggTypeId = it.eggTypeId,
+                date = it.date,
+                isBackedUp = 1,
+                createdAt = it.createdAt
+            )
+        }
+    }
+
+    override suspend fun updateEggCollection(eggCollection: EggCollectionModel) {
+        val existingEntity: EggCollectionModel? = getEggCollectionByUuid(eggCollection.uuid).firstOrNull()
+        println("ExistingEntity $existingEntity")
+
+        existingEntity?.toEggCollectionEntity()?.let {
             dbQuery.updateEggCollection(
                 egg_collection_id = it.egg_collection_id,
                 uuid = it.uuid,
@@ -61,7 +95,7 @@ class EggCollectionsRepositoryImpl(
                 cracked = it.cracked,
                 eggTypeId = it.eggTypeId,
                 date = it.date,
-                isBackedUp = it.isBackedUp,
+                isBackedUp = 1,
                 createdAt = it.createdAt
             )
         }
@@ -74,4 +108,5 @@ class EggCollectionsRepositoryImpl(
     override suspend fun deleteAllEggCollections() {
         dbQuery.deleteAllEggCollections()
     }
+
 }

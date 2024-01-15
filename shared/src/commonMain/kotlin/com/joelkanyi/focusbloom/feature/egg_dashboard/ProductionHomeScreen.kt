@@ -33,6 +33,8 @@ import androidx.compose.ui.graphics.PathEffect
 import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
 import com.joelkanyi.focusbloom.core.presentation.component.BloomTab
 import com.joelkanyi.focusbloom.core.presentation.theme.PrimaryColor
+import com.joelkanyi.focusbloom.core.presentation.theme.SecondaryColor
+import com.joelkanyi.focusbloom.core.presentation.theme.SurfaceDark
 import com.joelkanyi.focusbloom.core.utils.UiEvents
 import com.joelkanyi.focusbloom.core.utils.calculateFromFocusSessions
 import com.joelkanyi.focusbloom.core.utils.dateTimeToString
@@ -49,28 +51,10 @@ import org.koin.compose.rememberKoinInject
 fun ProductionHomeScreen(){
     val productionHomeViewModel = rememberKoinInject<ProductionHomeViewModel>()
 
-
-
     val snackbarHostState = remember { SnackbarHostState() }
 
 
-//    val productionHomeViewModel : ProductionHomeViewModel = hiltViewModel()
-    val eggCollections by productionHomeViewModel.eggCollections.collectAsState()
-
-
     val isSyncing by productionHomeViewModel.isSyncing.collectAsState()
-    val fabClicked = remember { mutableStateOf(false) }
-
-    val scaffoldState = rememberScaffoldState()
-
-    val snackbarData by productionHomeViewModel.snackbarData.collectAsState()
-
-//    if (snackbarData != null) {
-//        LaunchedEffect(snackbarData) {
-//            scaffoldState.snackbarHostState.showSnackbar(snackbarData!!.message)
-//            productionHomeViewModel.clearSnackbar()
-//        }
-//    }
 
 
 
@@ -90,12 +74,6 @@ fun ProductionHomeScreen(){
             }
         }
     }
-
-
-
-
-
-
 
 
 
@@ -151,7 +129,6 @@ fun ProductionHomeScreen(){
                 containerColor = MaterialTheme.colorScheme.primary,
                 onClick = {
                     productionHomeViewModel.syncRoomDbToRemote()
-//                                tabNavigator.current = BloomTab.AddTaskTab()
                 },
                 elevation = FloatingActionButtonDefaults.elevation(
                     defaultElevation = 0.dp,
@@ -165,20 +142,7 @@ fun ProductionHomeScreen(){
                     modifier = Modifier.size(24.dp),
                 )
             }
-        },
-
-
-//        snackbarHost = {
-//            SnackbarHost(
-//                hostState = snackbarHostState,
-//                modifier = Modifier.padding(16.dp)
-//            ) { snackbarData ->
-//                Snackbar(
-//                    modifier = Modifier.padding(8.dp),
-//                    snackbarData = snackbarData
-//                )
-//            }
-//        }
+        }
     ) {
 
 
@@ -188,7 +152,6 @@ fun ProductionHomeScreen(){
         ){
             LazyColumn {
                 items(eggCollectionsState) { collection ->
-
 
                     EggCollectionItem(
                         eggCollection = collection as EggCollectionModel,
@@ -248,9 +211,10 @@ fun EggCollectionItem(
             }
 
             Column(modifier = Modifier.padding(0.dp)) {
-                Image(
+                Icon(
                     imageVector = icon,
-                    contentDescription = if (eggCollection.isBackedUp) "Backed Up" else "Not Backed Up"
+                    contentDescription = if (eggCollection.isBackedUp) "Backed Up" else "Not Backed Up",
+                    tint = if (eggCollection.isBackedUp) SecondaryColor else SurfaceDark,
                 )
             }
 
@@ -266,10 +230,7 @@ fun EggCollectionItem(
             Box(modifier = Modifier
                 .padding(8.dp)
                 .fillMaxSize()) {
-                // Date Text
-//                val formattedDate = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
-//                    .format(eggCollection.date)
-                val formattedDate = eggCollection.date.dateTimeToString()
+                val formattedDate = eggCollection.date.date.toString()
                 Text(text = formattedDate,
                     modifier = Modifier.align(Alignment.BottomEnd)
                 )
