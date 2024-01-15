@@ -93,9 +93,6 @@ class MainScreen : Screen {
                             backgroundColor = MaterialTheme.colorScheme.background,
                         ) {
                             TabNavigationItem(BloomTab.MainDashboardTab)
-//                            TabNavigationItem(BloomTab.HomeTab)
-//                            TabNavigationItem(BloomTab.CalendarTab)
-//                            TabNavigationItem(BloomTab.StatisticsTab)
                             TabNavigationItem(BloomTab.ProductionHomeTab)
                             TabNavigationItem(BloomTab.ProductionRecordingTab())
                             TabNavigationItem(BloomTab.AiAssistantTab)

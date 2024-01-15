@@ -16,7 +16,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import cafe.adriel.voyager.navigator.tab.LocalTabNavigator
+import com.joelkanyi.focusbloom.core.presentation.component.BloomTab
 import com.joelkanyi.focusbloom.core.presentation.theme.ButtonShapes
+import com.joelkanyi.focusbloom.core.presentation.theme.SecondaryColor
 import com.joelkanyi.focusbloom.core.presentation.theme.Shapes
 import com.joelkanyi.focusbloom.feature.egg_collection.ProductionRecordingState
 import database.EggTypeEntity
@@ -34,6 +37,8 @@ fun EggProductionEntryComponent(
     onSaveEggCollection: () -> Unit,
 //    updateEggCollectionQty:() -> Unit,
 ){
+    val tabNavigator = LocalTabNavigator.current
+
 
     val eggTypeItems = listOf(
         EggTypeEntity(1, "Kienyeji"),
@@ -168,6 +173,7 @@ fun EggProductionEntryComponent(
                         }
                         false -> {
                             onSaveEggCollection.invoke()
+                            tabNavigator.current = BloomTab.ProductionHomeTab
                         }
                     }
                 },
@@ -175,9 +181,12 @@ fun EggProductionEntryComponent(
                         state.eggCollectionModel.cracked.isNotEmpty()&&
                         state.eggTypeName.isNotEmpty(),
                 shape = ButtonShapes.large,
+                colors = ButtonDefaults.buttonColors(
+                    backgroundColor = SecondaryColor,
+                    contentColor = Color.White
+                ),
             ) {
                 Text(text = buttonTitle)
-
             }
         }
     }

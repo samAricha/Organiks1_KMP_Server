@@ -27,20 +27,10 @@ import org.koin.compose.rememberKoinInject
 fun DashboardScreen() {
     val viewModel = rememberKoinInject<DashboardViewModel>()
 
-
-
     val eggs by viewModel.eggCollections.collectAsState()
-//    val totalEggsCollected = eggs.sumOf { it.qty.toInt() }
     val totalEggsCollected =  eggs.size
-
-
     val totalNotBackedUpCount by viewModel.totalNotBackedUpCount.collectAsState()
 
-
-
-//    LaunchedEffect(viewModel) {
-//        viewModel.viewModelInitialization()
-//    }
 
     Column(
         modifier = Modifier
@@ -56,7 +46,7 @@ fun DashboardScreen() {
         ) {
             DashboardCard(
                 title = "Egg Collections",
-                value = "$totalEggsCollected Eggs",
+                value = "$totalEggsCollected Rounds",
                 iconVector = Icons.Outlined.Egg,
                 color = PrimaryLightColor
             )
@@ -78,10 +68,6 @@ fun DashboardCard(
     iconVector: ImageVector, // Resource ID for the icon drawable
     color: Color
 ) {
-    // Load the drawable resource and convert it to a Painter
-//    val iconPainter = painterResource(id = iconResId)
-    val iconVector:ImageVector = iconVector
-
     Card(
         modifier = Modifier
             .fillMaxWidth()

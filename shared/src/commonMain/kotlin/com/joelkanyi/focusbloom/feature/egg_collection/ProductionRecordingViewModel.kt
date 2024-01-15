@@ -75,6 +75,7 @@ class ProductionRecordingViewModel (
                     isBackedUp = false
                 )
             )
+            screenState = ProductionRecordingState()
         }
     }
 
