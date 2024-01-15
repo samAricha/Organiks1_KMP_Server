@@ -1,5 +1,6 @@
 R_DEF: Internal format may change without notice
 local
+drawable laughing7
 drawable logo
 font montserrat_black
 font montserrat_bold

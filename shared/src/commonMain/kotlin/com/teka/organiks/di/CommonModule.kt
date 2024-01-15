@@ -1,5 +1,6 @@
 package com.teka.organiks.di
 
+import androidx.compose.ui.graphics.painter.Painter
 import com.teka.organiks.core.data.adapter.colorAdapter
 import com.teka.organiks.core.data.adapter.consumedFocusTimeAdapter
 import com.teka.organiks.core.data.adapter.consumedLongBreakTimeAdapter
@@ -37,6 +38,8 @@ fun commonModule() = module {
             driver = get<DatabaseDriverFactory>().createDriver(),
             )
     }
+
+
     /**
      * Multiplatform-Settings
      */

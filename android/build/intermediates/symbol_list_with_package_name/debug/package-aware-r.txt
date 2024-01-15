@@ -652,6 +652,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_launcher_foreground
 drawable il_statistics
+drawable laughing7
 drawable logo
 drawable notification_action_background
 drawable notification_bg

@@ -1,4 +1,5 @@
 com.teka.organiks.shared
+drawable laughing7
 drawable logo
 font montserrat_black
 font montserrat_bold
