@@ -18,7 +18,7 @@
     <uses-permission android:name="com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.joelkanyi.focusbloom.android.BloomApp"
+        android:name="com.teka.organiks.android.BloomApp"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -29,7 +29,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.joelkanyi.focusbloom.android.MainActivity"
+            android:name="com.teka.organiks.android.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

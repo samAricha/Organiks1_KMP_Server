@@ -134,13 +134,13 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /home/teka/.gradle/caches/t
 	android:theme
 		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:12:9-40
 	android:name
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:7:9-65
-activity#com.joelkanyi.focusbloom.android.MainActivity
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:7:9-58
+activity#com.teka.organiks.android.MainActivity
 ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:13:9-20:20
 	android:exported
 		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:15:13-36
 	android:name
-		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:14:13-73
+		ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:14:13-66
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:16:13-19:29
 action#android.intent.action.MAIN

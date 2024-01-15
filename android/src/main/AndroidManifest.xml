@@ -4,14 +4,14 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name="com.joelkanyi.focusbloom.android.BloomApp"
+        android:name="com.teka.organiks.android.BloomApp"
         android:allowBackup="false"
         android:supportsRtl="true"
         android:label="@string/focusbloom"
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.joelkanyi.focusbloom.android.MainActivity"
+            android:name="com.teka.organiks.android.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

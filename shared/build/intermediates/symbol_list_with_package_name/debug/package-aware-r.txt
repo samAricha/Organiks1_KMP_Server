@@ -1,4 +1,4 @@
-com.joelkanyi.focusbloom.shared
+com.teka.organiks.shared
 drawable logo
 font montserrat_black
 font montserrat_bold
