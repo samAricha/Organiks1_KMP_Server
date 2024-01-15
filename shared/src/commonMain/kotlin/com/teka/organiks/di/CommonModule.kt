@@ -1,14 +1,5 @@
 package com.teka.organiks.di
 
-import androidx.compose.ui.graphics.painter.Painter
-import com.teka.organiks.core.data.adapter.colorAdapter
-import com.teka.organiks.core.data.adapter.consumedFocusTimeAdapter
-import com.teka.organiks.core.data.adapter.consumedLongBreakTimeAdapter
-import com.teka.organiks.core.data.adapter.consumedShortBreakTimeAdapter
-import com.teka.organiks.core.data.adapter.currentAdapter
-import com.teka.organiks.core.data.adapter.currentCycleAdapter
-import com.teka.organiks.core.data.adapter.focusSessionsAdapter
-import com.teka.organiks.core.data.adapter.idAdapter
 import com.teka.organiks.core.data.local.setting.PreferenceManager
 import com.teka.organiks.core.data.repository.egg_collections.EggCollectionsRepositoryImpl
 import com.teka.organiks.core.data.repository.egg_collections.EggTypeRepositoryImpl
@@ -16,7 +7,6 @@ import com.teka.organiks.core.data.repository.settings.SettingsRepositoryImpl
 import com.teka.organiks.core.domain.repository.egg_collections.EggCollectionsRepository
 import com.teka.organiks.core.domain.repository.egg_collections.EggTypeRepository
 import com.teka.organiks.core.domain.repository.settings.SettingsRepository
-import com.teka.organiks.core.domain.repository.tasks.TasksRepository
 import com.teka.organiks.database.OrganiksDatabase
 import com.teka.organiks.feature.dashborad.DashboardViewModel
 import com.teka.organiks.feature.egg_collection.ProductionRecordingViewModel
@@ -25,7 +15,6 @@ import com.teka.organiks.feature.onboarding.OnboadingViewModel
 import com.teka.organiks.feature.settings.SettingsScreenModel
 import com.teka.organiks.main.MainViewModel
 import com.teka.organiks.platform.DatabaseDriverFactory
-import com.teka.organiks.platform.GetAppImages
 import org.koin.core.module.Module
 import org.koin.dsl.module
 
@@ -60,13 +49,13 @@ fun commonModule() = module {
 
     single<EggCollectionsRepository> {
         EggCollectionsRepositoryImpl(
-            bloomDatabase = get(),
+            organiksDatabase = get(),
         )
     }
 
     single<EggTypeRepository> {
         EggTypeRepositoryImpl(
-            bloomDatabase = get(),
+            organiksDatabase = get(),
         )
     }
 

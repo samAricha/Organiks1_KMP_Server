@@ -1,78 +1,82 @@
 [
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-hdpi/ic_launcher_foreground.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-mdpi/ic_launcher_foreground.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-hdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/drawable_il_statistics.xml.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/drawable/il_statistics.xml"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/drawable/ic_launcher_foreground.xml"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/drawable_il_statistics.xml.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/drawable/il_statistics.xml"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xhdpi/ic_launcher_foreground.webp"
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.joelkanyi.focusbloom.android-merged_res-53:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.joelkanyi.focusbloom.android-main-55:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.teka.organiks.android-merged_res-53:/drawable_egg100.png.flat",
+        "source": "com.teka.organiks.android-main-55:/drawable/egg100.png"
+    },
+    {
+        "merged": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-merged_res-53:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/teka/.gradle/daemon/8.5/com.teka.organiks.android-main-55:/mipmap-xxhdpi/ic_launcher_round.webp"
     }
 ]

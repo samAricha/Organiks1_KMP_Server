@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.joelkanyi.focusbloom.android"
+    package="com.teka.organiks.android"
     android:versionCode="4"
     android:versionName="1.0.3" >
 
@@ -12,18 +12,18 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <permission
-        android:name="com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.teka.organiks.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.joelkanyi.focusbloom.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.teka.organiks.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="com.teka.organiks.android.BloomApp"
+        android:name="com.teka.organiks.android.OrganiksApp"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/egg100"
         android:label="@string/focusbloom"
         android:supportsRtl="true"
         android:testOnly="true"
@@ -40,7 +40,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.joelkanyi.focusbloom.android.androidx-startup"
+            android:authorities="com.teka.organiks.android.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

@@ -7,7 +7,7 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.WindowPosition
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
-import com.teka.organiks.FocusBloomApp
+import com.teka.organiks.OrganiksApp
 import com.teka.organiks.di.KoinInit
 import org.koin.core.Koin
 
@@ -30,7 +30,7 @@ fun main() {
             ),
         ) {
             Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                FocusBloomApp()
+                OrganiksApp()
             }
         }
     }

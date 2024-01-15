@@ -12,9 +12,9 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class EggTypeRepositoryImpl(
-    private val bloomDatabase: OrganiksDatabase
+    private val organiksDatabase: OrganiksDatabase
 ) : EggTypeRepository {
-    private val dbQuery = bloomDatabase.egg_typeQueries
+    private val dbQuery = organiksDatabase.egg_typeQueries
 
     override fun getEggTypes(): Flow<List<EggTypeModel>> {
         return dbQuery
