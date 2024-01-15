@@ -18,7 +18,7 @@ import kotlinx.serialization.json.Json
 
 class GeminiApi {
     private val baseUrl = "https://generativelanguage.googleapis.com/v1/models"
-    private val apiKey = "AIzaSyDlDRTdtwk8L-9zLSaWtLF81W3TA-cdPq4"
+    private val apiKey = ""
 
     @OptIn(ExperimentalSerializationApi::class)
     private val client: HttpClient = HttpClient {

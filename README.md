@@ -13,16 +13,29 @@ the backend Server also within the project.
 In combination with Offline First Record Keeping, Organiks has implemented the Gemini AI LLM which acts as a farmers assistant whether they might have doubts
 whether their birds, animals or plants have been attacked by diseases inline with Googles promise of "a world responsibly empowered by AI".
 
-## 🛠️ WIP 🛠️
-> Please note that this project is still under development and some features may not work as expected.
+## 🛠️ Prerequisites 🛠️
+#### IDE
+You can either use [IntelliJ IDEA](https://www.jetbrains.com/idea/) or [Android Studio](https://developer.android.com/studio/).
 
-> If you find any bugs or have any suggestions, feel free to open an issue or a pull request.
+> For Gemini AI Assistant.
+#### Gemini Api Key
+You can get your key here [Google AI Studio](https://makersuite.google.com/app/prompts/new_freeform) and replace it in GeminiApi.kt file
+in this folder structure(change folder structure to Project from Android) Shared>Src>commonMain>kotlin>com>teka>organiks>feature>ai_assistant>GeminiApi.kt
+
+> For KTOR Server.
+#### Mysql for running 
+1. In order to save data to db from KTOR Server you will have to install MySQL on your machine and get the 
+user-name and password after which you replace them in Data.kt plugin file in the following structure
+Server>Src>main>kotlin>com>teka>organiks>plugins>Data.kt
+
+2. In order to access you running backend server remotely in your Android or Desktop you can use [Ngrok](https://ngrok.com/) using the following instructions [Ngrok Setup](https://ngrok.com/docs/getting-started/?os=macos)
+  - After setting up your Ngrok and getting your URL, you will have to replace the test_url under HttpClientProvider in the following structure
+    Shared>Src>commonMain>kotlin>com>teka>organiks>core>data>remote>HttpClientProvider
 
 ## Platforms
 ![](https://img.shields.io/badge/Android-black.svg?style=for-the-badge&logo=android) | ![](https://img.shields.io/badge/iOS-black.svg?style=for-the-badge&logo=apple) | ![](https://img.shields.io/badge/Desktop-black.svg?style=for-the-badge&logo=windows) | ![](https://img.shields.io/badge/Web-black.svg?style=for-the-badge&logo=google-chrome)
 :----: | :----: | :----: | :----:
 ✅ | ✅ | ✅ | Planned
-<a href='https://play.google.com/store/apps/details?id=com.joelkanyi.focusbloom.android'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
 
 ## Screenshots
 ### Android
@@ -64,5 +77,12 @@ To run the application on android device/emulator:
 
 ### Desktop
 Run the desktop application: `./gradlew :desktop:run`
+
+### Desktop
+To run the KTOR Server:
+- open project and access the Application.kt file under Server Folder 
+- run the main method in the Application.kt file
+N:b
+
 
   

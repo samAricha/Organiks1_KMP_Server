@@ -21,7 +21,6 @@ import kotlinx.serialization.json.Json
 
 object HttpClientProvider {
     private const val TEST_URL = "https://1661-41-81-202-217.ngrok-free.app/api"
-    private const val BASE_URL = "http://191.101.0.246:8081"
 
     //here we provide the HTTP client
      private fun provide(): HttpClient{
