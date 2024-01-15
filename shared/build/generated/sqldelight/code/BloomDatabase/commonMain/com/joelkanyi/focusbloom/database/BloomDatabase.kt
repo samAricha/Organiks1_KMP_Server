@@ -6,11 +6,17 @@ import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.db.SqlSchema
 import com.joelkanyi.focusbloom.database.shared.newInstance
 import com.joelkanyi.focusbloom.database.shared.schema
+import database.Egg_collectionQueries
+import database.Egg_typeQueries
 import database.TaskEntity
 import database.TaskQueries
 import kotlin.Unit
 
 public interface BloomDatabase : Transacter {
+  public val egg_collectionQueries: Egg_collectionQueries
+
+  public val egg_typeQueries: Egg_typeQueries
+
   public val taskQueries: TaskQueries
 
   public companion object {

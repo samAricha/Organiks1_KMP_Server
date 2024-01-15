@@ -1,22 +1,12 @@
-/*
- * Copyright 2023 Joel Kanyi.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.joelkanyi.focusbloom.core.data.mapper
 
+import com.joelkanyi.focusbloom.core.data.remote.EggCollectionDTO
+import com.joelkanyi.focusbloom.core.domain.model.EggCollectionModel
+import com.joelkanyi.focusbloom.core.domain.model.EggTypeModel
 import com.joelkanyi.focusbloom.core.domain.model.Task
 import com.joelkanyi.focusbloom.core.utils.dateTimeToString
+import database.EggCollectionEntity
+import database.EggTypeEntity
 import database.TaskEntity
 import kotlinx.datetime.toLocalDateTime
 
@@ -57,3 +47,52 @@ fun Task.toTaskEntity() = TaskEntity(
     currentCycle = currentCycle,
     active = active,
 )
+
+// Assuming date conversion functions and other necessary utilities are available
+
+fun EggCollectionEntity.toEggCollectionModel() = EggCollectionModel(
+    uuid = uuid,
+    qty = qty,
+    cracked = cracked,
+    eggTypeId = eggTypeId.toInt(), // Assuming eggTypeId is a Long in the entity
+    date = date.toLocalDateTime(), // Convert date to LocalDateTime
+    isBackedUp = isBackedUp == 1L, // Assuming isBackedUp is a Long in the entity
+    createdAt = createdAt
+)
+
+fun EggCollectionModel.toEggCollectionEntity() = EggCollectionEntity(
+    egg_collection_id = 0,
+    uuid = uuid,
+    qty = qty,
+    cracked = cracked,
+    eggTypeId = eggTypeId.toLong(), // Assuming eggTypeId is an Int in the model
+    date = date.dateTimeToString(), // Convert LocalDateTime to formatted string
+    isBackedUp = if (isBackedUp) 1L else 0L, // Convert Boolean to Long
+    createdAt = createdAt
+)
+
+fun EggCollectionModel.toEggCollectionDTO() = EggCollectionDTO(
+
+    uuid = uuid,
+    qty = qty,
+    cracked = cracked,
+    eggTypeId = eggTypeId.toLong(),
+    date = date.dateTimeToString(),
+    isBackedUp = if (isBackedUp) 1L else 0L,
+    createdAt = createdAt
+)
+
+fun EggTypeEntity.toEggTypeModel(): EggTypeModel {
+    return EggTypeModel(
+        id = egg_type_id.toInt(),
+        name = name
+    )
+}
+
+fun EggTypeModel.toEggTypeEntity(): EggTypeEntity {
+    return EggTypeEntity(
+        egg_type_id = id.toLong(),
+        name = name
+    )
+}
+

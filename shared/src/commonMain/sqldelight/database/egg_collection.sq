@@ -1,0 +1,60 @@
+
+CREATE TABLE eggCollectionEntity (
+    egg_collection_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    uuid TEXT NOT NULL,
+    qty TEXT NOT NULL,
+    cracked TEXT NOT NULL,
+    eggTypeId INTEGER NOT NULL,
+    date TEXT NOT NULL,
+    isBackedUp INTEGER NOT NULL,
+    createdAt INTEGER NOT NULL
+);
+
+getAllEggCollections:
+SELECT * FROM eggCollectionEntity ORDER BY date DESC;
+
+getEggCollectionById:
+SELECT * FROM eggCollectionEntity WHERE egg_collection_id = ?;
+
+getEggCollectionByUUId:
+SELECT * FROM eggCollectionEntity WHERE uuid = ?;
+
+insertEggCollection:
+INSERT OR REPLACE INTO eggCollectionEntity (
+    uuid,
+    qty,
+    cracked,
+    eggTypeId,
+    date,
+    isBackedUp,
+    createdAt
+) VALUES (?, ?, ?, ?, ?, ?, ?);
+
+updateEggCollection:
+UPDATE eggCollectionEntity SET
+    uuid = ?,
+    qty = ?,
+    cracked = ?,
+    eggTypeId = ?,
+    date = ?,
+    isBackedUp = ?,
+    createdAt = ?
+WHERE egg_collection_id = ?;
+
+updateEggCollectionByUUId:
+UPDATE eggCollectionEntity SET
+    qty = ?,
+    cracked = ?,
+    eggTypeId = ?,
+    date = ?,
+    isBackedUp = ?,
+    createdAt = ?
+WHERE uuid = ?;
+
+
+
+deleteEggCollectionById:
+DELETE FROM eggCollectionEntity WHERE egg_collection_id = ?;
+
+deleteAllEggCollections:
+DELETE FROM eggCollectionEntity;

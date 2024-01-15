@@ -1,26 +1,18 @@
-/*
- * Copyright 2023 Joel Kanyi.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 package com.joelkanyi.focusbloom.core.presentation.component
 
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.outlined.Home
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import cafe.adriel.voyager.navigator.tab.Tab
 import cafe.adriel.voyager.navigator.tab.TabOptions
 import com.joelkanyi.focusbloom.feature.addtask.AddTaskScreen
+import com.joelkanyi.focusbloom.feature.ai_assistant.image_selection.ImageSelectionScreen
 import com.joelkanyi.focusbloom.feature.calendar.CalendarScreen
+import com.joelkanyi.focusbloom.feature.dashborad.DashboardScreen
+import com.joelkanyi.focusbloom.feature.egg_collection.ProductionRecordingScreen
+import com.joelkanyi.focusbloom.feature.egg_dashboard.ProductionHomeScreen
 import com.joelkanyi.focusbloom.feature.home.HomeScreen
 import com.joelkanyi.focusbloom.feature.settings.SettingsScreen
 import com.joelkanyi.focusbloom.feature.statistics.StatisticsScreen
@@ -35,6 +27,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Home"
                 val icon = painterResource("home_outlined.xml")
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
 
                 return remember {
                     TabOptions(
@@ -58,6 +52,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Calendar"
                 val icon = painterResource("calendar_outlined.xml")
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
 
                 return remember {
                     TabOptions(
@@ -81,6 +77,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Statistics"
                 val icon = painterResource("statistics_outlined.xml")
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
 
                 return remember {
                     TabOptions(
@@ -104,6 +102,8 @@ internal sealed class BloomTab {
             get() {
                 val title = "Settings"
                 val icon = painterResource("settings_outlined.xml")
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
 
                 return remember {
                     TabOptions(
@@ -130,6 +130,9 @@ internal sealed class BloomTab {
                 val title = "Add Task"
                 val icon = painterResource("add_outlined.xml")
 
+                val filledIcon = Icons.Filled.Home
+                val outlinedIcon = Icons.Outlined.Home
+
                 return remember {
                     TabOptions(
                         index = 4u,
@@ -144,4 +147,105 @@ internal sealed class BloomTab {
             AddTaskScreen(taskId)
         }
     }
+
+    internal object MainDashboardTab : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "DashBoard Screen"
+                val icon = painterResource("home_outlined.xml")
+
+                return remember {
+                    TabOptions(
+                        index = 4u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            DashboardScreen()
+        }
+    }
+
+
+    internal object ProductionHomeTab : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "Records"
+                val icon = painterResource("statistics_outlined.xml")
+
+                return remember {
+                    TabOptions(
+                        index = 4u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            ProductionHomeScreen()
+        }
+    }
+
+    internal data class ProductionRecordingTab(
+        val collectionId: Int? = null,
+    ) : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "Record Collection"
+                val icon = painterResource("add_outlined.xml")
+
+
+
+                return remember {
+                    TabOptions(
+                        index = 4u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            ProductionRecordingScreen(collectionId)
+        }
+    }
+
+
+    internal object AiAssistantTab : Tab {
+        @OptIn(ExperimentalResourceApi::class)
+        override val options: TabOptions
+            @Composable
+            get() {
+                val title = "AI Assistant"
+                val icon = painterResource("work.xml")
+
+
+
+                return remember {
+                    TabOptions(
+                        index = 4u,
+                        title = title,
+                        icon = icon,
+                    )
+                }
+            }
+
+        @Composable
+        override fun Content() {
+            ImageSelectionScreen()
+        }
+    }
+
 }

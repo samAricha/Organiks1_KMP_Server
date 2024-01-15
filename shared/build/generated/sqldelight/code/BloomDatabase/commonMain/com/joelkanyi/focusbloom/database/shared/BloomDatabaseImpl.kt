@@ -6,6 +6,8 @@ import app.cash.sqldelight.db.QueryResult
 import app.cash.sqldelight.db.SqlDriver
 import app.cash.sqldelight.db.SqlSchema
 import com.joelkanyi.focusbloom.database.BloomDatabase
+import database.Egg_collectionQueries
+import database.Egg_typeQueries
 import database.TaskEntity
 import database.TaskQueries
 import kotlin.Long
@@ -23,6 +25,10 @@ private class BloomDatabaseImpl(
   driver: SqlDriver,
   taskEntityAdapter: TaskEntity.Adapter,
 ) : TransacterImpl(driver), BloomDatabase {
+  override val egg_collectionQueries: Egg_collectionQueries = Egg_collectionQueries(driver)
+
+  override val egg_typeQueries: Egg_typeQueries = Egg_typeQueries(driver)
+
   override val taskQueries: TaskQueries = TaskQueries(driver, taskEntityAdapter)
 
   public object Schema : SqlSchema<QueryResult.Value<Unit>> {
@@ -30,6 +36,24 @@ private class BloomDatabaseImpl(
       get() = 1
 
     override fun create(driver: SqlDriver): QueryResult.Value<Unit> {
+      driver.execute(null, """
+          |CREATE TABLE eggCollectionEntity (
+          |    egg_collection_id INTEGER PRIMARY KEY AUTOINCREMENT,
+          |    uuid TEXT NOT NULL,
+          |    qty TEXT NOT NULL,
+          |    cracked TEXT NOT NULL,
+          |    eggTypeId INTEGER NOT NULL,
+          |    date TEXT NOT NULL,
+          |    isBackedUp INTEGER NOT NULL,
+          |    createdAt INTEGER NOT NULL
+          |)
+          """.trimMargin(), 0)
+      driver.execute(null, """
+          |CREATE TABLE eggTypeEntity (
+          |    egg_type_id INTEGER PRIMARY KEY AUTOINCREMENT,
+          |    name TEXT NOT NULL
+          |)
+          """.trimMargin(), 0)
       driver.execute(null, """
           |CREATE TABLE taskEntity (
           |    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,

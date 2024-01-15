@@ -63,8 +63,8 @@ class MainActivity : ComponentActivity() {
 
             /*val notificationUtils = NotificationsManager(this)
             notificationUtils.showUpdateNotification(
-                "FocusBloom",
-                "FocusBloom is running in the background",
+                "Organiks",
+                "Organiks is running in the background",
             )*/
             FocusBloomApp()
         }

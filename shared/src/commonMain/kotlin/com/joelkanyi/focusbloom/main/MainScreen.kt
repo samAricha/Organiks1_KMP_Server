@@ -56,7 +56,7 @@ class MainScreen : Screen {
         val useNavRail = windowSizeClass.widthSizeClass > WindowWidthSizeClass.Compact
 
         TabNavigator(
-            BloomTab.HomeTab,
+            BloomTab.MainDashboardTab,
         ) {
             val tabNavigator = LocalTabNavigator.current
 
@@ -70,6 +70,10 @@ class MainScreen : Screen {
                             BloomTab.AddTaskTab(),
                             BloomTab.StatisticsTab,
                             BloomTab.SettingsTab,
+                            BloomTab.ProductionRecordingTab(),
+                            BloomTab.ProductionHomeTab,
+                            BloomTab.AiAssistantTab,
+                            BloomTab.MainDashboardTab
                         ),
                     )
                     CurrentScreen()
@@ -84,37 +88,17 @@ class MainScreen : Screen {
                             CurrentScreen()
                         }
                     },
-                    floatingActionButtonPosition = FabPosition.Center,
-                    floatingActionButton = {
-                        FloatingActionButton(
-                            modifier = Modifier
-                                .offset(y = 60.dp)
-                                .size(42.dp),
-                            containerColor = MaterialTheme.colorScheme.primary,
-                            onClick = {
-                                tabNavigator.current = BloomTab.AddTaskTab()
-                            },
-                            elevation = FloatingActionButtonDefaults.elevation(
-                                defaultElevation = 0.dp,
-                            ),
-                            shape = CircleShape,
-                        ) {
-                            Icon(
-                                imageVector = Icons.Filled.Add,
-                                contentDescription = "",
-                                tint = MaterialTheme.colorScheme.onPrimary,
-                                modifier = Modifier.size(24.dp),
-                            )
-                        }
-                    },
                     bottomBar = {
                         BottomNavigation(
                             backgroundColor = MaterialTheme.colorScheme.background,
                         ) {
-                            TabNavigationItem(BloomTab.HomeTab)
-                            TabNavigationItem(BloomTab.CalendarTab)
-                            TabNavigationItem(BloomTab.StatisticsTab)
-                            TabNavigationItem(BloomTab.SettingsTab)
+                            TabNavigationItem(BloomTab.MainDashboardTab)
+//                            TabNavigationItem(BloomTab.HomeTab)
+//                            TabNavigationItem(BloomTab.CalendarTab)
+//                            TabNavigationItem(BloomTab.StatisticsTab)
+                            TabNavigationItem(BloomTab.ProductionHomeTab)
+                            TabNavigationItem(BloomTab.ProductionRecordingTab())
+                            TabNavigationItem(BloomTab.AiAssistantTab)
                         }
                     },
                 )
