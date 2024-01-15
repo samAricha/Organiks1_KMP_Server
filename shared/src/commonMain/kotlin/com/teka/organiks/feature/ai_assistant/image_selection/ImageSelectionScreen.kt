@@ -24,6 +24,8 @@ import androidx.compose.material.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.ImageSearch
+import androidx.compose.material.icons.rounded.ImageSearch
 import androidx.compose.material.icons.rounded.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButtonDefaults
@@ -82,7 +84,7 @@ fun ImageSelectionScreen(){
             TopAppBar(
                 title = {
                     Text(
-                        text = "Organiks AI Assistant",
+                        text = "AI Assistant",
                         fontSize = 20.sp
                     )},
                 colors = TopAppBarDefaults.topAppBarColors(
@@ -102,7 +104,7 @@ fun ImageSelectionScreen(){
                 shape = CircleShape,
             ) {
                 Icon(
-                    imageVector = Icons.Filled.Add,
+                    imageVector = Icons.Filled.ImageSearch,
                     contentDescription = "Add Image",
                     tint = androidx.compose.material3.MaterialTheme.colorScheme.onPrimary,
                     modifier = Modifier.size(24.dp),
@@ -133,7 +135,7 @@ fun ImageSelectionScreen(){
                     contentAlignment = Alignment.Center
                 ) {
                     Icon(
-                        imageVector = Icons.Rounded.Search,
+                        imageVector = Icons.Rounded.ImageSearch,
                         contentDescription = "Add photo",
                         tint = androidx.compose.material3.MaterialTheme.colorScheme.onPrimary,
                         modifier = Modifier.size(40.dp),
@@ -162,36 +164,6 @@ fun ImageSelectionScreen(){
 
             )
             Spacer(modifier = Modifier.height(10.dp))
-
-
-//            Button(
-//                onClick = {
-//                    //here we place the actual implementation of calling Gemini api
-//                    if (geminiQuiz.isNotBlank() && pickedImage != null) {
-//                        coroutineScope.launch {
-//                            showProgress = true
-//                            val result = geminiApi.generateContentWithMedia(geminiQuiz, pickedImage!!)
-//                            println("our resp ----> ${result.getText()}")
-//
-//
-//                            if (result.error == null) {
-//                                content = result.getText().toString()
-//                            } else {
-//                                content = "No results"
-//                            }
-//
-//                            showProgress = false
-//                        }
-//                    }
-//
-//                },
-//                colors = ButtonDefaults.buttonColors(
-//                    contentColor = Color.White,
-//                    backgroundColor = SecondaryLightColor,
-//                ),
-//            ) {
-//                Text(text = "Search")
-//            }
 
             BloomButton(
                 content = { Text(text = "Search", color = Color.White) },

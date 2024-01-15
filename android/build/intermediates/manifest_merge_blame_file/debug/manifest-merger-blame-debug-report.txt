@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-11-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:3:5-77
-11-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:3:22-74
+11-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:3:5-77
+11-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:3:22-74
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:5-67
-12-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:4:22-64
+12-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:4:5-67
+12-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:4:22-64
 13
 14    <permission
 14-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
@@ -27,39 +27,39 @@
 18-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:6:5-21:19
+20-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:6:5-21:19
 21        android:name="com.teka.organiks.android.BloomApp"
-21-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:7:9-58
+21-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:7:9-58
 22        android:allowBackup="false"
-22-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:8:9-36
+22-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:8:9-36
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.12.0] /home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 24        android:debuggable="true"
 25        android:extractNativeLibs="false"
 26        android:icon="@mipmap/ic_launcher"
-26-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:11:9-43
+26-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:11:9-43
 27        android:label="@string/focusbloom"
-27-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:10:9-43
+27-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:10:9-43
 28        android:supportsRtl="true"
-28-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:9:9-35
+28-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:9:9-35
 29        android:testOnly="true"
 30        android:theme="@style/AppTheme" >
-30-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:12:9-40
+30-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:12:9-40
 31        <activity
-31-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:13:9-20:20
+31-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:13:9-20:20
 32            android:name="com.teka.organiks.android.MainActivity"
-32-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:14:13-66
+32-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:14:13-66
 33            android:exported="true" >
-33-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:15:13-36
+33-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:15:13-36
 34            <intent-filter>
-34-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:16:13-19:29
+34-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:16:13-19:29
 35                <action android:name="android.intent.action.MAIN" />
-35-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:17:17-69
-35-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:17:25-66
+35-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:17:17-69
+35-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:17:25-66
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:18:17-77
-37-->/home/teka/teka-code/challange/Organiks1/android/src/main/AndroidManifest.xml:18:27-74
+37-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:18:17-77
+37-->/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/AndroidManifest.xml:18:27-74
 38            </intent-filter>
 39        </activity>
 40
