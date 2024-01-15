@@ -4,7 +4,7 @@
     "type": "AAPT_FRIENDLY_MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "com.joelkanyi.focusbloom.shared",
+  "applicationId": "com.teka.organiks.shared",
   "variantName": "debug",
   "elements": [
     {
