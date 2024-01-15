@@ -7,8 +7,8 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.WindowPosition
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
-import com.joelkanyi.focusbloom.FocusBloomApp
-import com.joelkanyi.focusbloom.di.KoinInit
+import com.teka.organiks.FocusBloomApp
+import com.teka.organiks.di.KoinInit
 import org.koin.core.Koin
 
 lateinit var koin: Koin

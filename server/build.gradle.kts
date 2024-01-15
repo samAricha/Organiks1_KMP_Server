@@ -6,7 +6,7 @@ plugins {
 
 }
 
-group = "org.teka.project"
+group = "com.teka.organiks"
 version = "1.0.0"
 application {
     mainClass.set("org.teka.project.ApplicationKt")

@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.joelkanyi.focusbloom.shared"
+    namespace = "com.teka.organiks.shared"
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     sourceSets["main"].res.srcDirs("src/commonMain/resources")
     sourceSets["main"].resources.srcDirs("src/commonMain/resources")
@@ -133,8 +133,8 @@ kotlin {
 
 sqldelight {
     databases {
-        create("BloomDatabase") {
-            packageName.set("com.joelkanyi.focusbloom.database")
+        create("OrganiksDatabase") {
+            packageName.set("com.teka.organiks.database")
         }
     }
 }
