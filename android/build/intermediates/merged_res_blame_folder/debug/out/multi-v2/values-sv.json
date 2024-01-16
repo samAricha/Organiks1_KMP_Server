@@ -4,24 +4,7 @@
             "outputFile": "com.teka.organiks.android-mergeDebugResources-51:/values-sv/values-sv.xml",
             "map": [
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/0a90d45fd6352d1eb1d3baa187bb117a/transformed/core-1.12.0/res/values-sv/values-sv.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,150,252,350,449,557,662,783",
-                        "endColumns": "94,101,97,98,107,104,120,100",
-                        "endOffsets": "145,247,345,444,552,657,778,879"
-                    },
-                    "to": {
-                        "startLines": "33,34,35,36,37,38,39,91",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "3273,3368,3470,3568,3667,3775,3880,9153",
-                        "endColumns": "94,101,97,98,107,104,120,100",
-                        "endOffsets": "3363,3465,3563,3662,3770,3875,3996,9249"
-                    }
-                },
-                {
-                    "source": "/home/teka/.gradle/caches/transforms-3/4c2b5211b6de1852bb6f63f87ce39d69/transformed/ui-release/res/values-sv/values-sv.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/6b5390c875f7eb631aab6fdfd5bac521/transformed/ui-release/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/1b668878490546fb90f66342ce98c347/transformed/material3-1.1.2/res/values-sv/values-sv.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/bffc682fc6820df01a9445c8e912ac0c/transformed/material3-1.1.2/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/b755b846db33c6339b7e686fa059259a/transformed/appcompat-1.6.1/res/values-sv/values-sv.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/39caaf738bffd9a47c99038e85aa7675/transformed/appcompat-1.6.1/res/values-sv/values-sv.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -69,6 +52,23 @@
                         "startOffsets": "105,208,311,422,506,608,721,798,873,966,1061,1156,1250,1352,1447,1544,1642,1738,1831,1911,2017,2116,2212,2317,2420,2522,2676,8923",
                         "endColumns": "102,102,110,83,101,112,76,74,92,94,94,93,101,94,96,97,95,92,79,105,98,95,104,102,101,153,101,79",
                         "endOffsets": "203,306,417,501,603,716,793,868,961,1056,1151,1245,1347,1442,1539,1637,1733,1826,1906,2012,2111,2207,2312,2415,2517,2671,2773,8998"
+                    }
+                },
+                {
+                    "source": "/home/teka/.gradle/caches/transforms-3/98a58cdaab3a925ffc997774c33ea215/transformed/core-1.12.0/res/values-sv/values-sv.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,150,252,350,449,557,662,783",
+                        "endColumns": "94,101,97,98,107,104,120,100",
+                        "endOffsets": "145,247,345,444,552,657,778,879"
+                    },
+                    "to": {
+                        "startLines": "33,34,35,36,37,38,39,91",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "3273,3368,3470,3568,3667,3775,3880,9153",
+                        "endColumns": "94,101,97,98,107,104,120,100",
+                        "endOffsets": "3363,3465,3563,3662,3770,3875,3996,9249"
                     }
                 }
             ]
