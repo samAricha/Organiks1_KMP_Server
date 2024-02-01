@@ -5250,22 +5250,20 @@
                     }
                 },
                 {
-                    "source": "/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/res/values/styles.xml",
+                    "source": "/home/teka/teka-code/kmp/template/KMP+Server_Template/android/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "285"
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "157,55,104",
+                        "endColumns": "47,48,52",
+                        "endOffsets": "200,99,152"
                     },
                     "to": {
-                        "startLines": "468",
-                        "startColumns": "4",
-                        "startOffsets": "28628",
-                        "endLines": "472",
-                        "endColumns": "12",
-                        "endOffsets": "28896"
+                        "startLines": "84,85,86",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "3877,3925,3974",
+                        "endColumns": "47,48,52",
+                        "endOffsets": "3920,3969,4022"
                     }
                 },
                 {
@@ -5324,23 +5322,6 @@
                     }
                 },
                 {
-                    "source": "/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "3,10,6,13,5,14,7,4,2,9,11,8,12",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "103,439,257,585,207,637,295,149,55,393,487,355,537",
-                        "endColumns": "45,47,37,51,49,68,59,57,47,45,49,37,47",
-                        "endOffsets": "144,482,290,632,252,701,350,202,98,434,532,388,580"
-                    },
-                    "to": {
-                        "startLines": "363,364,380,418,421,422,423,425,426,436,441,446,447",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "21733,21779,22911,25652,25806,25856,25925,26031,26089,26608,26859,27131,27169",
-                        "endColumns": "45,47,37,51,49,68,59,57,47,45,49,37,47",
-                        "endOffsets": "21774,21822,22944,25699,25851,25920,25980,26084,26132,26649,26904,27164,27212"
-                    }
-                },
-                {
                     "source": "/home/teka/.gradle/caches/transforms-3/bffc682fc6820df01a9445c8e912ac0c/transformed/material3-1.1.2/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,14,15,16,17,18,19,20,21,22,23,24,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61",
@@ -5357,23 +5338,6 @@
                         "endLines": "366,367,368,369,379,381,382,383,384,387,388,389,390,391,392,393,394,395,396,397,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,419,424,429,437,440,443,449,450,451,452,453,454,455,456,457,458,459,460,461,462",
                         "endColumns": "83,81,76,79,47,60,78,101,81,13,49,64,56,64,84,90,69,92,88,93,13,86,83,91,93,59,63,82,89,62,67,67,96,104,71,64,43,45,68,52,52,67,45,49,66,66,65,64,53,71,66,69,81,45,65,60",
                         "endOffsets": "21989,22071,22148,22228,22906,23005,23084,23186,23268,23384,23434,23499,23556,23621,23706,23797,23867,23960,24049,24143,24288,24375,24459,24551,24645,24705,24769,24852,24942,25005,25073,25141,25238,25343,25415,25480,25743,26026,26313,26702,26854,27043,27348,27398,27465,27532,27598,27663,27717,27789,27856,27926,28008,28054,28120,28181"
-                    }
-                },
-                {
-                    "source": "/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "4,2,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "157,55,104",
-                        "endColumns": "47,48,52",
-                        "endOffsets": "200,99,152"
-                    },
-                    "to": {
-                        "startLines": "84,85,86",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "3877,3925,3974",
-                        "endColumns": "47,48,52",
-                        "endOffsets": "3920,3969,4022"
                     }
                 },
                 {
@@ -5432,6 +5396,25 @@
                     }
                 },
                 {
+                    "source": "/home/teka/teka-code/kmp/template/KMP+Server_Template/android/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "285"
+                    },
+                    "to": {
+                        "startLines": "468",
+                        "startColumns": "4",
+                        "startOffsets": "28628",
+                        "endLines": "472",
+                        "endColumns": "12",
+                        "endOffsets": "28896"
+                    }
+                },
+                {
                     "source": "/home/teka/.gradle/caches/transforms-3/ecff5a1ea6749c571995a09dfe7e4146/transformed/lifecycle-runtime-2.6.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -5487,23 +5470,6 @@
                     }
                 },
                 {
-                    "source": "/home/teka/teka-code/multiplatform/Organiks1_KMP_Server/android/src/main/res/values/ic_launcher_background.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "56",
-                        "endOffsets": "107"
-                    },
-                    "to": {
-                        "startLines": "97",
-                        "startColumns": "4",
-                        "startOffsets": "4708",
-                        "endColumns": "56",
-                        "endOffsets": "4760"
-                    }
-                },
-                {
                     "source": "/home/teka/.gradle/caches/transforms-3/787fab4db36186060280d39dd06b036e/transformed/savedstate-1.2.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -5535,6 +5501,40 @@
                         "startOffsets": "19387",
                         "endColumns": "49",
                         "endOffsets": "19432"
+                    }
+                },
+                {
+                    "source": "/home/teka/teka-code/kmp/template/KMP+Server_Template/android/src/main/res/values/ic_launcher_background.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    },
+                    "to": {
+                        "startLines": "97",
+                        "startColumns": "4",
+                        "startOffsets": "4708",
+                        "endColumns": "56",
+                        "endOffsets": "4760"
+                    }
+                },
+                {
+                    "source": "/home/teka/teka-code/kmp/template/KMP+Server_Template/android/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "3,10,6,13,5,14,7,4,2,9,11,8,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "103,439,257,585,207,637,295,149,55,393,487,355,537",
+                        "endColumns": "45,47,37,51,49,68,59,57,47,45,49,37,47",
+                        "endOffsets": "144,482,290,632,252,701,350,202,98,434,532,388,580"
+                    },
+                    "to": {
+                        "startLines": "363,364,380,418,421,422,423,425,426,436,441,446,447",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "21733,21779,22911,25652,25806,25856,25925,26031,26089,26608,26859,27131,27169",
+                        "endColumns": "45,47,37,51,49,68,59,57,47,45,49,37,47",
+                        "endOffsets": "21774,21822,22944,25699,25851,25920,25980,26084,26132,26649,26904,27164,27212"
                     }
                 }
             ]

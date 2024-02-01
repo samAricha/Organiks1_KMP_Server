@@ -26,6 +26,7 @@
         android:icon="@drawable/egg100"
         android:label="@string/focusbloom"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.teka.organiks.android.MainActivity"
