@@ -6,7 +6,7 @@ import cafe.adriel.voyager.core.model.ScreenModel
 import cafe.adriel.voyager.core.model.screenModelScope
 import com.teka.organiks.core.data.repository.gemini.GeminiRepositoryImpl
 import com.teka.organiks.domain.model.ChatStatusModel
-import com.teka.organiks.domain.model.MessageModel
+import com.teka.organiks.domain.model.ChatMessageModel
 import com.teka.organiks.domain.model.Sender
 import com.teka.organiks.domain.repository.GeminiRepository
 import kotlinx.coroutines.launch
@@ -61,7 +61,7 @@ class ChatViewModel : ScreenModel {
         sender: Sender,
         isLoading: Boolean = false
     ) {
-        val message = MessageModel(sender, text, images, isLoading)
+        val message = ChatMessageModel(sender, text, images, isLoading)
         _uiState.value = _uiState.value.copy(
             messages = _uiState.value.messages + message,
             status = if (isLoading) ChatStatusModel.Loading else ChatStatusModel.Idle

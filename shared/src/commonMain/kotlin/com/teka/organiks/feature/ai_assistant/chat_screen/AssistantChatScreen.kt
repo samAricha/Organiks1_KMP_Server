@@ -21,17 +21,19 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.unit.dp
-import com.teka.organiks.domain.model.MessageModel
-//import kotlinx.coroutines.launch
-//import presentation.theme.LightGreen
-//import presentation.theme.LightRed
-//import presentation.ui.component.CustomAppBar
-//import presentation.ui.component.CustomBottomBar
-//import presentation.ui.component.CustomDialog
-//import presentation.ui.component.CustomSnackBar
-//import presentation.ui.component.MessageBubble
-//import presentation.ui.component.MessageImagesStack
-//import presentation.ui.extension.showSnackBar
+import com.teka.organiks.core.presentation.theme.AiLightGreen
+import com.teka.organiks.core.presentation.theme.AiLightRed
+import com.teka.organiks.core.presentation.theme.LightGreen
+import com.teka.organiks.domain.model.ChatMessageModel
+import com.teka.organiks.domain.model.ChatStatusModel
+import com.teka.organiks.ui.extension.showSnackBar
+import com.teka.organiks.ui.widgets.CustomAppBar
+import com.teka.organiks.ui.widgets.CustomBottomSearchBar
+import com.teka.organiks.ui.widgets.CustomDialog
+import com.teka.organiks.ui.widgets.CustomSnackBar
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+
 
 @Composable
 fun AssistantChatScreen(viewModel: ChatViewModel = ChatViewModel()) {
@@ -42,33 +44,37 @@ fun AssistantChatScreen(viewModel: ChatViewModel = ChatViewModel()) {
     val errorSnackBarHostState = remember { SnackbarHostState() }
     val showDialog = remember { mutableStateOf(false) }
 
+
     Scaffold(
+        topBar = {
+            CustomAppBar(onActionClick = { showDialog.value = true })
+        },
         bottomBar = {
-//            CustomBottomBar(
-//                modifier = Modifier
-//                    .fillMaxWidth()
-//                    .padding(horizontal = 10.dp)
-//                    .padding(bottom = 30.dp, top = 5.dp),
-//                status = chatUiState.value.status,
-//                onSendClick = { text, images ->
-//                    coroutineScope.launch {
-//                        viewModel.generateContent(text, images)
-//                    }
-//                },
-//            )
+            CustomBottomSearchBar(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 10.dp)
+                    .padding(bottom = 30.dp, top = 5.dp),
+                status = chatUiState.value.status,
+                onSendClick = { text, images ->
+                    coroutineScope.launch(Dispatchers.IO) {
+                        viewModel.generateContent(text, images)
+                    }
+                },
+            )
         },
         snackbarHost = {
             SnackbarHost(errorSnackBarHostState) { data ->
-//                CustomSnackBar(
-//                    data = data,
-//                    containerColor = LightRed
-//                )
+                CustomSnackBar(
+                    data = data,
+                    containerColor = AiLightRed
+                )
             }
             SnackbarHost(apiKeySnackBarHostState) { data ->
-//                CustomSnackBar(
-//                    data = data,
-//                    containerColor = LightGreen
-//                )
+                CustomSnackBar(
+                    data = data,
+                    containerColor = AiLightGreen
+                )
             }
         },
         modifier = Modifier.pointerInput(Unit) {
@@ -81,32 +87,32 @@ fun AssistantChatScreen(viewModel: ChatViewModel = ChatViewModel()) {
         )
 
         if (showDialog.value) {
-//            CustomDialog(
-//                value = chatUiState.value.apiKey,
-//                onVisibilityChanged = { showDialog.value = it },
-//                onSaveClicked = {
-//                    coroutineScope.launch {
-//                        viewModel.setApiKey(it)
-//                        apiKeySnackBarHostState.currentSnackbarData?.dismiss()
-//                        if(chatUiState.value.status is Status.Success){
-//                            apiKeySnackBarHostState.showSnackbar(
-//                                message = (chatUiState.value.status as Status.Success).data,
-//                                withDismissAction = true
-//                            )
-//                        }
-//
-//                    }
-//                }
-//            )
+            CustomDialog(
+                value = chatUiState.value.apiKey,
+                onVisibilityChanged = { showDialog.value = it },
+                onSaveClicked = {
+                    coroutineScope.launch {
+                        viewModel.setApiKey(it)
+                        apiKeySnackBarHostState.currentSnackbarData?.dismiss()
+                        if(chatUiState.value.status is ChatStatusModel.Success){
+                            apiKeySnackBarHostState.showSnackbar(
+                                message = (chatUiState.value.status as ChatStatusModel.Success).data,
+                                withDismissAction = true
+                            )
+                        }
+
+                    }
+                }
+            )
         }
 
-//        errorSnackBarHostState.showSnackBar(coroutineScope, chatUiState.value.status)
+        errorSnackBarHostState.showSnackBar(coroutineScope, chatUiState.value.status)
     }
 }
 
 
 @Composable
-fun ChatList(modifier: Modifier, messages: List<MessageModel>) {
+fun ChatList(modifier: Modifier, messages: List<ChatMessageModel>) {
     val listState = rememberLazyListState()
 
     if (messages.isNotEmpty()) {
