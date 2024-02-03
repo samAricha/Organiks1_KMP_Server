@@ -84,20 +84,6 @@ fun CustomAppBar(onActionClick: () -> Unit = {}, modifier: Modifier = Modifier) 
                     Spacer(modifier = Modifier.width(5.dp))
                 }
             },
-//            actions = {
-//                IconButton(
-//                    onClick = {
-//                        onActionClick()
-//                    },
-//                    content = {
-//                        Icon(
-//                            Icons.Filled.Key,
-//                            contentDescription = null,
-//                            tint = Color.Gray,
-//                        )
-//                    },
-//                )
-//            },
         )
     }
 }
