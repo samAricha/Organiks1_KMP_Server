@@ -31,7 +31,7 @@ enum class Sender {
     override fun toString(): String {
         return when (this) {
             User -> "You"
-            Bot -> "ChatGemini"
+            Bot -> "Assistant"
         }
     }
 }
