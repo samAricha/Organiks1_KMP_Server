@@ -37,3 +37,14 @@ const val LightGreen = 0xFF90EE90
 const val Yellow = 0xFFFFFF00
 const val LightBlue = 0xFFADD8E6
 const val Pink = 0xFFFFC0CB
+
+val AiLightRed = Color(0xFFf44949)
+val AiLightBlue = Color(0xFF1e90ff)
+val AiLightGreen = Color(0xFF57C84D)
+
+val Gray400 = Color(0XFFE5E6E9)
+val Gray600 = Color(0xFFC4C4C4)
+val Gray700 = Color(0XFF959595)
+
+val Cream1 = Color(0xFFedeef5)
+val Cream2 = Color(0xfff4f0ed)
