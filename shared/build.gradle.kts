@@ -91,6 +91,8 @@ kotlin {
 
                 // For Adaptive FilePicker
                 implementation("com.mohamedrejeb.calf:calf-file-picker:0.3.0")
+                implementation("com.mikepenz:multiplatform-markdown-renderer:0.10.0")
+
             }
         }
 

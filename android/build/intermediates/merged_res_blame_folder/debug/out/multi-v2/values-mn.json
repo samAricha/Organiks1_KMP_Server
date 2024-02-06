@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.teka.organiks.android-mergeDebugResources-51:/values-mn/values-mn.xml",
+            "outputFile": "com.teka.organiks.android-mergeDebugResources-52:/values-mn/values-mn.xml",
             "map": [
                 {
                     "source": "/home/teka/.gradle/caches/transforms-3/39caaf738bffd9a47c99038e85aa7675/transformed/appcompat-1.6.1/res/values-mn/values-mn.xml",
