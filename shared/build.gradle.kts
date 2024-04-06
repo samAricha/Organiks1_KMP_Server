@@ -51,6 +51,7 @@ kotlin {
                 implementation(compose.material)
                 implementation(compose.materialIconsExtended)
 
+
                 @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
                 implementation(compose.components.resources)
 
@@ -63,7 +64,7 @@ kotlin {
 
                 implementation(libs.material3.window.size.multiplatform)
 
-               implementation(libs.sqlDelight.runtime)
+                implementation(libs.sqlDelight.runtime)
                 implementation(libs.sqlDelight.coroutine)
                 implementation(libs.primitive.adapters)
 

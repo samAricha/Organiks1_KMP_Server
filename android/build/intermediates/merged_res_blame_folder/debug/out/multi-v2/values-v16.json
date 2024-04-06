@@ -4,7 +4,17 @@
             "outputFile": "com.teka.organiks.android-mergeDebugResources-51:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/teka/.gradle/caches/transforms-3/39caaf738bffd9a47c99038e85aa7675/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
+                    "source": "/home/teka/.gradle/caches/transforms-3/9f1dbfb5b574da22b4f216f9ad7f7987/transformed/core-1.12.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/teka/.gradle/caches/transforms-3/5be1fd4f87c03374c802fc4a5e50dbee/transformed/appcompat-1.6.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,16 +30,6 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
-                    }
-                },
-                {
-                    "source": "/home/teka/.gradle/caches/transforms-3/98a58cdaab3a925ffc997774c33ea215/transformed/core-1.12.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
                     }
                 }
             ]

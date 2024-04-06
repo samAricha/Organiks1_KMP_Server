@@ -57,6 +57,8 @@ import com.teka.organiks.core.utils.prettyFormat
 import com.teka.organiks.core.utils.prettyTimeDifference
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
+import organiks1.shared.generated.resources.Res
+import organiks1.shared.generated.resources.ic_complete
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalResourceApi::class)
 @Composable
@@ -186,7 +188,7 @@ fun TaskCard(
                     Image(
                         modifier = Modifier
                             .size(48.dp),
-                        painter = painterResource("ic_complete.xml"),
+                        painter = painterResource(Res.drawable.ic_complete),
                         contentDescription = "Task Options",
                     )
                 } else {

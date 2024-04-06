@@ -36,6 +36,8 @@ import kotlinx.coroutines.withContext
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 import org.koin.compose.rememberKoinInject
+import organiks1.shared.generated.resources.Res
+import organiks1.shared.generated.resources.ic_complete
 
 
 @OptIn(ExperimentalResourceApi::class, ExperimentalMaterial3Api::class)
@@ -114,7 +116,9 @@ fun ProductionHomeScreen(){
                                 Image(
                                     modifier = Modifier
                                         .size(32.dp),
-                                    painter = painterResource("ic_complete.xml"),
+                                    painter = painterResource(
+                                        Res.drawable.ic_complete
+                                    ),
                                     contentDescription = "Task Options",
                                 )
                             }

@@ -1,9 +1,9 @@
 [versions]
 kotlin = "1.9.21"
-compose = "1.5.11"
+compose = "1.6.0"
 koinCore = "3.5.0"
 koinAndroid = "3.5.0"
-gradle = "8.2.0"
+gradle = "8.2.2"
 sqlDelight = "2.0.1"
 voyager = "1.0.0-rc10"
 componentsResources = "1.5.11"

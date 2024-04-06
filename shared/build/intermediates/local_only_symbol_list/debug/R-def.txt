@@ -8,13 +8,4 @@ drawable logo
 drawable perfect100
 drawable welcome100
 drawable welcome55
-font montserrat_black
-font montserrat_bold
-font montserrat_extrabold
-font montserrat_extralight
-font montserrat_light
-font montserrat_medium
-font montserrat_regular
-font montserrat_semi_bold
-font montserrat_thin
 raw alarm

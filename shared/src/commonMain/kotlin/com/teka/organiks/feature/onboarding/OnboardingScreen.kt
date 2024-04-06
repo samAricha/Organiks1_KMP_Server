@@ -39,10 +39,14 @@ import cafe.adriel.voyager.navigator.currentOrThrow
 import com.teka.organiks.main.MainScreen
 import com.teka.organiks.platform.MyAppImages
 import kotlinx.coroutines.launch
+import org.jetbrains.compose.resources.DrawableResource
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
 import org.koin.compose.rememberKoinInject
 import org.koin.core.component.KoinComponent
+import organiks1.shared.generated.resources.Res
+import organiks1.shared.generated.resources.add_filled
+import organiks1.shared.generated.resources.laughing7
 
 class OnboardingScreen : Screen, KoinComponent {
 
@@ -215,14 +219,15 @@ private fun CustomPageContent(title: String, description: String, painterResourc
 
 @OptIn(ExperimentalResourceApi::class)
 @Composable
-private fun PageContent(title: String, description: String, illustration: String) {
+private fun PageContent(title: String, description: String, illustration: DrawableResource) {
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Image(
-            painter = painterResource(illustration),
-            contentDescription = illustration,
+//            painter = painterResource(illustration),
+            painter = painterResource(Res.drawable.laughing7),
+            contentDescription = title,
             modifier = Modifier.size(370.dp),
         )
         Spacer(modifier = Modifier.height(32.dp))

@@ -14,6 +14,12 @@ import com.teka.organiks.feature.egg_dashboard.ProductionHomeScreen
 import com.teka.organiks.feature.settings.SettingsScreen
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.painterResource
+import organiks1.shared.generated.resources.Res
+import organiks1.shared.generated.resources.add_outlined
+import organiks1.shared.generated.resources.home_outlined
+import organiks1.shared.generated.resources.settings_outlined
+import organiks1.shared.generated.resources.statistics_outlined
+import organiks1.shared.generated.resources.study
 
 internal sealed class BloomTab {
 
@@ -23,7 +29,7 @@ internal sealed class BloomTab {
             @Composable
             get() {
                 val title = "DashBoard Screen"
-                val icon = painterResource("home_outlined.xml")
+                val icon = painterResource(Res.drawable.home_outlined)
 
                 return remember {
                     TabOptions(
@@ -46,7 +52,7 @@ internal sealed class BloomTab {
             @Composable
             get() {
                 val title = "Records"
-                val icon = painterResource("statistics_outlined.xml")
+                val icon = painterResource(Res.drawable.statistics_outlined)
 
                 return remember {
                     TabOptions(
@@ -71,7 +77,7 @@ internal sealed class BloomTab {
             @Composable
             get() {
                 val title = "Record Collection"
-                val icon = painterResource("add_outlined.xml")
+                val icon = painterResource(resource = Res.drawable.add_outlined)
 
 
 
@@ -96,7 +102,7 @@ internal sealed class BloomTab {
             @Composable
             get() {
                 val title = "AI Assistant"
-                val icon = painterResource("study.xml")
+                val icon = painterResource(Res.drawable.study)
 
                 return remember {
                     TabOptions(
@@ -121,7 +127,7 @@ internal sealed class BloomTab {
             @Composable
             get() {
                 val title = "Settings"
-                val icon = painterResource("settings_outlined.xml")
+                val icon = painterResource(Res.drawable.settings_outlined)
 
                 return remember {
                     TabOptions(
