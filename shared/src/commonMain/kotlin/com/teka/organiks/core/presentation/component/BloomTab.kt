@@ -7,6 +7,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import cafe.adriel.voyager.navigator.tab.Tab
 import cafe.adriel.voyager.navigator.tab.TabOptions
+import com.teka.organiks.BuildKonfig
 import com.teka.organiks.feature.ai_assistant.image_selection.ImageSelectionScreen
 import com.teka.organiks.feature.dashborad.DashboardScreen
 import com.teka.organiks.feature.egg_collection.ProductionRecordingScreen
@@ -17,9 +18,11 @@ import org.jetbrains.compose.resources.painterResource
 import organiks1.shared.generated.resources.Res
 import organiks1.shared.generated.resources.add_outlined
 import organiks1.shared.generated.resources.home_outlined
+import organiks1.shared.generated.resources.letsgo100
 import organiks1.shared.generated.resources.settings_outlined
 import organiks1.shared.generated.resources.statistics_outlined
 import organiks1.shared.generated.resources.study
+import presentation.chat_screens.ChatScreen
 
 internal sealed class BloomTab {
 
@@ -113,9 +116,17 @@ internal sealed class BloomTab {
                 }
             }
 
+        @OptIn(ExperimentalResourceApi::class)
         @Composable
         override fun Content() {
-            ImageSelectionScreen()
+//            ImageSelectionScreen()
+
+            ChatScreen(
+                geminiKey = BuildKonfig.GEMINI_API_KEY,
+                mainTitle = "OrganiksKMP",
+                subTitle = "by aricha",
+                brandingImg = painterResource(Res.drawable.letsgo100)
+            )
         }
     }
 

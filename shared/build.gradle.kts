@@ -1,9 +1,13 @@
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
+
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlinX.serialization.plugin)
     alias(libs.plugins.sqlDelight.plugin)
     alias(libs.plugins.compose.multiplatform)
+    alias(libs.plugins.buildKonfig) apply true
+
 }
 
 android {
@@ -92,6 +96,9 @@ kotlin {
 
                 // For Adaptive FilePicker
                 implementation("com.mohamedrejeb.calf:calf-file-picker:0.3.0")
+
+                implementation("io.github.samaricha:chatSDK:0.0.1")
+
             }
         }
 
@@ -141,5 +148,20 @@ sqldelight {
         create("OrganiksDatabase") {
             packageName.set("com.teka.organiks.database")
         }
+    }
+}
+
+buildkonfig {
+    packageName = "com.teka.organiks"
+
+
+    defaultConfigs {
+        val apiKey: String = gradleLocalProperties(rootDir).getProperty("GEMINI_API_KEY")
+
+        require(apiKey.isNotEmpty()) {
+            "Register your api key from developer and place it in local.properties as `API_KEY`"
+        }
+
+        buildConfigField(com.codingfeline.buildkonfig.compiler.FieldSpec.Type.STRING, "GEMINI_API_KEY", apiKey)
     }
 }

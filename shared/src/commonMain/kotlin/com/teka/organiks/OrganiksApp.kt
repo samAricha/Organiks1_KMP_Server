@@ -36,6 +36,8 @@ fun OrganiksApp(
                 statusBarColor = MaterialTheme.colorScheme.background,
                 navBarColor = MaterialTheme.colorScheme.background,
             )
+
+
             when (onBoardingCompleted) {
                 is OnBoardingState.Success -> {
                     Surface(
