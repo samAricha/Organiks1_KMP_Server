@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.teka.organiks.android-mergeDebugResources-51:/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "com.teka.organiks.android-mergeDebugResources-52:/values-en-rCA/values-en-rCA.xml",
             "map": [
                 {
                     "source": "/home/teka/.gradle/caches/transforms-3/5be1fd4f87c03374c802fc4a5e50dbee/transformed/appcompat-1.6.1/res/values-en-rCA/values-en-rCA.xml",
